@@ -24,7 +24,7 @@ export default {
 <style lang="scss" scoped>
 .page-title{
   .title-char{
-    font-size:10em;
+    font-size:10vw;
     color:lightgrey;
     transform: rotateY(360deg);
     float:left;

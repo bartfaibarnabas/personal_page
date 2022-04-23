@@ -5,6 +5,7 @@
       fixed
       app
     >
+    <v-spacer></v-spacer>
       <v-btn depressed @click="openLoginDialog">
         <v-icon>mdi-account</v-icon>
         <span>Login</span>
