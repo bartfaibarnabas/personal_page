@@ -1,6 +1,6 @@
 <template>
   <v-row justify="center" align="center">
-    <v-col v-for="char in titleChars" :key="char" class="page-title">
+    <v-col v-for="(char, key) in titleChars" :key="key" class="page-title">
       <p class="title-char">{{char}}</p>
     </v-col>
   </v-row>
@@ -8,7 +8,7 @@
 
 <script>
 export default {
-  name: 'WelcomePage',
+  name: 'index',
   data() {
     return {
       title:'WELCOME',

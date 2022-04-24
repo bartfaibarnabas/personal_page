@@ -21,15 +21,22 @@
       app
     >
       <span>&copy; {{ new Date().getFullYear() }}</span>
+      <login v-model="loginDailog"/>
     </v-footer>
   </v-app>
 </template>
 
 <script>
+import login from '../components/login.vue'
 export default {
   name: 'DefaultLayout',
+  components: {
+    login,
+  },
   data () {
     return {
+      loginDailog: false,
+
       clipped: false,
       drawer: false,
       fixed: false,
@@ -39,11 +46,6 @@ export default {
           title: 'Login',
           to: '/'
         },
-        {
-          icon: 'mdi-chart-bubble',
-          title: 'Inspire',
-          to: '/inspire'
-        }
       ],
       miniVariant: false,
       right: true,
@@ -54,6 +56,7 @@ export default {
   methods: {
     openLoginDialog() {
       console.log('login');
+      this.loginDailog = true;
     },
   },
 }

@@ -18,6 +18,7 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/icon.ico' }
     ]
   },
+  mode: 'spa',
 
   target: 'static',
 
@@ -41,7 +42,24 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    '@nuxtjs/axios',
+    '@nuxtjs/auth-next',
+    '@nuxtjs/firebase',
   ],
+  firebase: {
+    config: {
+      apiKey: 'AIzaSyAGNS04UtFZRXl0R_MauPV5USKLxEBbYmk',
+      authDomain: 'bbperssite.firebaseapp.com',
+      projectId: 'bbperssite',
+      storageBucket: 'bbperssite.appspot.com',
+      messagingSenderId: '584787693700',
+      appId: '1:584787693700:web:23a483f177470c198b32d1',
+      measurementId: 'G-C7EX49PQJC'
+    },
+    services: {
+      auth: true // Just as example. Can be any other service.
+    }
+  },
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
@@ -61,8 +79,33 @@ export default {
       }
     }
   },
+  auth: {
+    strategies: {
+      google: {
+        clientId: '584787693700-fce79bu23lb56fpnsgr8qe9d0iuknem3.apps.googleusercontent.com',
+        scope: ['profile', 'email'],
+        responseType: 'token id_token',
+        code_challenge_method: '',
+      },
+      facebook: {
+        endpoints: {
+          userInfo: 'https://graph.facebook.com/v6.0/me?fields=id,name,picture{url}'
+        },
+        clientId: 'bartfaibarnabas',
+        scope: ['public_profile', 'email']
+      },
+    }
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+  },
+  database: {
+    emulatorPort: 9000,
+    emulatorHost: 'localhost',
+  },
+
+  router: {
+    middleware: 'router-auth',
   }
 }
