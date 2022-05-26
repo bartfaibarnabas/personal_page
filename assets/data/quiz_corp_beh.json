@@ -1,0 +1,150 @@
+[
+    {
+        "question": "Rutinfeladatok esetében a támogató vezetési stílus, komplex, nem rutin jellegű feladatoknál viszont a direktív vezetési stílus alkalmazása javasolt.",
+        "answer_a": "Igaz",
+        "answer_b": "Hamis",       
+        "correct": "answer_a"
+    },
+    {
+        "question": "Ha, hogy a MARS-modell tényezőinek bármelyike alacsony szintű nem lehet magas az egyén   teljesítménye.",
+        "answer_a": "Igaz",
+        "answer_b": "Hamis",       
+        "correct": "answer_a"
+    },
+    {
+        "question": "A férfias-nőies értékeke dimenzió arra utal, hogy az adott ország mennyire értékeli a férfias, maszkulin magatartást és szerepet, illetve milyenek a nők jogai.",
+        "answer_a": "Igaz",
+        "answer_b": "Hamis",       
+        "correct": "answer_a"
+    },
+    {
+        "question": "A teamalapú szervezetek fenntartása gyakran költséges",
+        "answer_a": "Igaz",
+        "answer_b": "Hamis",       
+        "correct": "answer_a"
+    },
+    {
+        "question": "A kollektivista társadalmakban a közösséghez való tartozás, a közösség céljainak elfogadása az alapvető érték.",
+        "answer_a": "Igaz",
+        "answer_b": "Hamis",       
+        "correct": "answer_a"
+    },
+    {
+        "question": "A kollektivista társadalmakban a közösséghez való tartozás, a közösség céljainak elfogadása azalapvető érték.",
+        "answer_a": "Igaz",
+        "answer_b": "Hamis",       
+        "correct": "answer_a"
+    },
+    {
+        "question": "Mátrix típusú szervezeteknél a technokratikus koordinációs eszközök a meghatározóak",
+        "answer_a": "Igaz",
+        "answer_b": "Hamis",       
+        "correct": "answer_b"
+    },
+    {
+        "question": "Egyes vizsgálatok szerint a beosztottakra fordított alacsonyabb figyelem nem párosul egyértelmű negatív hatásokkal, bizonyos esetekben éppen elégedettséget vált ki.",
+        "answer_a": "Igaz",
+        "answer_b": "Hamis",       
+        "correct": "answer_b"
+    },
+    {
+        "question": "Fiedler szerint eltérő súlyozással az adott szituációnak megfelelően kell alkalmazni a támogató és az előíró magatartást",
+        "answer_a": "Igaz",
+        "answer_b": "Hamis",       
+        "correct": "answer_b"
+    },
+    {
+        "question": "kioltás azt jelenti, hogy megszüntetünk valamely olyan következményt, amelyet a beosztott nem szeret, számára kellemetlen",
+        "answer_a": "Igaz",
+        "answer_b": "Hamis",       
+        "correct": "answer_b"
+    },
+    {
+        "question": "A törzsegység a begyűjtött információk alapján utasítja az érintett szervezeti egységet, ezzel segítve a szervezet vezetőinek munkáját",
+        "answer_a": "Igaz",
+        "answer_b": "Hamis",       
+        "correct": "answer_b"
+    },
+    {
+        "question": "A szervezeti motiváció modelljében a szervezeti teljesítmény outputtényező, az egyéni elégedettség viszont nem.",
+        "answer_a": "Igaz",
+        "answer_b": "Hamis",       
+        "correct": "answer_b"
+    },
+    {
+        "question": "Az átalakító vezetés mikro fókuszú és konkrét, speciális célok megvalósítására koncentrál, amelyeket az átalakítás során el kell érni",
+        "answer_a": "Igaz",
+        "answer_b": "Hamis",       
+        "correct": "answer_b"
+    },
+    {
+        "question": "A vezetők a szervezeti kultúra kialakítása során a struktúra hatására dolgoznak ki szervezeti kulturális válaszokat a környezet kihívásaira",
+        "answer_a": "Igaz",
+        "answer_b": "Hamis",       
+        "correct": "answer_b"
+    },
+    {
+        "question": "A törzsegység a begyűjtött információk alapján utasítja az érintett szervezeti egységet, ezzel segítve a szervezet vezetőinek munkáját",
+        "answer_a": "Igaz",
+        "answer_b": "Hamis",       
+        "correct": "answer_b"
+    },
+    {
+        "question": "Az ún. Laissez-faire, laissez passer stílussal vezetett csoportokban a legmagasabb az elégedettség, mivel-ugyan tág keretek között, de-azt és úgy csinálhatnak, amit akarnak.",
+        "answer_a": "Igaz",
+        "answer_b": "Hamis",       
+        "correct": "answer_b"
+    },
+    {
+        "question": "Vroom modellje szerint az erőfeszítést kiváltó pszichológiai kényszer nagysága nem a jövővel kapcsolatos elvárások függvényében alakul ki.",
+        "answer_a": "Igaz",
+        "answer_b": "Hamis",       
+        "correct": "answer_b"
+    },
+    {
+        "question": "A motivátor tényezők alacsony szintje elégedettséget okoz.",
+        "answer_a": "Igaz",
+        "answer_b": "Hamis",       
+        "correct": "answer_b"
+    },
+    {
+        "question": "Mely tényező(k) hatnak közvetlenül az értékek kialakulására? </br> 1. intézményesített működés, 2. misszió és elvek, 3. az alapítók döntései, 4. társadalmi szerkezet, 5.normák, 6. megőrzött történetek, szimbólumok",
+        "answer_a": "1., 3., 5.",
+        "answer_b": "2., 3., 6.",
+        "answer_c": "4., 5., 6.",
+        "answer_d": "1., 2., 4",        
+        "correct": "answer_b"
+    },
+    {
+        "question": "Kik sorolhatók azonos csoportba?</br> 1. McClelland, 2. Tannenbaum, 3. Mouton, 4. Porter, 5. Handy, 6. Schmidt",
+        "answer_a": "1., 2., 3., 6.",
+        "answer_b": "2., 3., 6.",
+        "answer_c": "1., 4., 5.",
+        "answer_d": "2., 4., 6",        
+        "correct": "answer_b"
+    },
+    {
+        "question": "Melyik organikus szervezeti formák?</br>1. projektszervezet, 2. mátrix, 3. lineáris, 4. divizionális, 5. törzsegységi, 6. teamalapú",
+        "answer_a": "1., 2., 3.",
+        "answer_b": "2., 3., 5.",
+        "answer_c": "1., 4., 6.",
+        "answer_d": "4., 5., 6.",        
+        "correct": "answer_c"
+    },
+    {
+        "question": "Melyek/Kik sorolhatók azonos csoportba?</br>1. hatalom, 2. teljesítmény, 3. valencia, 4. Vroom, 5. siker, 6. Schein",
+        "answer_a": "3., 4., 5.",
+        "answer_b": "1., 2., 5.",
+        "answer_c": "2., 3.",
+        "answer_d": "4., 5., 6.",        
+        "correct": "answer_c"
+    },
+    {
+        "question": "Melyek/Kik sorolhatóak azonos csoportba?</br>1. valencia, 2.Schein, 3. motivátorok, 4.Maslow, 5.létérdekek, 6. kapcsolatorientált",
+        "answer_a": "3.,4.,5",
+        "answer_b": "2.,3.,6.",
+        "answer_c": "4.,5.,6.",
+        "answer_d": "1.,2.,5",        
+        "correct": "answer_a"
+    }
+]
