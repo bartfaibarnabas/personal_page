@@ -10,8 +10,8 @@
                 <v-radio
                     v-for="option in quiz.answers" :key="option.letter"
                     :class="{ 
-                      correct: (checked && option.isCorrect && answers[index]),
-                      incorrect: (checked && !option.isCorrect && answers[index] === option.letter)
+                      correct: (checked && option.isCorrect && answers[index]) || (showAnswers && option.isCorrect),
+                      incorrect: (checked && !option.isCorrect && answers[index] === option.letter),
                     }"
                     :label="option.answer"
                     :value="option.letter"
@@ -19,17 +19,24 @@
                 </v-radio-group>
             </v-card>
         </v-container>
+        <v-card
+        class="float-circular"
+        v-if="checked"
+        >
+          <v-progress-circular
+            :rotate="360"
+            :size="100"
+            :width="15"
+            :value="(correctAnswers / quizData.length)*100"
+            color="teal"
+            >
+            {{correctAnswers}}/{{filledAnswersCount}} of {{quizData.length}}
+          </v-progress-circular>
+        </v-card>
         <v-card class="float-button">
-                <v-progress-circular
-                v-if="checked"
-                :rotate="360"
-                :size="100"
-                :width="15"
-                :value="(correctAnswers / quizData.length)*100"
-                color="teal"
-                >
-                {{correctAnswers}}/{{quizData.length}}
-                </v-progress-circular>
+            <v-btn @click="showAnswers = !showAnswers">
+                <v-icon center>{{showAnswers ? 'mdi-eye-off' : 'mdi-eye'}}</v-icon>
+            </v-btn>
             <v-btn  @click="check">
                 <v-icon left>mdi-check-all</v-icon>
                 {{checked ? 'uncheck' : 'check'}}
@@ -48,14 +55,14 @@ export default {
   name: 'test',
   data() {
     return {
-      answers:{},
+      answers: {},
       checked: false,
       correctAnswers: 0,
       quizData: [],
+      showAnswers: false,
     };
   },
   created() {
-
     const lawData = this.shuffle(business_law.map((element, index) => {
       return this.calcAnswer(element, index);
     }));
@@ -68,6 +75,11 @@ export default {
         return this.calcAnswer(element, index);
     }));
     this.quizData.push(...marketingData);
+  },
+  computed: {
+    filledAnswersCount () {
+      return Object.keys(this.answers).length;
+    }
   },
   methods: {
       calcAnswer(element, index) {
@@ -141,5 +153,12 @@ export default {
     right: 10px;
     bottom: 10px;
     z-index: 4;
+}
+.float-circular {
+    position: fixed;
+    right: 10px;
+    top: 70px;
+    z-index: 4;
+    border-radius: 50%;
 }
 </style>
