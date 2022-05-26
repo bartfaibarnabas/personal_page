@@ -1,18 +1,565 @@
 [
     {
         "question": "A jogi személyek ügyvezetését",
-        "a": " az alapítók látják el",
-        "b": " a vezető tisztségviselő látja el",
-        "c": " a kuratórium látja el",
-        "d": " a cégvezető látja el",
-        "correct": "b"
+        "answer_a": " az alapítók látják el",
+        "answer_b": " a vezető tisztségviselő látja el",
+        "answer_c": " a kuratórium látja el",
+        "answer_d": " a cégvezető látja el",
+        "correct": "answer_b"
     },
     {
         "question": "Melyik állítás nem igaz?",
-        "a": "Az egyesülés nem önálló társasági forma, de a társasági szabályozás általános rendelkezései irányadóak rá",
-        "b": "A társasági formák közül lehet egyszemélyes a kft., az rt. és az egyéni cég",
-        "c": "A gazdasági társaságoknak fő szabályként két taggal kell rendelkezniük",
-        "d": "Az egyéni cég egyszemélyes vállalkozási forma, melynek önálló cégneve van, és bejegyzik a cégjegyzékbe",
-        "correct": "c"
+        "answer_a": "Az egyesülés nem önálló társasági forma, de a társasági szabályozás általános rendelkezései irányadóak rá",
+        "answer_b": "A társasági formák közül lehet egyszemélyes a kft., az rt. és az egyéni cég",
+        "answer_c": "A gazdasági társaságoknak fő szabályként két taggal kell rendelkezniük",
+        "answer_d": "Az egyéni cég egyszemélyes vállalkozási forma, melynek önálló cégneve van, és bejegyzik a cégjegyzékbe",
+        "correct": "answer_c"
+    },
+    {
+        "question": "Egy kkt. esetében az új Ptk.:",
+        "answer_a": "nem ír elő tőkeminimumot",
+        "answer_b": "100.000 forint összegű tőkeminimumot ír elő",
+        "answer_c": "a vagyoni szolgáltatás nélküli cégalapítást is lehetővé teszi",
+        "answer_d": "kereskedelmi név alatt jogalanyiságot biztosít",        
+        "correct": "answer_a"
+    },
+    {
+        "question": "A kft-ben az ügyvezetőket fő szabályként …",
+        "answer_a": "taggyűlés egyhangú többséggel választja, illetve hívhatja vissza",
+        "answer_b": "taggyűlés egyszerű többséggel választja, de csak minősített többséggel hívhatja vissza",
+        "answer_c": "taggyűlés egyszerű többséggel választja, illetve hívhatja vissza",
+        "answer_d": "taggyűlés minősített többséggel választja, illetve hívhatja vissza",        
+        "correct": "answer_c"
+    },
+    {
+        "question": "A kft. tagjai főszabály szerint:",
+        "answer_a": "tagsági jogviszonyának megszűnésétől számított 5 évig még felel a társaság tartozásaiért",
+        "answer_b": "nem felel a kft. tartozásaiért",
+        "answer_c": "korlátlanul felel a társaság tartozásaiért",
+        "answer_d": "korlátlanul felel a társaság tartozásaiért, ha apporttal száll be a társaságba",        
+        "correct": "answer_b"
+    },
+    {
+        "question": "Az audit bizottság…",
+        "answer_a": "nem más, mint a zrt.-ben megválasztott Board",
+        "answer_b": "nem más, mint az nyrt. felügyelőbizottságának tagjai közül választott kötelező szerv",
+        "answer_c": "nem más, mint a felügyelőbizottság dolgozói küldötteinek összessége",
+        "answer_d": "nem más, mint a beszámoló auditálására jogosult könyvvizsgáló, és az FB együttesen",        
+        "correct": "answer_b"
+    },
+    {
+        "question": "Válassza ki a helytelen megoldást! Az értékpapírjog szerint …",
+        "answer_a": "A csekk és a váltó ún. hitelpapír",
+        "answer_b": "A kötvény tagi jogot megtestesítő értékpapír",
+        "answer_c": "Az értékpapírok kétfélék: hitel- illetve tagsági jogot megtestesítő értékpapírról beszélhetünk",
+        "answer_d": "A részvény tagi jogot megtestesítő értékpapír",        
+        "correct": "answer_b"
+    },
+    {
+        "question": "Az új Ptk szerint részvénytársaság …… alapítható",
+        "answer_a": "csak nyílvánosan",
+        "answer_b": "zártan és nyilvánosan",
+        "answer_c": "csak a tőzsdén",
+        "answer_d": "csak zártan",        
+        "correct": "answer_d"
+    },
+    {
+        "question": "Válassza ki a helyes választ! A kkt. …",
+        "answer_a": "Csak akkor alapítható vagyon nélkül, ha legalább két tagja van (az egyszemélyes formában nem)",
+        "answer_b": "törzstőkéjéhez minden tagnak kötelező azonos mértékben hozzájárulni",
+        "answer_c": "alapításkor kötelező egy minimális vagyont a társaság rendelkezésére bocsátani",
+        "answer_d": "alapítható vagyon nélkül, a vagyonra vonatkozó előírás nincs a Ptk.-ban",        
+        "correct": "answer_c"
+    },
+    {
+        "question": "A Ptk. szabályozása az általános eltérést engedő főszabály (3:4 paragrafus) eredményeként…",
+        "answer_a": "konstitutív",
+        "answer_b": "imperatív",
+        "answer_c": "diszpozitív",
+        "answer_d": "kogens",        
+        "correct": "answer_c"
+    },
+    {
+        "question": "Nem lehet gazdasági társaság tagja …",
+        "answer_a": "egyesület és alapítvány",
+        "answer_b": "korlátlan tagi felelősséggel létrejött társaság",
+        "answer_c": "szövetkezet",
+        "answer_d": "az előtársaság",        
+        "correct": "answer_d"
+    },
+    {
+        "question": "Az alábbiak közül melyik nem tartozik a jogi személyekkel szemben támasztott alapvető követelmények közé",
+        "answer_a": "elkülönült vagyonon alapuló önálló vagyoni felelősség",
+        "answer_b": "ellenőrzést és felügyeletet ellátó szerv",
+        "answer_c": "elkülönült vagyon",
+        "answer_d": "megkülönböztetésre alkalmas név",        
+        "correct": "answer_b"
+    },
+    {
+        "question": "Válassza ki a hamis állítást",
+        "answer_a": "A board rendszerű irányítási rendszer az igazgatóság mellett működő, tanácsadó     felügyelő szerv",
+        "answer_b": "Nyrt-ben nem lehet vezérigazgatót kinevezni a társaság vezetői tisztségviselői feladatainak   ellátására",
+        "answer_c": "Az ügydöntő FB jogosult megválasztani a társaság vezetői tisztségviselőjét",
+        "answer_d": "Zrt.-ben az igazgatóság helyett egyszemélyes vezető tisztségviselő is választható",        
+        "correct": "answer_a"
+    },
+    {
+        "question": "A betéti társaság minden esetben legalább ... tagjának lennie kell.",
+        "answer_a": "1",
+        "answer_b": "2",
+        "answer_c": "3",
+        "answer_d": "4",        
+        "correct": "answer_b"
+    },
+    {
+        "question": "A zártkörűen alapított részvénytársaság részvényeit alapításkor:",
+        "answer_a": "kizárólag az alapító társaság tagjai szerezhetik meg",
+        "answer_b": "csak az igazgatóság tagajai szerzehetik meg",
+        "answer_c": "kizárólag a társaság vezető tisztségviselői szerezhetik meg",
+        "answer_d": "bárki megszerezheti",        
+        "correct": "answer_a"
+    },
+    {
+        "question": "KFT tagjainak kötelezettsége:",
+        "answer_a": "vagyoni hozzájárulás teljesítése, esetleg mellékszolgáltatás, pótbefizetés",
+        "answer_b": "kizárólag a társaság működésében való részvétel, és szavazati jog gyakorlása",
+        "answer_c": "kizárólag a vagyoni szolgáltatás teljesítésére terjed ki",
+        "answer_d": "kizárólag a személyes közreműködés lehet a társaság tevékenységében",        
+        "correct": "answer_c"
+    },
+    {
+        "question": "A jogi személy elmélet kifinomult kimunkálása melyik állam jogtudományának terméke?",
+        "answer_a": "amerikai jogtudományé",
+        "answer_b": "az angolszász jogtudományé",
+        "answer_c": "a német jogtudományé",
+        "answer_d": "a francia jogtudományé",        
+        "correct": "answer_c"
+    },
+    {
+        "question": "A hatályos Polgári Törvénykönyvet Magyarországon…",
+        "answer_a": "2013-ban alkották",
+        "answer_b": "1997-ben alkották",
+        "answer_c": " 2017-ben alkották",
+        "answer_d": " 1959-ben alkották",        
+        "correct": "answer_a"
+    },
+    {
+        "question": "Az alábbaik közül melyik állítás NEM igaz: A taggyűlés a törzstőkét",
+        "answer_a": "a társaság a taggyűlés ¾-es határozatával leszállíthatja",
+        "answer_b": "a Ptk-ban meghatározott esetekben köteles leszállítani",
+        "answer_c": "nem szállítja le: arra a felügyelő bizottság előzetes véleményének kikérése után az  ügyvezető vagy ügyvezetők jogosultak",
+        "answer_d": "nem szállítja le a kötelező törzstőke minimum alá",        
+        "correct": "answer_c"
+    },
+    {
+        "question": "A board...",
+        "answer_a": "nem más, mint a felügyelő biztotság küldöttjeinek összesége",
+        "answer_b": "nem más, mint az nyrt. egységes irányító szerve",
+        "answer_c": "nem más, mint az nyrt. igazgatósága",
+        "answer_d": "nem más, mint a zrt-ben megváltozott egységes irányító szerv",        
+        "correct": "answer_b"
+    },
+    {
+        "question": "Az alábbi állítások közül melyik helyes?",
+        "answer_a": "az egyéni cég nem jogi személy, de szerepel a cégnyilvántartásban",
+        "answer_b": "az egyéni cég olyan egyéni vállalkozó, akit a jegyző nyilvántartása vett.",
+        "answer_c": "az egyéni cég jogi személy, szerepel a cégnyilvántartásba",
+        "answer_d": "az egyéni cég nem más mint az egyszemélyes kft. vagy rt",        
+        "correct": "answer_c"
+    },
+    {
+        "question": "Az un. „ultra vires” elv érvényesülése (azaz a szervezetek relatív jogképessége) ma is érvényesül",
+        "answer_a": "a német jogcsoportban",
+        "answer_b": "az angolszász jogcsoportban",
+        "answer_c": "a visegrádi régió országaiban",
+        "answer_d": "a francia jogcsoportban",        
+        "correct": "answer_b"
+    },
+    {
+        "question": "A gazdasági társaságokra vonatkozó hatályos magyar szabályozás:",
+        "answer_a": "kompromisszumos: a piaci ágazatoik saját maguk határozzák meg, hogy alkalmazzák-e vagy sem a Ptk szabályait",
+        "answer_b": "zerint GT általános szabályait a Ptk. tartalmazza, de az egyes formákra külön törvények  vonatkoznak",
+        "answer_c": "monista: GT-ról-más jogi személyekkel együtt- a polgári törvénykönyv rendelkezik",
+        "answer_d": "dualista: csak a társaságokat rendezi a Ptk., az egyesület és az alapítvány külön tv. szabályozza",        
+        "correct": "answer_c"
+    },
+    {
+        "question": "Rutinfeladatok esetében a támogató vezetési stílus, komplex, nem rutin jellegű feladatoknál viszont a direktív vezetési stílus alkalmazása javasolt.",
+        "answer_a": "Igaz",
+        "answer_b": "Hamis",       
+        "correct": "answer_a"
+    },
+    {
+        "question": "Ha, hogy a MARS-modell tényezőinek bármelyike alacsony szintű nem lehet magas az egyén   teljesítménye.",
+        "answer_a": "Igaz",
+        "answer_b": "Hamis",       
+        "correct": "answer_a"
+    },
+    {
+        "question": "A férfias-nőies értékeke dimenzió arra utal, hogy az adott ország mennyire értékeli a férfias, maszkulin magatartást és szerepet, illetve milyenek a nők jogai.",
+        "answer_a": "Igaz",
+        "answer_b": "Hamis",       
+        "correct": "answer_a"
+    },
+    {
+        "question": "A teamalapú szervezetek fenntartása gyakran költséges",
+        "answer_a": "Igaz",
+        "answer_b": "Hamis",       
+        "correct": "answer_a"
+    },
+    {
+        "question": "A kollektivista társadalmakban a közösséghez való tartozás, a közösség céljainak elfogadása az alapvető érték.",
+        "answer_a": "Igaz",
+        "answer_b": "Hamis",       
+        "correct": "answer_a"
+    },
+    {
+        "question": "A kollektivista társadalmakban a közösséghez való tartozás, a közösség céljainak elfogadása azalapvető érték.",
+        "answer_a": "Igaz",
+        "answer_b": "Hamis",       
+        "correct": "answer_a"
+    },
+    {
+        "question": "Mátrix típusú szervezeteknél a technokratikus koordinációs eszközök a meghatározóak",
+        "answer_a": "Igaz",
+        "answer_b": "Hamis",       
+        "correct": "answer_b"
+    },
+    {
+        "question": "Egyes vizsgálatok szerint a beosztottakra fordított alacsonyabb figyelem nem párosul egyértelmű negatív hatásokkal, bizonyos esetekben éppen elégedettséget vált ki.",
+        "answer_a": "Igaz",
+        "answer_b": "Hamis",       
+        "correct": "answer_b"
+    },
+    {
+        "question": "Fiedler szerint eltérő súlyozással az adott szituációnak megfelelően kell alkalmazni a támogató és az előíró magatartást",
+        "answer_a": "Igaz",
+        "answer_b": "Hamis",       
+        "correct": "answer_b"
+    },
+    {
+        "question": "kioltás azt jelenti, hogy megszüntetünk valamely olyan következményt, amelyet a beosztott nem szeret, számára kellemetlen",
+        "answer_a": "Igaz",
+        "answer_b": "Hamis",       
+        "correct": "answer_b"
+    },
+    {
+        "question": "A törzsegység a begyűjtött információk alapján utasítja az érintett szervezeti egységet, ezzel segítve a szervezet vezetőinek munkáját",
+        "answer_a": "Igaz",
+        "answer_b": "Hamis",       
+        "correct": "answer_b"
+    },
+    {
+        "question": "A szervezeti motiváció modelljében a szervezeti teljesítmény outputtényező, az egyéni elégedettség viszont nem.",
+        "answer_a": "Igaz",
+        "answer_b": "Hamis",       
+        "correct": "answer_b"
+    },
+    {
+        "question": "Az átalakító vezetés mikro fókuszú és konkrét, speciális célok megvalósítására koncentrál, amelyeket az átalakítás során el kell érni",
+        "answer_a": "Igaz",
+        "answer_b": "Hamis",       
+        "correct": "answer_b"
+    },
+    {
+        "question": "A vezetők a szervezeti kultúra kialakítása során a struktúra hatására dolgoznak ki szervezeti kulturális válaszokat a környezet kihívásaira",
+        "answer_a": "Igaz",
+        "answer_b": "Hamis",       
+        "correct": "answer_b"
+    },
+    {
+        "question": "A törzsegység a begyűjtött információk alapján utasítja az érintett szervezeti egységet, ezzel segítve a szervezet vezetőinek munkáját",
+        "answer_a": "Igaz",
+        "answer_b": "Hamis",       
+        "correct": "answer_b"
+    },
+    {
+        "question": "Az ún. Laissez-faire, laissez passer stílussal vezetett csoportokban a legmagasabb az elégedettség, mivel-ugyan tág keretek között, de-azt és úgy csinálhatnak, amit akarnak.",
+        "answer_a": "Igaz",
+        "answer_b": "Hamis",       
+        "correct": "answer_b"
+    },
+    {
+        "question": "Vroom modellje szerint az erőfeszítést kiváltó pszichológiai kényszer nagysága nem a jövővel kapcsolatos elvárások függvényében alakul ki.",
+        "answer_a": "Igaz",
+        "answer_b": "Hamis",       
+        "correct": "answer_b"
+    },
+    {
+        "question": "A motivátor tényezők alacsony szintje elégedettséget okoz.",
+        "answer_a": "Igaz",
+        "answer_b": "Hamis",       
+        "correct": "answer_b"
+    },
+    {
+        "question": "Mely tényező(k) hatnak közvetlenül az értékek kialakulására? </br> 1. intézményesített működés, 2. misszió és elvek, 3. az alapítók döntései, 4. társadalmi szerkezet, 5.normák, 6. megőrzött történetek, szimbólumok",
+        "answer_a": "1., 3., 5.",
+        "answer_b": "2., 3., 6.",
+        "answer_c": "4., 5., 6.",
+        "answer_d": "1., 2., 4",        
+        "correct": "answer_b"
+    },
+    {
+        "question": "Kik sorolhatók azonos csoportba?</br> 1. McClelland, 2. Tannenbaum, 3. Mouton, 4. Porter, 5. Handy, 6. Schmidt",
+        "answer_a": "1., 2., 3., 6.",
+        "answer_b": "2., 3., 6.",
+        "answer_c": "1., 4., 5.",
+        "answer_d": "2., 4., 6",        
+        "correct": "answer_b"
+    },
+    {
+        "question": "Melyik organikus szervezeti formák?</br>1. projektszervezet, 2. mátrix, 3. lineáris, 4. divizionális, 5. törzsegységi, 6. teamalapú",
+        "answer_a": "1., 2., 3.",
+        "answer_b": "2., 3., 5.",
+        "answer_c": "1., 4., 6.",
+        "answer_d": "4., 5., 6.",        
+        "correct": "answer_c"
+    },
+    {
+        "question": "Melyek/Kik sorolhatók azonos csoportba?</br>1. hatalom, 2. teljesítmény, 3. valencia, 4. Vroom, 5. siker, 6. Schein",
+        "answer_a": "3., 4., 5.",
+        "answer_b": "1., 2., 5.",
+        "answer_c": "2., 3.",
+        "answer_d": "4., 5., 6.",        
+        "correct": "answer_c"
+    },
+    {
+        "question": "Melyek/Kik sorolhatóak azonos csoportba?</br>1. valencia, 2.Schein, 3. motivátorok, 4.Maslow, 5.létérdekek, 6. kapcsolatorientált",
+        "answer_a": "3.,4.,5",
+        "answer_b": "2.,3.,6.",
+        "answer_c": "4.,5.,6.",
+        "answer_d": "1.,2.,5",        
+        "correct": "answer_a"
+    },
+    {
+        "question": "Melyik tényező NEM része a vállalati belső környezetnek, amely befolyásolja a marketing döntéseket?",
+        "answer_a": "K+F",
+        "answer_b": "viszonteladók",
+        "answer_c": "beszerzés",
+        "answer_d": "számvitel", 
+        "answer_e": "gyártás",      
+        "correct": "answer_b"
+    },
+    {
+        "question": "A _______ a vállalati kínálat és imázs tervezésének folyamata, amelynek célja, hogy a vállalat megkülönböztetett helyet foglaljon el a célvásárlók tudatában.",
+        "answer_a": "tömegmarketing",
+        "answer_b": "targetálás / célpiac kiválasztása",
+        "answer_c": "szegmentálás",
+        "answer_d": "differenciálás",
+        "answer_e": "pozícionálás",        
+        "correct": "answer_e"
+    },
+    {
+        "question": "teljes kommunikáció költségvetés megállapításakor a _______ módszerét alkalmazzák, ha néhány vállalat aktuális vagy becsült forgalmának vagy a termék eladási árának meghatározott százalékában állapítják meg kommunikációs költségvetését",
+        "answer_a": "A megengedhető költés módszere",
+        "answer_b": "A dinamikus árazás módszere",
+        "answer_c": "A forgalomarányos módszer",
+        "answer_d": "A cél-feladat módszer",
+        "answer_e": "A versenyparitásos módszer",        
+        "correct": "answer_c"
+    },
+    {
+        "question": "Michael Porter szerint melyik a három hatékony versenystratégia, amelyet a vállalat követhet?",
+        "answer_a": "koncentráló, differenciáló és harmadikutas",
+        "answer_b": "harmadikutas, koncentráló és költségdiktáló",
+        "answer_c": "differenciáló, piacszegmentáló és koncentráló",
+        "answer_d": "költségdiktáló, differenciáló és harmadikutas",
+        "answer_e": "költségdiktáló, differenciáló, és koncentráló",        
+        "correct": "answer_e"
+    },
+    {
+        "question": "A ……. módszerek jellemzője, hogy általában mélyebb, árnyaltabb ismeretek megszerzésére  irányulnak.",
+        "answer_a": "induktív",
+        "answer_b": "magyarázó",
+        "answer_c": "kvantitatív",
+        "answer_d": "kvalitatív",
+        "answer_e": "szekunder",        
+        "correct": "answer_d"
+    },
+    {
+        "question": "Melyik állítás igaz a behatoló árazásra?",
+        "answer_a": "a célja a konkurens cégek belépésének megakadályozása",
+        "answer_b": "az ár magasról indul, viszont idővel fokozatosan csökken",
+        "answer_c": "a fogyasztó és a számlafizető gyakran eltér",
+        "answer_d": "az ügyfelek magas vásárlóerővel rendelkeznek",
+        "answer_e": "a termék nagy értéket képvisel",        
+        "correct": "answer_a"
+    },
+    {
+        "question": "Melyik állítás NEM igaz a küldetésnyilatkozatra?",
+        "answer_a": "A vállalat fő irányvonalait és értékeit emeli ki",
+        "answer_b": "Rövid távú szemléletű",
+        "answer_c": "Kijelöli a vállalat működési terét képező versenyszférát",
+        "answer_d": "Korlátozott számú célra összpontosít",       
+        "correct": "answer_b"
+    },
+    {
+        "question": "Melyik állítás NEM igaz a küldetésnyilatkozatra?",
+        "answer_a": "A vállalat fő irányvonalait és értékeit emeli ki",
+        "answer_b": "Rövid távú szemléletű",
+        "answer_c": "Kijelöli a vállalat működési terét képező versenyszférát",
+        "answer_d": "Korlátozott számú célra összpontosít",      
+        "correct": "answer_b"
+    },
+    {
+        "question": "A(z) _______ rögzíti a cégpiacokat és a legjobb piaci lehetőségeket elemzése alapján a cég értékajánlatát.",
+        "answer_a": "a piaci szegmens",
+        "answer_b": "marketing mix",
+        "answer_c": "stratégiai marketing",
+        "answer_d": "piaci kínálat",
+        "answer_e": "értéklánc",        
+        "correct": "answer_c"
+    },
+    {
+        "question": "Akkor beszélünk ______, amikor a végfelhasználók, a fogyasztói piac kereslete határozza meg az üzleti piac keresletét.",
+        "answer_a": "módosított újravásárlásról",
+        "answer_b": "üzleti kapcsolatról",
+        "answer_c": "B2B piacról",
+        "answer_d": "származtatott keresletről",
+        "answer_e": "beszerzési folyamatról",        
+        "correct": "answer_d"
+    },
+    {
+        "question": "A versenytársak elemzésének első lépése a ….",
+        "answer_a": "versenytársak azonosítása",
+        "answer_b": "versenyelőny meghatározása",
+        "answer_c": "versenyképese marketingstratégia kialakítása",
+        "answer_d": "ügyfélérték-elemzés",
+        "answer_e": "a vállalat küldetésnyilatkozatának meghatározása",        
+        "correct": "answer_a"
+    },
+    {
+        "question": "____ olyan egyedi jellemzőkkel vagy márkatulajdonságokkal rendelkeznek, amelyekért a vevők bizonyos csoportja hajlandó rendkívüli erőfeszítést is tenni a vásárlás során.",
+        "answer_a": "Beruházási eszközök",
+        "answer_b": "A nem keresett termékek (unsought products)",
+        "answer_c": "Bevásárlási javak",
+        "answer_d": "Speciális termékek",
+        "answer_e": "Kényelmi termékek",        
+        "correct": "answer_d"
+    },
+    {
+        "question": "Melyik állítás igaz a lefölöző árazásra?",
+        "answer_a": "Akkor hatékony, ha sok versenytárs van a piacon, akik képesek alacsonyabb árakat kínálni",
+        "answer_b": "Jellemző az alacsony ár meghatározása egy új termékre, hogy a nagy számú vevőt vonzzanak",
+        "answer_c": "Akkor érdemes alkalmazni, ha a termék nagy értéket képvisel a fogyasztók számára",
+        "answer_d": "Nem hatékony olyan helyzetekben, amikor a versenytársak nehezen tudnak belépni a piacra",
+        "answer_e": "Célja a piaci részesedés növelése",        
+        "correct": "answer_c"
+    },
+    {
+        "question": "….során versenytársakhoz képest saját helyünket meghatározzuk, és a jövőbeni  elképzeléseinket megjelenítsük.",
+        "answer_a": "a fentiek egyike sem helyes",
+        "answer_b": "a célpiac meghatározás",
+        "answer_c": "a piac szegmentálás",
+        "answer_d": "pozícionálás",
+        "answer_e": "a stratégiai tervezés",        
+        "correct": "answer_d"
+    },
+    {
+        "question": "terméktervezőknek három szinten kell meghatározniuk a termékeket és szolgáltatásokat. A harmadik szinten a terméktervezők létrehozzák……",
+        "answer_a": "tényleges terméket",
+        "answer_b": "a kiterjesztett terméket",
+        "answer_c": "a márkaszemélyiséget",
+        "answer_d": "az alaphasznosságot",
+        "answer_e": "az alapterméket",        
+        "correct": "answer_b"
+    },
+    {
+        "question": "A(z)….meghatározza azokat az előnyöket, amelyeket a vevőket a vevők értéknek tartanak, és azt, hogy az ügyfelek hogyan értékelik a különböző versenytársak ajánlatait.",
+        "answer_a": "ügyfélérték-elemzés",
+        "answer_b": "versenyelőny",
+        "answer_c": "versenytársak elemzése",
+        "answer_d": "versenyképes marketingstratégia",
+        "answer_e": "kék óceán stratégiája",        
+        "correct": "answer_a"
+    },
+    {
+        "question": "Akkor beszélünk …..amikor a végfelhasználók, a fogyasztói piac kereslete határozza meg a üzleti piac keresletét.",
+        "answer_a": "származtatott keresletről",
+        "answer_b": "üzleti kapcsolatról",
+        "answer_c": "beszerzési folyamatról",
+        "answer_d": "BB piacról",
+        "answer_e": "módosított újravásárlásról",        
+        "correct": "answer_a"
+    },
+    {
+        "question": "Melyik árazás tartozik a differenciált árazás közé?",
+        "answer_a": "Költség alapú árképzés",
+        "answer_b": "Melléktermékek árazása",
+        "answer_c": "Behatoló árképzés",
+        "answer_d": "Csatorna szerinti árképzés",
+        "answer_e": "Lefölözés árazás",        
+        "correct": "answer_d"
+    },
+    {
+        "question": "…..célja a márkatudatosság létrahozása, valamint új termékek vagy meglévő termékek új tulajdonságainak megismertetése.",
+        "answer_a": "a tájékoztató reklám",
+        "answer_b": "az összehasonlító reklám",
+        "answer_c": "az emlékezetető reklám",
+        "answer_d": "a meggyőző reklám",
+        "answer_e": "a személyes értékesítés",        
+        "correct": "answer_a"
+    },
+    {
+        "question": "A BCG növekedési-piacrészesedési mátrixa alapján, a vizsgált stratégiai üzletágra vonatkoztatva a vállalat piaci erejét a vállalat….mutatja meg",
+        "answer_a": "piaci diverzifikáció",
+        "answer_b": "piacszegmentációja",
+        "answer_c": "piaci kínálat",
+        "answer_d": "piaci részesedésének mértéke",
+        "answer_e": "piacfejlesztés",        
+        "correct": "answer_d"
+    },
+    {
+        "question": "A következő feladatok mind a versenytárs információs rendszer részei, KIVÉVE…..",
+        "answer_a": "a versenytársakkal kapcsolatos lépések végrehajtása",
+        "answer_b": "az adatok érvényességének és megbízhatóságának ellenőrzése",
+        "answer_c": "az információk interpretálása",
+        "answer_d": "az információ rendszerezése",
+        "answer_e": "a folyamatos adatgyűjtés",        
+        "correct": "answer_a"
+    },
+    {
+        "question": "….jellemzője az alacsony ár meghatározása egy új termékre azért,hogy nagy számú vevőt vonzzanak és nagy piaci részesedést érjenek el.",
+        "answer_a": "a kiegészítők árazása",
+        "answer_b": "a költség alapú árazás",
+        "answer_c": "a kétrészes árazás",
+        "answer_d": "a behatoló árképzés",
+        "answer_e": "a magas-alacsony árazás",        
+        "correct": "answer_d"
+    },
+    {
+        "question": "A következők közül melyik a stratégia tervezés első lépései?",
+        "answer_a": "a kiegészítők árazása",
+        "answer_b": "a költség alapú árazás",
+        "answer_c": "a kétrészes árazás",
+        "answer_d": "a behatoló árképzés",
+        "answer_e": "a magas-alacsony árazás",        
+        "correct": "answer_d"
+    },
+    {
+        "question": "A következők közül melyik a stratégia tervezés első lépései?",
+        "answer_a": "a vállalat küldetés-nyilatkozatának megfogalmazása",
+        "answer_b": "rövidtávú célok kitűzése",
+        "answer_c": "üzleti portfóliók kijelölése",
+        "answer_d": "az erőforrások eloszlása az egyes stratégiai üzletágak között",
+        "answer_e": "stratégiai üzletágak létrehozása",        
+        "correct": "answer_a"
+    },
+    {
+        "question": "Melyik NEM igaz a leíró kutatásra",
+        "answer_a": "célja lehet a termékjellemzők leírása, vagy célcsoport leírása",
+        "answer_b": "célja lehet esemény, helyzet leírás (piaci jellemzők, funkciók leírása)",
+        "answer_c": "célja lehet a marketingváltozók kapcsolatának meghatározása",
+        "answer_d": "elsősorban kvantitatív technikák alkalmazása jellemző",        
+        "correct": "answer_c"
+    },
+    {
+        "question": "A….miatt az általunk kedvelt termék jó tulajdonságait megjegyezzük, míg a rivális termékek jó vonásait elfeledjük",
+        "answer_a": "szelektív emlékezés",
+        "answer_b": "szelektív torzítás",
+        "answer_c": "pszichográfiai jellemzők",
+        "answer_d": "szelektív figyelem",
+        "answer_e": "kognitív disszonancia",        
+        "correct": "answer_a"
     }
 ]
