@@ -21,10 +21,10 @@
             </v-card>
             <v-card :light="lightMode" class="pa-4" v-if="quiz.type === 'text'">
               <v-row>
-                <v-col :cols="11">
+                <v-col cols="8" sm="10" lg="11">
                   <p  v-html="quiz.question"></p>
                 </v-col >
-                <v-col :cols="1" align="right">
+                <v-col cols="4" sm="2" lg="1" align="right">
                   <v-btn xs1 text @click="quiz.show = !quiz.show">
                     <v-icon center>{{quiz.show ? 'mdi-eye-off' : 'mdi-eye'}}</v-icon>
                   </v-btn>
