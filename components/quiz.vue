@@ -2,7 +2,7 @@
 <div>
     <client-only>
         <v-container v-for="(quiz, index) in quizData" :key="quiz.index">
-            <v-card class="pa-4">
+            <v-card class="pa-4" v-if="quiz.type === 'radio'">
                 <p v-html="quiz.question"></p>
                 <v-radio-group
                 v-model="answers[index]"
@@ -18,6 +18,11 @@
                 />
                 </v-radio-group>
             </v-card>
+            <v-card class="pa-4" v-if="quiz.type === 'text'">
+                <p v-html="quiz.question"></p>
+                <p class="text-answer" v-if="checked || showAnswers" v-html="quiz.answer"></p>
+                <v-text-field outlined></v-text-field>
+            </v-card>
         </v-container>
         <v-card
         class="float-circular"
@@ -25,8 +30,8 @@
         >
           <v-progress-circular
             :rotate="360"
-            :size="100"
-            :width="15"
+            :size="130"
+            :width="20"
             :value="(correctAnswers / quizData.length)*100"
             color="teal"
             >
@@ -50,6 +55,8 @@
 import business_law from '../assets/data/quiz_law.json';
 import marketing from '../assets/data/quiz_marketing.json';
 import behavior from '../assets/data/quiz_corp_beh.json';
+import text_law from '../assets/data/text_law.json';
+import text_org from '../assets/data/text_org_beh.json';
 
 export default {
   name: 'test',
@@ -64,17 +71,30 @@ export default {
   },
   created() {
     const lawData = this.shuffle(business_law.map((element, index) => {
-      return this.calcAnswer(element, index);
+      return this.calcRadioAnswer(element, index);
     }));
     this.quizData.push(...lawData);
+
+    const lawText = this.shuffle(text_law.map((element, index) => {
+      return this.calcTextAnswer(element, index);
+    }));
+    this.quizData.push(...lawText);
+
     const behaviorData = this.shuffle(behavior.map((element, index) => {
-      return this.calcAnswer(element, index);
+      return this.calcRadioAnswer(element, index);
     }));
     this.quizData.push(...behaviorData);
+    
+    const behaviorText = this.shuffle(text_org.map((element, index) => {
+      return this.calcTextAnswer(element, index);
+    }));
+    this.quizData.push(...behaviorText);
+
     const marketingData = this.shuffle(marketing.map((element, index) => {
-        return this.calcAnswer(element, index);
+        return this.calcRadioAnswer(element, index);
     }));
     this.quizData.push(...marketingData);
+    
   },
   computed: {
     filledAnswersCount () {
@@ -82,7 +102,7 @@ export default {
     }
   },
   methods: {
-      calcAnswer(element, index) {
+      calcRadioAnswer(element, index) {
         const answers = [];
         Object.keys(element).forEach((key) => {
           if (key.includes('answer')) {
@@ -94,16 +114,25 @@ export default {
           }
         });
         return {
+          type: 'radio',
           question: element.question,
           answers: this.shuffle(answers),
           index: index + this.quizData.length,
           correct: element.correct,
         }
       },
+      calcTextAnswer(element, index) {
+        return {
+          type: 'text',
+          question: element.question,
+          answer: element.answer,
+          index: index + this.quizData.length,
+        }
+      },
       check() {
           this.correctAnswers = 0;
           this.quizData.forEach((element, index) => {
-              if (this.answers[index] === element.correct) {
+              if (element.type === 'radio' && this.answers[index] === element.correct) {
                   this.correctAnswers += 1;
               }
           });
@@ -131,7 +160,7 @@ export default {
     answers() {
         this.correctAnswers = 0;
         this.quizData.forEach((element, index) => {
-          if (this.answers[index] === element.correct) {
+          if (element.type === 'radio' && this.answers[index] === element.correct) {
               this.correctAnswers += 1;
           }
       });
@@ -160,5 +189,10 @@ export default {
     top: 70px;
     z-index: 4;
     border-radius: 50%;
+}
+.text-answer {
+  border: 3px solid #4f7f4f;
+  border-radius: 5px;
+  padding: 10px;
 }
 </style>

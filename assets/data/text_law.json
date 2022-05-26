@@ -1,0 +1,74 @@
+[
+    {
+        "question": "A betéti társaságban az egyik tag helytállása (felelőssége) a társaság tartozásaiért [a.) …] és [b.) …] (ez a tag a [c.) …]), a másik tag helytállási kötelezettsége [d.) …] és [e.) …] (ez a tag a [f.) …]).",
+        "answer": "a) korlátlan </br>b) a többi beltaggal egyetemleges </br>c) beltag</br>d) korlátozott</br>e) csak vagyoni betétjüket köteles a társaság részére szolgáltatni</br>f) kültag"
+    },
+    {
+        "question": "A kft. legfőbb döntéshozó szerve a [a.) …]",
+        "answer": "taggyűlés"
+    },
+    {
+        "question": "A kft. kivételesen és ideiglenesen megszerezheti a saját üzletrészét a törzstőke [a.) …] %-ig. A saját üzletrész alapján tagsági jogok [b.) …], a saját üzletrészere eső osztalékot [c.) …] kell felosztani.",
+        "answer": "a) 50</br>b) nem gyakorolhatóak</br>c) a tagok között"
+    },
+    {
+        "question": "Board alapítására csak az alábbi társaságban van lehetőség: [a.) …]",
+        "answer": "Nyrt."
+    },
+    {
+        "question": "A részvényes vagyoni hozzájárulásáról [a.) …] kap, a részvény testesíti meg [b.) …]",
+        "answer": "a) részvényt</br>b) a részvényes vagyoni és személyi jogait"
+    },
+    {
+        "question": "A jogi személy jogképessége - szemben a korábbiakban irányadó „ultra vires tan” felfogástól - [a.) …]",
+        "answer": "abszolút"
+    },
+    {
+        "question": "Amelyik társaságban board van, ott igazgatóság [a.) …]",
+        "answer": "a.) nincs (helyette egységes irányítású igazgatótanács van)"
+    },
+    {
+        "question": "A közkereseti társaságnak legalább [a.) …] tagja van, egyszemélyes társaság ebben a formában [b.) …]",
+        "answer": "a.) két</br>b.) nem alapítható"
+    },
+    {
+        "question": "A betéti társaságnak legalább [a.) …] tagja van, legalább [b.) …] beltag, és legalább [c.) …] kültag, egyszemélyes társaság ebben a formában [d.) …]",
+        "answer": "a) két</br>b) egy</br>c) egy</br>d) nem alapítható"
+    },
+    {
+        "question": "A board nem más, mint (határozza meg a board fogalmát): [a.) …]",
+        "answer": "Nyrt.-nél lehet az igazgatóság és a felügyelőbizottság kettős rendszere helyett egységes irányítási rendszerben működő igazgatótanács (board). Tagjai többségének ún. független személyek."
+    },
+    {
+        "question": "Az Rt. működési módjának megváltozásához (zrt.-ből nyrt., illetve fordítva) a közgyűlés [(a)….] szótöbbséggel hozott határozatára van szükség, amely a részvény [b.)…..], illetve, [c.)…] válik hatályossá.",
+        "answer": "a) legalább háromnegyedes</br>b) tőzsdére való bevezetésével</br>c) kivezetésével"
+    },
+    {
+        "question": "Amennyiben a Bt. minden kültagja távozik (meghal, megszűnik, felmond), abban az esetben a társaság [a)….., b)….]",
+        "answer": "a) -ba be kell léptetni egy kültagot 6 hónap alatt</br>b) ellenkező esetben a társaság megszűnik"
+    },
+    {
+        "question": "A jogi személyek alaptípusai az alábbiak: a, b, c, d, e, f?",
+        "answer": "a) egyesület</br>b) gazdasági társaságok (Kft, Kkt, Bt, rt)</br>c) szövetkezet</br>d) alapítvány</br>e) egyesülés</br>f) állam, mint jogi személy"
+    },
+    {
+        "question": "Az ultra vires tan értelmében a jogi személy jogképessége [a)…)",
+        "answer": "relatív, lényege, hogy a jogi személy csak tevékenységi körén belül rendelkezik jogokkal és kötelezettségekkel"
+    },
+    {
+        "question": "A jogi személy jogképessége - szemben a korábbiakban irányadó „ultra vires tan” felfogástól [a..]",
+        "answer": "a) abszolút jogképesség, minden polgári alanyi jog és kötelezettség megilleti, ami nem az emberi mivolthoz fűződik"
+    },
+    {
+        "question": "A részvénytársaság legfőbb döntéshozó szerv a [a…]",
+        "answer": "Közgyűlés"
+    },
+    {
+        "question": "GT fő szabályi szerint legalább [a….] tagjának kell lennie, kivéve az alábbi társaságokat [b…]",
+        "answer": "a) két </br> b) egyszemélyes társaság (Kft, rt)"
+    },
+    {
+        "question": "A Ptk. 3:159-3:209. paragrafusban szabályozott Kft. olyan társaság: amely [a…]összegű [b…]-ből álló [c…]alakul. A törzsbetét legkisebb értéke [d..], a legkisebb törzstőkéje [e…]Ft. A törzsbetét [f….] tag üzletrészévé alakult.",
+        "answer": "a) előre meghatározott</br> b) betétekből</br>c) törzstőkével</br>d) 100.000</br>e) 3.000.000</br>f) a társaság cégbejegyzése után a törzsbetétet szolgáló"
+    }
+]
