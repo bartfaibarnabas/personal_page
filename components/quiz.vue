@@ -20,8 +20,17 @@
                 </v-radio-group>
             </v-card>
             <v-card :light="lightMode" class="pa-4" v-if="quiz.type === 'text'">
-                <p v-html="quiz.question"></p>
-                <p class="text-answer" v-if="checked || showAnswers" v-html="quiz.answer"></p>
+              <v-row>
+                <v-col :cols="11">
+                  <p  v-html="quiz.question"></p>
+                </v-col >
+                <v-col :cols="1" align="right">
+                  <v-btn xs1 text @click="quiz.show = !quiz.show">
+                    <v-icon center>{{quiz.show ? 'mdi-eye-off' : 'mdi-eye'}}</v-icon>
+                  </v-btn>
+                </v-col>
+              </v-row>
+                <p class="text-answer" v-if="quiz.show" v-html="quiz.answer"></p>
                 <v-text-field outlined></v-text-field>
             </v-card>
         </v-container>
@@ -133,6 +142,7 @@ export default {
           question: element.question,
           answer: element.answer,
           index: index + this.quizData.length,
+          show: false,
         }
       },
       check() {
@@ -171,10 +181,22 @@ export default {
           }
       });
     },
+    showAnswers() {
+      this.quizData.map(quiz => {
+        if(quiz.type === "text") {
+          quiz.show = this.showAnswers;
+        }
+      })
+    }
   }
 }
 </script>
 <style scoped>
+.text-show-button {
+  position: absolute;
+  margin-right: 15px;
+  right: 0px;
+}
 .correct>>>.theme--light {
   color:aliceblue;
 }

@@ -148,42 +148,42 @@
         "correct": "answer_a"
     },
     {
-        "question": "Válassza ki az adott leíráshoz tartozó struktúratípusát! <br>Erősen decentralizált struktúra, minimális felügyelet mellett dolgozó önirányító csapatok, jól alkalmazkodik a turbulens:",
+        "question": "Válassza ki az adott leíráshoz tartozó struktúratípusát! </br>Erősen decentralizált struktúra, minimális felügyelet mellett dolgozó önirányító csapatok, jól alkalmazkodik a turbulens:",
         "answer_a": "teamalapú",
         "answer_b": "mátrix",
         "answer_c": "divizionális",
         "correct": "answer_a"
     },
     {
-        "question": "Válassza ki az adott leíráshoz tartozó struktúratípusát! <br>Többdimenziós, felelősségvállalás hárítása jellemző a menedzsereknél elsősorban személyorientált koordinációs eszközök",
+        "question": "Válassza ki az adott leíráshoz tartozó struktúratípusát! </br>Többdimenziós, felelősségvállalás hárítása jellemző a menedzsereknél elsősorban személyorientált koordinációs eszközök",
         "answer_a": "teamalapú",
         "answer_b": "mátrix",
         "answer_c": "divizionális",
         "correct": "answer_b"
     },
     {
-        "question": "Válassza ki az adott leíráshoz tartozó struktúratípusát! <br>Részben centralizált, részben decentralizált hatáskörmegosztás, párhuzamosan meglévő funkciók jellemzik, a stratégiai és az operatív irányítás elválik:",
+        "question": "Válassza ki az adott leíráshoz tartozó struktúratípusát! </br>Részben centralizált, részben decentralizált hatáskörmegosztás, párhuzamosan meglévő funkciók jellemzik, a stratégiai és az operatív irányítás elválik:",
         "answer_a": "teamalapú",
         "answer_b": "mátrix",
         "answer_c": "divizionális",
         "correct": "answer_c"
     },
     {
-        "question": "Válassza ki az adott leíráshoz tartozó struktúratípusát! <br>bürokratikus szabályozás, többvonalas, technokratikus koordináció:",
+        "question": "Válassza ki az adott leíráshoz tartozó struktúratípusát! </br>bürokratikus szabályozás, többvonalas, technokratikus koordináció:",
         "answer_a": "funkcionális",
         "answer_b": "lineáris",
         "answer_c": "mátrix",
         "correct": "answer_a"
     },
     {
-        "question": "Válassza ki az adott leíráshoz tartozó struktúratípusát! <br>egyvonalas, új feladatokhoz nehezen alkalmazkodik, kisméretű szervezeteknél:",
+        "question": "Válassza ki az adott leíráshoz tartozó struktúratípusát! </br>egyvonalas, új feladatokhoz nehezen alkalmazkodik, kisméretű szervezeteknél:",
         "answer_a": "funkcionális",
         "answer_b": "lineáris",
         "answer_c": "mátrix",
         "correct": "answer_b"
     },
     {
-        "question": "Válassza ki az adott leíráshoz tartozó struktúratípusát! <brtöbbvonalas, többdimenziós, felelősségvállalás hárítása jellemző a menedzsereknél:",
+        "question": "Válassza ki az adott leíráshoz tartozó struktúratípusát! </br>többvonalas, többdimenziós, felelősségvállalás hárítása jellemző a menedzsereknél:",
         "answer_a": "funkcionális",
         "answer_b": "lineáris",
         "answer_c": "mátrix",
