@@ -9,7 +9,10 @@
                 >
                 <v-radio
                     v-for="option in quiz.answers" :key="option.letter"
-                    :class="(checked && option.isCorrect) ? 'correct' : ''"
+                    :class="{ 
+                      correct: (checked && option.isCorrect && answers[index]),
+                      incorrect: (checked && !option.isCorrect && answers[index] === option.letter)
+                    }"
                     :label="option.answer"
                     :value="option.letter"
                 />
@@ -112,6 +115,16 @@ export default {
         return array;
       },
   },
+  watch: {
+    answers() {
+        this.correctAnswers = 0;
+        this.quizData.forEach((element, index) => {
+          if (this.answers[index] === element.correct) {
+              this.correctAnswers += 1;
+          }
+      });
+    },
+  }
 }
 </script>
 <style scoped>
