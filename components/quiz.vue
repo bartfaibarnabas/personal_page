@@ -37,7 +37,9 @@
 </template>
 
 <script>
-import quiz from '../assets/data/quiz.json';
+import business_law from '../assets/data/quiz_law.json';
+import marketing from '../assets/data/quiz_marketing.json';
+import behavior from '../assets/data/quiz_corp_beh.json';
 
 export default {
   name: 'test',
@@ -50,7 +52,21 @@ export default {
     };
   },
   created() {
-    this.quizData = this.shuffle(quiz.map((element, index) => {
+    const marketingData = this.shuffle(marketing.map((element, index) => {
+        return this.calcAnswer(element, index);
+      }));
+    const lawData = this.shuffle(business_law.map((element, index) => {
+      return this.calcAnswer(element, index);
+    }));
+    const behaviorData = this.shuffle(behavior.map((element, index) => {
+      return this.calcAnswer(element, index);
+    }));
+    this.quizData.push(...lawData);
+    this.quizData.push(...behaviorData);
+    this.quizData.push(...marketingData);
+  },
+  methods: {
+      calcAnswer(element, index) {
         const answers = [];
         Object.keys(element).forEach((key) => {
           if (key.includes('answer')) {
@@ -67,9 +83,7 @@ export default {
           index,
           correct: element.correct,
         }
-      }));
-  },
-  methods: {
+      },
       check() {
           this.correctAnswers = 0;
           this.quizData.forEach((element, index) => {
