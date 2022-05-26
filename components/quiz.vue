@@ -2,13 +2,14 @@
 <div>
     <client-only>
         <v-container v-for="(quiz, index) in quizData" :key="quiz.index">
-            <v-card class="pa-4" v-if="quiz.type === 'radio'">
+            <v-card :light="lightMode" class="pa-4" v-if="quiz.type === 'radio'">
                 <p v-html="quiz.question"></p>
                 <v-radio-group
                 v-model="answers[index]"
                 >
                 <v-radio
                     v-for="option in quiz.answers" :key="option.letter"
+                    class="radio"
                     :class="{ 
                       correct: (checked && option.isCorrect && answers[index]) || (showAnswers && option.isCorrect),
                       incorrect: (checked && !option.isCorrect && answers[index] === option.letter),
@@ -18,13 +19,14 @@
                 />
                 </v-radio-group>
             </v-card>
-            <v-card class="pa-4" v-if="quiz.type === 'text'">
+            <v-card :light="lightMode" class="pa-4" v-if="quiz.type === 'text'">
                 <p v-html="quiz.question"></p>
                 <p class="text-answer" v-if="checked || showAnswers" v-html="quiz.answer"></p>
                 <v-text-field outlined></v-text-field>
             </v-card>
         </v-container>
         <v-card
+        :light="lightMode"
         class="float-circular"
         v-if="checked"
         >
@@ -38,7 +40,10 @@
             {{correctAnswers}}/{{filledAnswersCount}} of {{quizData.length}}
           </v-progress-circular>
         </v-card>
-        <v-card class="float-button">
+        <v-card class="float-button" :light="lightMode">
+            <v-btn @click="lightMode = !lightMode">
+                <v-icon center>mdi-theme-light-dark</v-icon>
+            </v-btn>
             <v-btn @click="showAnswers = !showAnswers">
                 <v-icon center>{{showAnswers ? 'mdi-eye-off' : 'mdi-eye'}}</v-icon>
             </v-btn>
@@ -67,6 +72,7 @@ export default {
       correctAnswers: 0,
       quizData: [],
       showAnswers: false,
+      lightMode: false,
     };
   },
   created() {
@@ -169,13 +175,21 @@ export default {
 }
 </script>
 <style scoped>
+.correct>>>.theme--light {
+  color:aliceblue;
+}
+.incorrect>>>.theme--light {
+  color:aliceblue;
+}
 .correct {
     background: rgb(79, 127, 79);
     font-weight: 500;
+    border-radius: 5px;
 }
 .incorrect {
     background:red;
     font-weight: 500;
+    border-radius: 5px;
 }
 .float-button {
     position: fixed;
@@ -191,7 +205,7 @@ export default {
     border-radius: 50%;
 }
 .text-answer {
-  border: 3px solid #4f7f4f;
+  border: 4px solid #4f7f4f;
   border-radius: 5px;
   padding: 10px;
 }
