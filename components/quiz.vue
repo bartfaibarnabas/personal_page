@@ -52,17 +52,18 @@ export default {
     };
   },
   created() {
-    const marketingData = this.shuffle(marketing.map((element, index) => {
-        return this.calcAnswer(element, index);
-      }));
+
     const lawData = this.shuffle(business_law.map((element, index) => {
       return this.calcAnswer(element, index);
     }));
+    this.quizData.push(...lawData);
     const behaviorData = this.shuffle(behavior.map((element, index) => {
       return this.calcAnswer(element, index);
     }));
-    this.quizData.push(...lawData);
     this.quizData.push(...behaviorData);
+    const marketingData = this.shuffle(marketing.map((element, index) => {
+        return this.calcAnswer(element, index);
+    }));
     this.quizData.push(...marketingData);
   },
   methods: {
@@ -80,7 +81,7 @@ export default {
         return {
           question: element.question,
           answers: this.shuffle(answers),
-          index,
+          index: index + this.quizData.length,
           correct: element.correct,
         }
       },
