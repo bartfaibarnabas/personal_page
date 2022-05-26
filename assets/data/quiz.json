@@ -1,0 +1,18 @@
+[
+    {
+        "question": "A jogi személyek ügyvezetését",
+        "a": " az alapítók látják el",
+        "b": " a vezető tisztségviselő látja el",
+        "c": " a kuratórium látja el",
+        "d": " a cégvezető látja el",
+        "correct": "b"
+    },
+    {
+        "question": "Melyik állítás nem igaz?",
+        "a": "Az egyesülés nem önálló társasági forma, de a társasági szabályozás általános rendelkezései irányadóak rá",
+        "b": "A társasági formák közül lehet egyszemélyes a kft., az rt. és az egyéni cég",
+        "c": "A gazdasági társaságoknak fő szabályként két taggal kell rendelkezniük",
+        "d": "Az egyéni cég egyszemélyes vállalkozási forma, melynek önálló cégneve van, és bejegyzik a cégjegyzékbe",
+        "correct": "c"
+    }
+]
