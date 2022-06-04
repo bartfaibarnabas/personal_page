@@ -1,9 +1,15 @@
 <template>
-<quiz/>
+<div>
+  <quiz v-if="user"/>
+  <v-alert v-else type="info">
+    Login for test
+  </v-alert>
+</div>
 </template>
 
 <script>
 import quiz from '../components/quiz.vue';
+import { mapMutations } from 'vuex';
 
 export default {
   name: 'test',
@@ -13,6 +19,11 @@ export default {
   data() {
     return {
     };
+  },
+  computed: {
+    user() {
+      return this.$store.state.user;
+    },
   },
 }
 </script>
