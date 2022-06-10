@@ -4,53 +4,35 @@
       :clipped-left="clipped"
       fixed
       app
+      height="70"
     >
-    <v-spacer></v-spacer>
-      <v-btn v-if="!user" depressed @click="openLoginDialog">
-        <v-icon>mdi-account</v-icon>
-        <span>Login</span>
-      </v-btn>
-      <v-btn v-else depressed @click="logout">
-        <v-icon>mdi-account</v-icon>
-        <span>Logout</span>
-      </v-btn>
-      </v-app-bar>
+      <v-spacer></v-spacer>
+      <headerMenu/>
+    </v-app-bar>
     <v-main>
       <v-container>
         <Nuxt />
       </v-container>
     </v-main>
-    <v-footer
-      :absolute="!fixed"
-      app
-    >
+    <v-footer :absolute="!fixed" app>
       <span>&copy; {{ new Date().getFullYear() }}</span>
-      <login v-model="loginDailog" :close="closeDialog"/>
     </v-footer>
   </v-app>
 </template>
 
 <script>
-import login from '../components/login.vue'
+import headerMenu from '../components/header'
 export default {
-  name: 'DefaultLayout',
+  name: 'default',
   components: {
-    login,
+    headerMenu,
   },
   data () {
     return {
       loginDailog: false,
-
       clipped: false,
       drawer: false,
       fixed: false,
-      items: [
-        {
-          icon: 'mdi-user',
-          title: 'Login',
-          to: '/'
-        },
-      ],
       miniVariant: false,
       right: true,
       rightDrawer: false,
@@ -58,21 +40,8 @@ export default {
     }
   },
   methods: {
-    openLoginDialog() {
-      console.log('login');
-      this.loginDailog = true;
-    },
-    closeDialog() {
-      this.loginDailog = false;
-    },
-    logout() {
-       this.$store.commit('setUser', null);
-    },
   },
   computed: {
-    user() {
-      return this.$store.state.user;
-    },
   },
 }
 </script>

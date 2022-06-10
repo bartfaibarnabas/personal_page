@@ -1,5 +1,5 @@
 <template>
-<v-dialog v-model="value" width="400">
+<v-dialog v-model="value" width="400" @click:outside="close" color="red">
      <template v-slot:default="dialog">
           <v-card>
             <v-toolbar

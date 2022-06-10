@@ -1,7 +1,7 @@
 <template>
   <v-row justify="center" align="center">
     <v-col v-for="(char, key) in titleChars" :key="key" class="page-title">
-      <p class="title-char">{{char}}</p>
+      <p class="title-char" :class="{'rotate': char === 'E'}">{{char}}</p>
     </v-col>
   </v-row>
 </template>
@@ -22,14 +22,16 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-.page-title{
-  .title-char{
+.page-title {
+  .title-char {
     font-size:10vw;
-    color:lightgrey;
-    transform: rotateY(360deg);
-    float:left;
-    &:hover {
-      animation: turn 1.5s ease-in ;
+    color: $primary-color;
+    &.rotate {
+      transform: rotateY(360deg);
+      float:left;
+      &:hover {
+        animation: turn 1.0s ease-in ;
+      }
     }
   }
 }
