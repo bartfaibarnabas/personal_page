@@ -27,7 +27,7 @@
         </v-btn>
       </li>
       <li class="list">
-        <v-btn :ripple="false" depressed>
+        <v-btn :ripple="false" depressed @click="navigateToHome">
           <v-icon class="icon">mdi-home</v-icon>
           <span class="text">Home</span>
         </v-btn>
@@ -92,6 +92,11 @@ export default {
     navigateToTest() {
       this.$router.push({
         path: '/test',
+      })
+    },
+    navigateToHome() {
+      this.$router.push({
+        path: '/',
       })
     }
   },
