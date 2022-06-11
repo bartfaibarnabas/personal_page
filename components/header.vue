@@ -10,6 +10,12 @@
   </v-btn>-->
   <div class="navigation">
     <ul>
+      <li class="list active">
+        <v-btn :ripple="false" depressed @click="navigateToHome">
+          <v-icon class="icon">mdi-home</v-icon>
+          <span class="text">Home</span>
+        </v-btn>
+      </li>
       <li class="list">
         <v-btn :ripple="false" v-if="!user" depressed @click="openLoginDialog">
           <v-icon class="icon">mdi-account</v-icon>
@@ -27,18 +33,12 @@
         </v-btn>
       </li>
       <li class="list">
-        <v-btn :ripple="false" depressed @click="navigateToHome">
-          <v-icon class="icon">mdi-home</v-icon>
-          <span class="text">Home</span>
-        </v-btn>
-      </li>
-      <li class="list">
         <v-btn :ripple="false" depressed >
           <v-icon class="icon">mdi-dots-horizontal-circle</v-icon>
           <span class="text">More</span>
         </v-btn>
       </li>
-      <li class="list active">
+      <li class="list">
         <v-btn :ripple="false" depressed @click="navigateToTest">
           <v-icon class="icon">mdi-fencing</v-icon>
           <span class="text">Fight</span>
@@ -53,17 +53,19 @@
 </template>
 
 <script>
+console.log(process.client);
 if (process.client) {
-  const list = document.querySelectorAll('.list');
-  function activeLink() {
-    list.forEach((item) => {
-      item.classList.remove('active');
-      this.classList.add('active');
-    })
-  }
-  list.forEach(item => {
-    item.addEventListener('click', activeLink);
-  });
+    const list = document.querySelectorAll('.list');
+    function activeLink() {
+      list.forEach((item) => {
+        item.classList.remove('active');
+        this.classList.add('active');
+      })
+    }
+    list.forEach(item => {
+      console.log(item);
+      item.addEventListener('click', activeLink);
+    });
 }
 
 
