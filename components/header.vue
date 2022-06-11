@@ -1,22 +1,14 @@
 <template>
 <div>
-  <!--<v-btn v-if="!user" depressed @click="openLoginDialog">
-      <v-icon>mdi-account</v-icon>
-      <span>Login</span>
-    </v-btn>
-    <v-btn v-else depressed @click="logout">
-      <v-icon>mdi-account</v-icon>
-      <span>Logout</span>
-  </v-btn>-->
   <div class="navigation">
     <ul>
-      <li class="list active">
+      <li class="list" :class="{'active': selected === 1}" @click="liClicked(1)">
         <v-btn :ripple="false" depressed @click="navigateToHome">
           <v-icon class="icon">mdi-home</v-icon>
           <span class="text">Home</span>
         </v-btn>
       </li>
-      <li class="list">
+      <li class="list" :class="{'active': selected === 2}" @click="liClicked(2)">
         <v-btn :ripple="false" v-if="!user" depressed @click="openLoginDialog">
           <v-icon class="icon">mdi-account</v-icon>
           <span class="text">Login</span>
@@ -26,19 +18,19 @@
           <span class="text">Logout</span>
         </v-btn>
       </li>
-      <li class="list">
+      <li class="list" :class="{'active': selected === 3}" @click="liClicked(3)">
         <v-btn :ripple="false" depressed>
           <v-icon class="icon">mdi-information</v-icon>
           <span class="text">Info</span>
         </v-btn>
       </li>
-      <li class="list">
+      <li class="list" :class="{'active': selected === 4}" @click="liClicked(4)">
         <v-btn :ripple="false" depressed >
           <v-icon class="icon">mdi-dots-horizontal-circle</v-icon>
           <span class="text">More</span>
         </v-btn>
       </li>
-      <li class="list">
+      <li class="list" :class="{'active': selected === 5}" @click="liClicked(5)">
         <v-btn :ripple="false" depressed @click="navigateToTest">
           <v-icon class="icon">mdi-fencing</v-icon>
           <span class="text">Fight</span>
@@ -57,6 +49,7 @@ console.log(process.client);
 if (process.client) {
     const list = document.querySelectorAll('.list');
     function activeLink() {
+      console.log('ACTIVE');
       list.forEach((item) => {
         item.classList.remove('active');
         this.classList.add('active');
@@ -78,6 +71,7 @@ export default {
   data () {
     return {
       loginDailog: false,
+      selected: 1,
     }
   },
   methods: {
@@ -100,6 +94,10 @@ export default {
       this.$router.push({
         path: '/',
       })
+    },
+    liClicked(id) {
+      console.log(id);
+      this.selected = id;
     }
   },
   computed: {

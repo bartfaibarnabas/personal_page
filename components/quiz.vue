@@ -222,7 +222,7 @@ export default {
 .float-circular {
     position: fixed;
     right: 10px;
-    top: 70px;
+    top: 90px;
     z-index: 4;
     border-radius: 50%;
 }

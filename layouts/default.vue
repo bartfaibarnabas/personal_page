@@ -5,6 +5,7 @@
       fixed
       app
       height="70"
+      class="app-bar"
     >
       <v-spacer></v-spacer>
       <headerMenu/>
@@ -45,3 +46,8 @@ export default {
   },
 }
 </script>
+<style scoped>
+.app-bar {
+  margin-bottom: 20px;
+}
+</style>
