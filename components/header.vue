@@ -2,38 +2,10 @@
 <div>
   <div class="navigation">
     <ul>
-      <li class="list" :class="{'active': selected === 1}" @click="liClicked(1)">
-        <v-btn :ripple="false" depressed @click="navigateToHome">
-          <v-icon class="icon">mdi-home</v-icon>
-          <span class="text">Home</span>
-        </v-btn>
-      </li>
-      <li class="list" :class="{'active': selected === 2}" @click="liClicked(2)">
-        <v-btn :ripple="false" v-if="!user" depressed @click="openLoginDialog">
-          <v-icon class="icon">mdi-account</v-icon>
-          <span class="text">Login</span>
-        </v-btn>
-        <v-btn :ripple="false" v-else depressed @click="logout">
-          <v-icon class="icon">mdi-logout</v-icon>
-          <span class="text">Logout</span>
-        </v-btn>
-      </li>
-      <li class="list" :class="{'active': selected === 3}" @click="liClicked(3)">
-        <v-btn :ripple="false" depressed>
-          <v-icon class="icon">mdi-information</v-icon>
-          <span class="text">Info</span>
-        </v-btn>
-      </li>
-      <li class="list" :class="{'active': selected === 4}" @click="liClicked(4)">
-        <v-btn :ripple="false" depressed >
-          <v-icon class="icon">mdi-dots-horizontal-circle</v-icon>
-          <span class="text">More</span>
-        </v-btn>
-      </li>
-      <li class="list" :class="{'active': selected === 5}" @click="liClicked(5)">
-        <v-btn :ripple="false" depressed @click="navigateToTest">
-          <v-icon class="icon">mdi-fencing</v-icon>
-          <span class="text">Fight</span>
+      <li class="list" v-for="menu in menuList" :key="menu.id" :class="{'active': selected === menu.id}" @click="liClicked(menu.id)">
+        <v-btn :ripple="false" depressed @click="menu.clickEvent">
+          <v-icon class="icon">{{menu.icon}}</v-icon>
+          <span class="text">{{menu.text}}</span>
         </v-btn>
       </li>
       <div class="indicator"></div>
@@ -45,23 +17,6 @@
 </template>
 
 <script>
-console.log(process.client);
-if (process.client) {
-    const list = document.querySelectorAll('.list');
-    function activeLink() {
-      console.log('ACTIVE');
-      list.forEach((item) => {
-        item.classList.remove('active');
-        this.classList.add('active');
-      })
-    }
-    list.forEach(item => {
-      console.log(item);
-      item.addEventListener('click', activeLink);
-    });
-}
-
-
 import login from '../components/login.vue'
 export default {
   name: 'DefaultLayout',
@@ -71,16 +26,18 @@ export default {
   data () {
     return {
       loginDailog: false,
-      selected: 1,
+      selected: 0,
     }
+  },
+  created() {
   },
   methods: {
     openLoginDialog() {
-      console.log('login');
       this.loginDailog = true;
     },
     closeDialog() {
       this.loginDailog = false;
+      this.selected = 0;
     },
     logout() {
        this.$store.commit('setUser', null);
@@ -95,12 +52,64 @@ export default {
         path: '/',
       })
     },
+    navigateToInformation() {
+      this.$router.push({
+        path: '/information',
+      })
+    },
+    navigateToMore() {
+      this.$router.push({
+        path: '/more',
+      })
+    },
     liClicked(id) {
-      console.log(id);
       this.selected = id;
     }
   },
   computed: {
+    menuList() {
+      const menuArray = [
+        {
+          id: 1,
+          icon: 'mdi-home',
+          clickEvent: this.navigateToHome,
+          text: 'Home',
+        },
+        {
+          id: 2,
+          icon: 'mdi-account',
+          clickEvent: this.openLoginDialog,
+          text: 'Login',
+        },
+        {
+          id: 3,
+          icon: 'mdi-information',
+          clickEvent: this.navigateToInformation,
+          text: 'Information',
+        },
+        {
+          id: 4,
+          icon: 'mdi-dots-horizontal-circle',
+          clickEvent: this.navigateToMore,
+          text: 'More',
+        },
+        {
+          id: 5,
+          icon: 'mdi-fencing',
+          clickEvent: this.navigateToTest,
+          text: 'Fight',
+        },
+      ];
+      if (this.user) {
+        menuArray[1] = {
+          id: '2',
+          icon: 'mdi-logout',
+          clickEvent: this.logout,
+          text: 'Logout',
+        };
+      }
+      return menuArray;
+      },
     user() {
       return this.$store.state.user;
     },
