@@ -50,4 +50,7 @@ export default {
 .app-bar {
   margin-bottom: 20px;
 }
+.app-bar ::v-deep .v-toolbar__content {
+  box-shadow: 0px 12px 3px #121212;
+}
 </style>
