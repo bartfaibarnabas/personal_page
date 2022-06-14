@@ -118,21 +118,6 @@
     "answer_k": "10-nél több / sok"
   },
   {
-    "question": "10. Hány heurisztika van?",
-    "correct": "answer_i",
-    "answer_a": "1",
-    "answer_b": "2",
-    "answer_c": "3",
-    "answer_d": "4",
-    "answer_e": "5",
-    "answer_f": "6",
-    "answer_g": "7",
-    "answer_h": "8",
-    "answer_i": "9",
-    "answer_j": "10",
-    "answer_k": "10-nél több / sok"
-  },
-  {
     "question": "11. Az úgynevezett „bumeránghatás” akkor lép fel, amikor a manipulált személy felismeri: őt manipulálták, és így ő is manipulatív eszközöket alkalmaz.",
     "correct": "answer_a",
     "answer_a": "HAMIS",
@@ -355,14 +340,6 @@
     "answer_b": "de Morgan azonosság",
     "answer_c": "Oksági érvelés",
     "answer_d": "Konstruktív dilemma"
-  },
-  {
-    "question": "45. Párosítsad a kapcsolódó szakkifejezéssel! objektivitás",
-    "correct": "answer_b",
-    "answer_a": "attitűd",
-    "answer_b": "emlékezet",
-    "answer_c": "reprezentációk",
-    "answer_d": "heurisztika"
   },
   {
     "question": "46. Párosítsad a kapcsolódó szakkifejezéssel! elérhetőség",
