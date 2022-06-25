@@ -1,0 +1,671 @@
+[
+  {
+    "question": "1. A látótérnek … teljes agykérgi leképezése van",
+    "correct": "answer_k",
+    "answer_a": "1",
+    "answer_b": "2",
+    "answer_c": "3",
+    "answer_d": "4",
+    "answer_e": "5",
+    "answer_f": "6",
+    "answer_g": "7",
+    "answer_h": "8",
+    "answer_i": "9",
+    "answer_j": "10",
+    "answer_k": "10-nél több / sok"
+  },
+  {
+    "question": "2. A retorika … előadói stílust különböztet meg",
+    "correct": "answer_c",
+    "answer_a": "1",
+    "answer_b": "2",
+    "answer_c": "3",
+    "answer_d": "4",
+    "answer_e": "5",
+    "answer_f": "6",
+    "answer_g": "7",
+    "answer_h": "8",
+    "answer_i": "9"
+  },
+  {
+    "question": "3. … érvelési hiba van",
+    "correct": "answer_j",
+    "answer_a": "1",
+    "answer_b": "2",
+    "answer_c": "3",
+    "answer_d": "4",
+    "answer_e": "5",
+    "answer_f": "6",
+    "answer_g": "7",
+    "answer_h": "8",
+    "answer_i": "9",
+    "answer_j": "10",
+    "answer_k": "10-nél több / sok"
+  },
+  {
+    "question": "4. Az attitűd fogalma … értelmű",
+    "correct": "answer_k",
+    "answer_a": "1",
+    "answer_b": "2",
+    "answer_c": "3",
+    "answer_d": "4",
+    "answer_e": "5",
+    "answer_f": "6",
+    "answer_g": "7",
+    "answer_h": "8",
+    "answer_i": "9",
+    "answer_j": "10",
+    "answer_k": "10-nél több / sok"
+  },
+  {
+    "question": "5. A retorikának … eszközdimenziója van.",
+    "correct": "answer_c",
+    "answer_a": "1",
+    "answer_b": "2",
+    "answer_c": "3",
+    "answer_d": "4",
+    "answer_e": "5",
+    "answer_f": "6",
+    "answer_g": "7",
+    "answer_h": "8",
+    "answer_i": "9",
+    "answer_j": "10",
+    "answer_k": "10-nél több / sok"
+  },
+  {
+    "question": "7. a pragmadialektikai véleménykülönbség-feloldási folyamatnak … szakasza van.",
+    "correct": "answer_d",
+    "answer_a": "1",
+    "answer_b": "2",
+    "answer_c": "3",
+    "answer_d": "4",
+    "answer_e": "5",
+    "answer_f": "6",
+    "answer_g": "7",
+    "answer_h": "8",
+    "answer_i": "9",
+    "answer_j": "10",
+    "answer_k": "10-nél több / sok"
+  },
+  {
+    "question": "8. A kognitív disszonancia fennállásához … tényezőnek kell együtt járnia",
+    "correct": "answer_d",
+    "answer_a": "1",
+    "answer_b": "2",
+    "answer_c": "3",
+    "answer_d": "4",
+    "answer_e": "5",
+    "answer_f": "6",
+    "answer_g": "7",
+    "answer_h": "8",
+    "answer_i": "9",
+    "answer_j": "10",
+    "answer_k": "10-nél több / sok"
+  },
+  {
+    "question": "9. A kondicionális hamis igazságtáblájának… sorában",
+    "correct": "answer_b",
+    "answer_a": "1",
+    "answer_b": "2",
+    "answer_c": "3",
+    "answer_d": "4",
+    "answer_e": "5",
+    "answer_f": "6",
+    "answer_g": "7",
+    "answer_h": "8",
+    "answer_i": "9",
+    "answer_j": "10",
+    "answer_k": "10-nél több / sok"
+  },
+  {
+    "question": "11. Az úgynevezett „bumeránghatás” akkor lép fel, amikor a manipulált személy felismeri: őt manipulálták, és így ő is manipulatív eszközöket alkalmaz.",
+    "correct": "answer_a",
+    "answer_a": "HAMIS",
+    "answer_b": "IGAZ"
+  },
+  {
+    "question": "12. A túl általános kérdéseket akkor érdemes használni, ha kedvezni szeretnénk riportalanyunknak, ezért az ilyen kérdés tipikusan hibás, de nem veszélyes",
+    "correct": "answer_a",
+    "answer_a": "IGAZ ????",
+    "answer_b": "HAMIS"
+  },
+  {
+    "question": "13. Minden helytálló érvelés érvényes.",
+    "correct": "answer_a",
+    "answer_a": "IGAZ",
+    "answer_b": "HAMIS"
+  },
+  {
+    "question": "14. Nem igaz, hogy az agresszív kérdés a válaszadó álláspontjához képest túl szűkre szabja az egyenes válasz kereteit.",
+    "correct": "answer_b",
+    "answer_a": "IGAZ",
+    "answer_b": "HAMIS"
+  },
+  {
+    "question": "15. A veszélyes kérdés nem határozza meg egyértelműen, kellő pontossággal, hogy milyen információt várunk a válaszolótól.",
+    "correct": "answer_a",
+    "answer_a": "IGAZ",
+    "answer_b": "HAMIS"
+  },
+  {
+    "question": "16. Az utánzásos tanulás kumulatív technológiájának alapfeltétele a mítikus kultúra.",
+    "correct": "answer_a",
+    "answer_a": "HAMIS",
+    "answer_b": "IGAZ"
+  },
+  {
+    "question": "17. Mi a Wason teszt lényeges tanulsága? Adj egy mondatos választ és találj ki egy példát, ahol a kártyák egyik oldalán pénzösszeg, a másikon a csekk színe az információ (pl. kék, sárga, ibolya, narancs). Adj meg négy kártyát és tesztelésükhöz egy mondatot, valamint hogy mely kártyákkal kell ellenőrizni (4 mondat) ",
+    "correct": "answer_a",
+    "answer_a": "ez egy kifejtős: pl.: Wason teszt: együttműködést befolyásoló kognitív szabályok vizsgálatát szolgáló kutatási teszteljárásként fejlesztett ki, 100 $, 30$, zöld, sárga. Ha a csekk értéke nagyobb, mint 50, akkor a zöld csekk fogadható el. Ellenőrizni a 100$ és a sárga csekket"
+  },
+  {
+    "question": "18. Milyen krízisreakciós stratégia a bocsánatkérés?",
+    "correct": "answer_d",
+    "answer_a": "Tagadó",
+    "answer_b": "Megerősítő",
+    "answer_c": "Mérséklő",
+    "answer_d": "Újraépítő"
+  },
+  {
+    "question": "19. A vita végére kialakuló konszenzus az eredményesség alapvető feltétele és a vita nem az állítások igazsága vagy megalapozottsága körül forog.",
+    "correct": "answer_d",
+    "answer_a": "veszekedés típusú vita",
+    "answer_b": "törvényszéki típusú vita",
+    "answer_c": "racionális tényfeltáró vita",
+    "answer_d": "egyezkedés/tárgyalás típusú"
+  },
+  {
+    "question": "20. A kérdésbe csomagolva fogalmaz meg állításokat anélkül, hogy azokat előzetesen alátámasztotta volna",
+    "correct": "answer_a",
+    "answer_a": "Túl sokat állító kérdés",
+    "answer_b": "Hipotetikus kérdés",
+    "answer_c": "Agresszív kérdés",
+    "answer_d": "Komplex kérdés",
+    "answer_e": "Túl általános kérdés"
+  },
+  {
+    "question": "21. Párosítsad a kapcsolódó szakkifejezéssel! Redukció",
+    "correct": "answer_d",
+    "answer_a": "heurisztika",
+    "answer_b": "manipuláció",
+    "answer_c": "keretezés",
+    "answer_d": "kognitív disszonancia"
+  },
+  {
+    "question": "22. Milyen típusú a kérdés: „Támogatja-e a Világkiállítás megrendezését, és így a magyar gazdaság fellendülését?”",
+    "correct": "answer_c",
+    "answer_a": "Túl sokat állító kérdés",
+    "answer_b": "Túl általános kérdés",
+    "answer_c": "Komplex kérdés",
+    "answer_d": "Hipotetikus kérdés",
+    "answer_e": "Agresszív kérdés",
+    "answer_f": "A kérdés nem hibás"
+  },
+  {
+    "question": "23. A sztászisznak három irányító kérdése van",
+    "correct": "answer_a",
+    "answer_a": "HAMIS",
+    "answer_b": "IGAZ"
+  },
+  {
+    "question": "24. Nem igaz, hogy a deduktív érvelés ismeret kibontó érvelés",
+    "correct": "answer_b",
+    "answer_a": "IGAZ",
+    "answer_b": "HAMIS"
+  },
+  {
+    "question": "25. A reprezentációs viszony aszimmetrikus",
+    "correct": "answer_b",
+    "answer_a": "HAMIS",
+    "answer_b": "IGAZ"
+  },
+  {
+    "question": "26. A dialogikus megközelítések elsősorban az üzenetre, az üzenet struktúrájára fordítanak nagy hangsúlyt.",
+    "correct": "answer_b",
+    "answer_a": "IGAZ",
+    "answer_b": "HAMIS"
+  },
+  {
+    "question": "27. A korlátozott kategóriabővítés példa a laza használatra, avagy bővítésre.",
+    "correct": "answer_a",
+    "answer_a": "IGAZ",
+    "answer_b": "HAMIS"
+  },
+  {
+    "question": "29. Az agresszív és túl sokat állító kérdés jellemzői gyakran együtt jelentkeznek.",
+    "correct": "answer_a",
+    "answer_a": "HAMIS",
+    "answer_b": "IGAZ"
+  },
+  {
+    "question": "30. A mai kutatások alapján nem igaz, hogy nagyobb csoportokban kisebb az önmeggyőzés hatása.",
+    "correct": "answer_b",
+    "answer_a": "IGAZ",
+    "answer_b": "HAMIS"
+  },
+  {
+    "question": "31. A külső memóriatár létrejötte alapozta meg a teoretikus kultúrát.",
+    "correct": "answer_a",
+    "answer_a": "IGAZ",
+    "answer_b": "HAMIS"
+  },
+  {
+    "question": "32. Minden érvényes következtetés helytálló",
+    "correct": "answer_a",
+    "answer_a": "IGAZ",
+    "answer_b": "HAMIS"
+  },
+  {
+    "question": "33. A kondicionális igaz, ha az előtagja igaz és az utótagja hamis",
+    "correct": "answer_b",
+    "answer_a": "IGAZ",
+    "answer_b": "HAMIS"
+  },
+  {
+    "question": "34. Amikor egy kérdezési egységben több kérdés szerepel, de az egészre együttesen egy választ adhatunk, akkor a kérdés tekinthető hipotetikus kérdésnek.",
+    "correct": "answer_b",
+    "answer_a": "HAMIS",
+    "answer_b": "IGAZ"
+  },
+  {
+    "question": "35. Az autóvezetés rutinja az 1. rendszert használja, a szűk helyen parkolás a 2.-at Kahnemann szerint",
+    "correct": "answer_b",
+    "answer_a": "HAMIS",
+    "answer_b": "IGAZ"
+  },
+  {
+    "question": "36. A megfigyelői paradoxon érdekes folyománya, hogy ha egy tükröt helyezünk a megfigyelt személy látóterébe,szintesége nőhet.",
+    "correct": "answer_a",
+    "answer_a": "IGAZ",
+    "answer_b": "HAMIS"
+  },
+  {
+    "question": "37. Selye János szerint az emberek közötti konfliktusok esetén kétféle védekezési reakció lehetséges: 1.szintoxikus, amely nem méltatja figyelemre az ellenséget, és kitér előle anélkül, hogy megkísérelné megtámadni;2. a katatoxikus, amely harchoz vezet.",
+    "correct": "answer_b",
+    "answer_a": "IGAZ",
+    "answer_b": "HAMIS A 3. a menekülés, vagyis szökés az ellenség elől, az elviselésre vagy a megsemmisítésre tett kísérlet nélkül"
+  },
+  {
+    "question": "38. Párosítsad a kapcsolódó szakkifejezéssel! Belső",
+    "correct": "answer_d",
+    "answer_a": "attitűd",
+    "answer_b": "emlékezet",
+    "answer_c": "heurisztika",
+    "answer_d": "reprezentációk"
+  },
+  {
+    "question": "39. Párosítsad a kapcsolódó szakkifejezéssel! Konatív",
+    "correct": "answer_a",
+    "answer_a": "attitűd",
+    "answer_b": "reprezentációk",
+    "answer_c": "heurisztika",
+    "answer_d": "emlékezet"
+  },
+  {
+    "question": "40. Párosítsad a kapcsolódó szakkifejezéssel! Nyomatékosító",
+    "correct": "answer_d",
+    "answer_a": "kognitív disszonancia",
+    "answer_b": "manipuláció",
+    "answer_c": "heurisztika",
+    "answer_d": "keretezés"
+  },
+  {
+    "question": "41. Mi a krízisreakciós stratégia kompenzálás?",
+    "correct": "answer_c",
+    "answer_a": "Megerősítő",
+    "answer_b": "Tagadó",
+    "answer_c": "Újraépítő",
+    "answer_d": "Mérséklő"
+  },
+  {
+    "question": "42. Párosítsad a kapcsolódó szakkifejezéssel! nyereség/veszteség",
+    "correct": "answer_d",
+    "answer_a": "manipuláció",
+    "answer_b": "heurisztika",
+    "answer_c": "kognitív disszonancia",
+    "answer_d": "keretezés"
+  },
+  {
+    "question": "43. Párosítsad a kapcsolódó szakkifejezéssel! implicit",
+    "correct": "answer_b",
+    "answer_a": "heurisztika",
+    "answer_b": "attitűd",
+    "answer_c": "reprezentációk",
+    "answer_d": "emlékezet"
+  },
+  {
+    "question": "44. Milyen érvelési séma rekonstruálható a pápai polgármester megnyilatkozásában (miután több zsák szemetet szórt egy helybéli kertjébe)? „Mindent visszahoztunk, az egészségügyi betétektől a műkörmökig. Ő most igazából boldog lehet. Két eset lehetséges, ő ezt vagy elveszítette, vagy ellopták tőle. Ha ellopták, akkor mi vagyunk a visszaszolgáltatók, ha elveszítette, akkor a szerencsés megtalálók”",
+    "correct": "answer_b",
+    "answer_a": "Bikondicionális",
+    "answer_b": "de Morgan azonosság",
+    "answer_c": "Oksági érvelés",
+    "answer_d": "Konstruktív dilemma"
+  },
+  {
+    "question": "46. Párosítsad a kapcsolódó szakkifejezéssel! elérhetőség",
+    "correct": "answer_c",
+    "answer_a": "kognitív disszonancia",
+    "answer_b": "manipuláció",
+    "answer_c": "heurisztika",
+    "answer_d": "keretezés"
+  },
+  {
+    "question": "47. Milyen szintű a szervezetnek tulajdonított felelősség a szervezet hibájából eredő vállalatvezetési kötelezettszegés esetén?",
+    "correct": "answer_b",
+    "answer_a": "Alacsony",
+    "answer_b": "Közepes",
+    "answer_c": "Magas"
+  },
+  {
+    "question": "48. Párosítsad a kapcsolódó szakkifejezéssel! Konvencionális",
+    "correct": "answer_b",
+    "answer_a": "attitűd",
+    "answer_b": "reprezentációk",
+    "answer_c": "heurisztika",
+    "answer_d": "emlékezet"
+  },
+  {
+    "question": "49. Milyen típusú kérdés: „Igaz, hogy önnek csak harmadik nekifutásra sikerült az államvizsgát letennie?”",
+    "correct": "answer_b",
+    "answer_a": "Kiegészítendő kérdés",
+    "answer_b": "Eldöntendő kérdés",
+    "answer_c": "Hipotetikus kérdés",
+    "answer_d": "Választó kérdés"
+  },
+  {
+    "question": "50. Petty és Cacioppo szerint is … fő útja van a meggyőzésnek.",
+    "correct": "answer_b",
+    "answer_a": "1",
+    "answer_b": "2",
+    "answer_c": "3",
+    "answer_d": "4",
+    "answer_e": "5",
+    "answer_f": "6",
+    "answer_g": "7",
+    "answer_h": "8",
+    "answer_i": "9",
+    "answer_j": "10",
+    "answer_k": "10-nél több / sok"
+  },
+  {
+    "question": "52. Milyen szintű a szervezetnek tulajdonított felelősség érdekgazdák kifogásai esetén?",
+    "correct": "answer_c",
+    "answer_a": "Alacsony",
+    "answer_b": "Közepes",
+    "answer_c": "Magas"
+  },
+  {
+    "question": "53. A sztászisz melyik irányító kérdéshez tartozik? à Elkövettem, de van mentségem",
+    "correct": "answer_d",
+    "answer_a": "Hogyan határozható meg a tett?",
+    "answer_b": "Valóban megtörtént?",
+    "answer_c": "Mit lehet/kell cselekednünk",
+    "answer_d": "Milyen a tett jellege?"
+  },
+  {
+    "question": "54. Kiinduló konfliktus = Érzelmi feszültség",
+    "correct": "answer_c",
+    "answer_a": "egyezkedés/tárgyalás típusú vita",
+    "answer_b": "racionális tényfeltáró vita",
+    "answer_c": "veszekedés típusú vita",
+    "answer_d": "törvényszéki tárgyalási típusú vita"
+  },
+  {
+    "question": "55. Milyen típusú kérdés: „Adott be feladatot?”",
+    "correct": "answer_b",
+    "answer_a": "Kiegészítendő kérdés",
+    "answer_b": "Eldöntendő kérdés",
+    "answer_c": "Választó kérdés"
+  },
+  {
+    "question": "56. Milyen típusú kérdés: „Az újonnan alakult vallási szektákhoz tartozók fanatikusok vagy csalók?”",
+    "correct": "answer_a",
+    "answer_a": "Agresszív kérdés",
+    "answer_b": "Túl sokat állító kérdés",
+    "answer_c": "Kiegészítendő kérdés",
+    "answer_d": "Komplex kérdés EZ IS  JÓ MEGOLDÁS",
+    "answer_e": "Hipotetikus kérdés",
+    "answer_f": "Túl általános kérdés"
+  },
+  {
+    "question": "57. A klasszikus szövegkidolgozás … lépésből áll",
+    "correct": "answer_e",
+    "answer_a": "1",
+    "answer_b": "2",
+    "answer_c": "3",
+    "answer_d": "4",
+    "answer_e": "5",
+    "answer_f": "6",
+    "answer_g": "7",
+    "answer_h": "8",
+    "answer_i": "9",
+    "answer_j": "10",
+    "answer_k": "10-nél több / sok"
+  },
+  {
+    "question": "58. Az ilyen kérdések esetén felmerült, hogy a riporter csupán „mikrofonállványként” van jelen és alákérdez a riportalanynak.",
+    "correct": "answer_c",
+    "answer_a": "Hipotetikus kérdés",
+    "answer_b": "Túl sokat állító kérdés",
+    "answer_c": "Túl általános kérdés",
+    "answer_d": "Agresszív kérdés",
+    "answer_e": "Komplex kérdés"
+  },
+  {
+    "question": "59. Milyen típusú a kérdés: „Igaz, hogy kóklernak tartják a szakmában?”",
+    "correct": "answer_c",
+    "answer_a": "Agresszív kérdés",
+    "answer_b": "Túl sokat állító kérdés",
+    "answer_c": "Komplex kérdés",
+    "answer_d": "Hipotetikus kérdés",
+    "answer_e": "Túl általános kérdés",
+    "answer_f": "A kérdés nem hibás"
+  },
+  {
+    "question": "60. Egy erős induktív érvelés ismeretbővítő érvelés",
+    "correct": "answer_a",
+    "answer_a": "HAMIS",
+    "answer_b": "IGAZ"
+  },
+  {
+    "question": "61. A dialogikus megközelítések elsősorban az üzenetre, az üzenet belső struktúrájára fordítanak nagy hangsúlyt.",
+    "correct": "answer_b",
+    "answer_a": "IGAZ",
+    "answer_b": "HAMIS"
+  },
+  {
+    "question": "62. A korlátozott kategóriabővítés példa a laza használatra, avagy bővítésre.",
+    "correct": "answer_a",
+    "answer_a": "IGAZ",
+    "answer_b": "HAMIS"
+  },
+  {
+    "question": "63. Egy igaz premisszákkal rendelkező érvényes deduktív érvelés szükségszerűen maga után vonja a konklúzió igazságát.",
+    "correct": "answer_b",
+    "answer_a": "HAMIS",
+    "answer_b": "IGAZ"
+  },
+  {
+    "question": "64. A mai kutatások alapján nagyobb csoportokban nagyobb az önmeggyőzés hatása",
+    "correct": "answer_b",
+    "answer_a": "IGAZ",
+    "answer_b": "HAMIS"
+  },
+  {
+    "question": "65. A mai kutatások alapján nem igaz, hogy nagyobb csoportokban kisebb az önmeggyőzés hatása",
+    "correct": "answer_b",
+    "answer_a": "IGAZ",
+    "answer_b": "HAMIS"
+  },
+  {
+    "question": "66. Egy igaz premisszákkal rendelkező érvényes deduktív érvelés szükségszerűen maga után vonja a konklúzióhamisságát",
+    "correct": "answer_a",
+    "answer_a": "HAMIS",
+    "answer_b": "IGAZ"
+  },
+  {
+    "question": "67. Az eustressz korunkban növekszik és komoly terhet jelent egyre több munkavállaló számára.",
+    "correct": "answer_b",
+    "answer_a": "IGAZ",
+    "answer_b": "HAMIS"
+  },
+  {
+    "question": "68. A tudományos fogalmaknak egyértelműeknek kell lenniük a gyors kategorizációt.",
+    "correct": "answer_b",
+    "answer_a": "IGAZ",
+    "answer_b": "HAMIS"
+  },
+  {
+    "question": "69. Milyen krízisreakciós stratégia a visszatámadás?",
+    "correct": "answer_c",
+    "answer_a": "Újraépítő",
+    "answer_b": "Megerősítő",
+    "answer_c": "Tagadó",
+    "answer_d": "Mérséklő"
+  },
+  {
+    "question": "70. Milyen típusú a kérdés: „Nem sérti Miniszter úr szerint a Minisztérium által hangoztatott egyensúlyi célokat az a tény, hogy a mezőgazdasági export a termelőknél jelentkező tőkehiány, a felvásárlási piac szervezetlensége és az engedélyezési rendszer nehézkessége miatt kevesebb a lehetségesnél?”",
+    "correct": "answer_b",
+    "answer_a": "Kiegészítendő kérdés",
+    "answer_b": "Eldöntendő kérdés",
+    "answer_c": "Válaszadó kérdés",
+    "answer_d": "Hipotetikus kérdés"
+  },
+  {
+    "question": "71. Párosítsad a kapcsolódó szakkifejezéssel! implicit konklúzió",
+    "correct": "answer_b",
+    "answer_a": "heurisztika",
+    "answer_b": "manipuláció",
+    "answer_c": "kognitív disszonancia",
+    "answer_d": "keretezés"
+  },
+  {
+    "question": "72. A vita tétje egy harmadik fél meggyőzése.",
+    "correct": "answer_d",
+    "answer_a": "egyezkedés/tárgyalás típusú vita",
+    "answer_b": "racionális tényfeltáró vita",
+    "answer_c": "veszekedési típusú vita",
+    "answer_d": "törvényszéki tárgyalás típusú vita"
+  },
+  {
+    "question": "73. Milyen típusú a kérdés: „Hajdú vagy Whirpool mosógépet választ?”",
+    "correct": "answer_a",
+    "answer_a": "Választó kérdés",
+    "answer_b": "Kiegészítendő kérdés",
+    "answer_c": "Eldöntendő kérdés"
+  },
+  {
+    "question": "74. Milyen típusú a kérdés: „Hajdú vagy Whirpool mosógépet választ?”",
+    "correct": "answer_a",
+    "answer_a": "Agresszív kérdés",
+    "answer_b": "Túl általános kérdés",
+    "answer_c": "A kérdés nem hibás",
+    "answer_d": "Hipotetikus kérdés",
+    "answer_e": "Komplex kérdés",
+    "answer_f": "Túl általános kérdés"
+  },
+  {
+    "question": "75. Párosítsad a kapcsolódó szakkifejezéssel! objektivitás",
+    "correct": "answer_c",
+    "answer_a": "attitűd",
+    "answer_b": "emlékezet",
+    "answer_c": "heurisztika",
+    "answer_d": "reprezentációk"
+  },
+  {
+    "question": "76. Párosítsad a kapcsolódó szakkifejezéssel! szakértői",
+    "correct": "answer_c",
+    "answer_a": "attitűd",
+    "answer_b": "emlékezet",
+    "answer_c": "heurisztika",
+    "answer_d": "reprezentációk"
+  },
+  {
+    "question": "77. Párosítsad a kapcsolódó szakkifejezéssel! homályos",
+    "correct": "answer_b",
+    "answer_a": "attitűd",
+    "answer_b": "emlékezet",
+    "answer_c": "heurisztika",
+    "answer_d": "reprezentációk"
+  },
+  {
+    "question": "78. Hány heurisztika van?",
+    "correct": "answer_k",
+    "answer_a": "1",
+    "answer_b": "2",
+    "answer_c": "3",
+    "answer_d": "4",
+    "answer_e": "5",
+    "answer_f": "6",
+    "answer_g": "7",
+    "answer_h": "8",
+    "answer_i": "9",
+    "answer_j": "10",
+    "answer_k": "10-nél több / sok"
+  },
+  {
+    "question": "79. A klasszikus szövegkidolgozás … lépésből áll.",
+    "correct": "answer_e",
+    "answer_a": "1",
+    "answer_b": "2",
+    "answer_c": "3",
+    "answer_d": "4",
+    "answer_e": "5",
+    "answer_f": "6",
+    "answer_g": "7",
+    "answer_h": "8",
+    "answer_i": "9",
+    "answer_j": "10",
+    "answer_k": "10-nél több / sok"
+  },
+  {
+    "question": "80. Hány toposz van?",
+    "correct": "answer_c",
+    "answer_a": "1",
+    "answer_b": "2",
+    "answer_c": "3",
+    "answer_d": "4",
+    "answer_e": "5",
+    "answer_f": "6",
+    "answer_g": "7",
+    "answer_h": "8",
+    "answer_i": "9",
+    "answer_j": "10",
+    "answer_k": "10-nél több / sok"
+  },
+  {
+    "question": "81. Hány attitűd-felfogás van?",
+    "correct": "answer_c",
+    "answer_a": "1",
+    "answer_b": "2",
+    "answer_c": "3",
+    "answer_d": "4",
+    "answer_e": "5",
+    "answer_f": "6",
+    "answer_g": "7",
+    "answer_h": "8",
+    "answer_i": "9",
+    "answer_j": "10",
+    "answer_k": "10-nél több / sok"
+  },
+  {
+    "question": "82. Hány fő funkciója van az attitűdöknek?",
+    "correct": "answer_d",
+    "answer_a": "1",
+    "answer_b": "2",
+    "answer_c": "3",
+    "answer_d": "4",
+    "answer_e": "5",
+    "answer_f": "6",
+    "answer_g": "7",
+    "answer_h": "8",
+    "answer_i": "9",
+    "answer_j": "10",
+    "answer_k": "10-nél több / sok"
+  },
+  {
+    "question": "84. A meggyőzés sikeressége (hatásosság) nemcsak az Üzenet tulajdonsága, hanem részben Befogadófüggő. Miért? Írj 2 mondatos indoklást! (KIFEJTŐS)",
+    "correct": "answer_a",
+    "answer_a": " A Befogadók tipikusan nem ugyanúgy reagálnak: a közeg heterogén! Az idén jó meggyőzési technikák lehet, hogy jövőre elavulnak!"
+  }
+]

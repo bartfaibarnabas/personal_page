@@ -3,7 +3,7 @@
     <client-only>
         <v-container v-for="(quiz, index) in quizData" :key="quiz.index">
             <v-card :light="lightMode" class="pa-4" v-if="quiz.type === 'radio'">
-                <p v-html="quiz.question"></p>
+                <p v-html="quiz.question.substring(2)"></p>
                 <v-radio-group
                 v-model="answers[index]"
                 >
@@ -66,11 +66,7 @@
 </template>
 
 <script>
-import business_law from '../assets/data/quiz_law.json';
-import marketing from '../assets/data/quiz_marketing.json';
-import behavior from '../assets/data/quiz_corp_beh.json';
-import text_law from '../assets/data/text_law.json';
-import text_org from '../assets/data/text_org_beh.json';
+import mt_quiz from '../assets/data/quiz_mt.json';
 
 export default {
   name: 'test',
@@ -85,30 +81,10 @@ export default {
     };
   },
   created() {
-    const lawData = this.shuffle(business_law.map((element, index) => {
+    const data = this.shuffle(mt_quiz.map((element, index) => {
       return this.calcRadioAnswer(element, index);
     }));
-    this.quizData.push(...lawData);
-
-    const lawText = this.shuffle(text_law.map((element, index) => {
-      return this.calcTextAnswer(element, index);
-    }));
-    this.quizData.push(...lawText);
-
-    const behaviorData = this.shuffle(behavior.map((element, index) => {
-      return this.calcRadioAnswer(element, index);
-    }));
-    this.quizData.push(...behaviorData);
-    
-    const behaviorText = this.shuffle(text_org.map((element, index) => {
-      return this.calcTextAnswer(element, index);
-    }));
-    this.quizData.push(...behaviorText);
-
-    const marketingData = this.shuffle(marketing.map((element, index) => {
-        return this.calcRadioAnswer(element, index);
-    }));
-    this.quizData.push(...marketingData);
+    this.quizData.push(...data);
     
   },
   computed: {
@@ -131,7 +107,7 @@ export default {
         return {
           type: 'radio',
           question: element.question,
-          answers: this.shuffle(answers),
+          answers: answers.length < 6 ? this.shuffle(answers) : answers,
           index: index + this.quizData.length,
           correct: element.correct,
         }

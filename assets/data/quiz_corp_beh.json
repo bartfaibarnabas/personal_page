@@ -30,7 +30,7 @@
         "correct": "answer_a"
     },
     {
-        "question": "A kollektivista társadalmakban a közösséghez való tartozás, a közösség céljainak elfogadása azalapvető érték.",
+        "question": "Alderfer Maslow elméletét fejlesztette tovább három szükségleti csoportot meghatározva.",
         "answer_a": "Igaz",
         "answer_b": "Hamis",       
         "correct": "answer_a"
@@ -146,5 +146,79 @@
         "answer_c": "4.,5.,6.",
         "answer_d": "1.,2.,5",        
         "correct": "answer_a"
+    },
+    {
+        "question": "Válassza ki az adott leíráshoz tartozó struktúratípusát! </br>Erősen decentralizált struktúra, minimális felügyelet mellett dolgozó önirányító csapatok, jól alkalmazkodik a turbulens:",
+        "answer_a": "teamalapú",
+        "answer_b": "mátrix",
+        "answer_c": "divizionális",
+        "correct": "answer_a"
+    },
+    {
+        "question": "Válassza ki az adott leíráshoz tartozó struktúratípusát! </br>Többdimenziós, felelősségvállalás hárítása jellemző a menedzsereknél elsősorban személyorientált koordinációs eszközök",
+        "answer_a": "teamalapú",
+        "answer_b": "mátrix",
+        "answer_c": "divizionális",
+        "correct": "answer_b"
+    },
+    {
+        "question": "Válassza ki az adott leíráshoz tartozó struktúratípusát! </br>Részben centralizált, részben decentralizált hatáskörmegosztás, párhuzamosan meglévő funkciók jellemzik, a stratégiai és az operatív irányítás elválik:",
+        "answer_a": "teamalapú",
+        "answer_b": "mátrix",
+        "answer_c": "divizionális",
+        "correct": "answer_c"
+    },
+    {
+        "question": "Válassza ki az adott leíráshoz tartozó struktúratípusát! </br>bürokratikus szabályozás, többvonalas, technokratikus koordináció:",
+        "answer_a": "funkcionális",
+        "answer_b": "lineáris",
+        "answer_c": "mátrix",
+        "correct": "answer_a"
+    },
+    {
+        "question": "Válassza ki az adott leíráshoz tartozó struktúratípusát! </br>egyvonalas, új feladatokhoz nehezen alkalmazkodik, kisméretű szervezeteknél:",
+        "answer_a": "funkcionális",
+        "answer_b": "lineáris",
+        "answer_c": "mátrix",
+        "correct": "answer_b"
+    },
+    {
+        "question": "Válassza ki az adott leíráshoz tartozó struktúratípusát! </br>többvonalas, többdimenziós, felelősségvállalás hárítása jellemző a menedzsereknél:",
+        "answer_a": "funkcionális",
+        "answer_b": "lineáris",
+        "answer_c": "mátrix",
+        "correct": "answer_c"
+    },
+    {
+        "question": "Válassza ki az adott leíráshoz tartozó kultúratípust és tipológiát!</br>szívesen figyelmen kívül hagyják az emberi magatartás kérdéseit, szakemberek:",
+        "answer_a": "A technokraták kultúrája - Schein-féle szakmakultúrák",
+        "answer_b": "Szabályorientált kultúra - Quinn-féle kultúrák",
+        "answer_c": "Támogató kultúra - Quinn-féle kultúrák",
+        "answer_d": "vezérek kultúrája - Schein-féle szakmakultúrák",
+        "correct": "answer_a"
+    },
+    {
+        "question": "Válassza ki az adott leíráshoz tartozó kultúratípust és tipológiát!</br>legfontosabb értéke a stabilitás, a szabályozottság, erőteljes ellenőrzést gyakorol, az elért eredmények megőrzése a cél:",
+        "answer_a": "A technokraták kultúrája - Schein-féle szakmakultúrák",
+        "answer_b": "Szabályorientált kultúra - Quinn-féle kultúrák",
+        "answer_c": "Támogató kultúra - Quinn-féle kultúrák",
+        "answer_d": "vezérek kultúrája - Schein-féle szakmakultúrák",
+        "correct": "answer_b"
+    },
+    {
+        "question": "Válassza ki az adott leíráshoz tartozó kultúratípust és tipológiát!</br>rugalmas, a humán erőforrások fejlesztésére helyezi a hangsúlyt:",
+        "answer_a": "A technokraták kultúrája - Schein-féle szakmakultúrák",
+        "answer_b": "Szabályorientált kultúra - Quinn-féle kultúrák",
+        "answer_c": "Támogató kultúra - Quinn-féle kultúrák",
+        "answer_d": "vezérek kultúrája - Schein-féle szakmakultúrák",
+        "correct": "answer_c"
+    },
+    {
+        "question": "Válassza ki az adott leíráshoz tartozó kultúratípust és tipológiát!</br>Felső színtű menedzserek, az alapvető érték a pénzügyi szempontok érvényre juttatása:",
+        "answer_a": "A technokraták kultúrája - Schein-féle szakmakultúrák",
+        "answer_b": "Szabályorientált kultúra - Quinn-féle kultúrák",
+        "answer_c": "Támogató kultúra - Quinn-féle kultúrák",
+        "answer_d": "vezérek kultúrája - Schein-féle szakmakultúrák",
+        "correct": "answer_d"
     }
 ]

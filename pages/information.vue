@@ -11,7 +11,7 @@ export default {
   name: 'index',
   data() {
     return {
-      title:'WELCOME',
+      title:'INFORMATION TBD',
     };
   },
   computed: {
@@ -24,7 +24,7 @@ export default {
 <style lang="scss" scoped>
 .page-title {
   .title-char {
-    font-size:10vw;
+    font-size:5vw;
     color: $primary-color;
     &.rotate {
       transform: rotateY(360deg);

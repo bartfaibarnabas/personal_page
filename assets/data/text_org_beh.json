@@ -1,0 +1,26 @@
+[
+    {
+        "question": "Röviden jellemezze a Handy-féle személyiségkultúrát! Mely struktúratípussal kapcsolható ez össze?",
+        "answer": "Speciális szervezetek esetében figyelhető meg ez a kultúra. pl: ügyvédi irodák, amelyek központi alakjai a kiemelkedő speciális szaktudással rendelkező személyek, akik lényegében az infrastruktúra biztosítására alakítanak sajátos szervezetet. Közös irodát működtetnek, de a személyiségek autonóm módon dolgoznak, és a szervezet lényegében a kiszolgálásukra jön létre."
+    },
+    {
+        "question": "Rövid jellemezze a Handy-féle feladatkultúrát! Mely struktúratípussal kapcsolható ez össze?",
+        "answer": "A változó környezet, az erős verseny megköveteli, hogy a szervezet megfelelő időben adjon a kihívásokra értelmes válaszokat. Ilyen körülmények között a reagálás kerül előtérbe, amely azt vonja maga után, hogy az elsődleges érték a szervezeten belül a feladatok megoldása, amelyhez szaktudásra és vállalkozási készségre van szükség. Ehhez a kultúrához szervezetileg a mátrix szervezetek, illetve a projektteamek köthetők. A gyorsan változó környezetben fontosabb a cél elérése, a feladat végrehajtása, mint a tevékenységek aprólékos szabályozása."
+    },
+    {
+        "question": "Miben hasonlít, illetve különbözik a paternalizmus/maternalizmus stílus, illetve az opportunizmus?",
+        "answer": "Az opportunisták az 5 alaptípusból bármelyik kombinációt alkalmazhatják, úgy alkalmazva és váltogatva ezeket a magatartásokat, ahogy éppen a saját személyes érdeke diktálja. Jellemzői: kegyetlen, ravasz, önző, ugyanakkor akár rugalmas és stratégiai szemléletű is.</br></br> A paternalista, maternalisták a tekintélyelvű vezetést és a klub stílusú vezetést alkalmazzák, de nem integrálják a kettőt. „Jótékony diktátornak”, atyáskodónak vagy anyáskodónak titulálják őket, családként tekintenek a szervezetre, a hűséget és az engedelmességet jutalmazzák."
+    },
+    {
+        "question": "Mi Porter és Lawler modelljének legfőbb erényei?",
+        "answer": "A szervezeti magatartás tanulmányozásában alkalmazott valamennyi lényeges felfogást összefogja. A modell a motivációs folyamat szinte minden lényeges elemét, azok egymással való összefüggésében mutatja be. Ugyanakkor látható, hogy milyen komplex a folyamat, és milyen könnyen fordulhatnak elő olyan hibák, amelyek a menedzsment erőfeszítéseit alááshatják. A modellből a sikerre törekvő menedzserek számára értékes következtetések adódnak."
+    },
+    {
+        "question": "Hogyan lehet eldönteni a Fiedler-féle modell alapján, hogy egy adott vezetési helyzetben milyen stílust érdemes választani?",
+        "answer": "A vezető számára kedvező, ill. kedvezőtlen helyzetekben a feladatorientált stílus az eredményesebb, a közepes, bizonytalan helyzetekben a kapcsolatorientált stílus."
+    },
+    {
+        "question": "Mi a tanulsága Alderfer elméletének menedzseri szempontból?",
+        "answer": "Az elmélet azt sugallja a menedzsmentnek, hogy fel kell ismernie a szimultán megjelenő szükségleteket, hiszen azok kielégítésével motiválhat. Továbbá azt, hogy ha a növekedési igény nem kielégíthető, akkor a kapcsolati igényre célszerű koncentrálni."
+    }
+]

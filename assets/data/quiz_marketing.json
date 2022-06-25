@@ -62,14 +62,6 @@
         "correct": "answer_b"
     },
     {
-        "question": "Melyik állítás NEM igaz a küldetésnyilatkozatra?",
-        "answer_a": "A vállalat fő irányvonalait és értékeit emeli ki",
-        "answer_b": "Rövid távú szemléletű",
-        "answer_c": "Kijelöli a vállalat működési terét képező versenyszférát",
-        "answer_d": "Korlátozott számú célra összpontosít",      
-        "correct": "answer_b"
-    },
-    {
         "question": "A(z) _______ rögzíti a cégpiacokat és a legjobb piaci lehetőségeket elemzése alapján a cég értékajánlatát.",
         "answer_a": "a piaci szegmens",
         "answer_b": "marketing mix",
@@ -115,6 +107,15 @@
         "correct": "answer_c"
     },
     {
+        "question": "_____ használata során a fogyasztó az információ feldolgozásakor minden alternatíva vagy attribútum esetében azonos mennyiségű információt dolgoz fel.",
+        "answer_a": "Kompenzáló stratégia",
+        "answer_b": "Alternatíva szerint értékelése",
+        "answer_c": "Konzisztens feldolgozás",
+        "answer_d": "Kognitív disszonancia",
+        "answer_e": "Szelektív információfeldolgozás",
+        "correct": "answer_c"
+    },
+    {
         "question": "….során versenytársakhoz képest saját helyünket meghatározzuk, és a jövőbeni  elképzeléseinket megjelenítsük.",
         "answer_a": "a fentiek egyike sem helyes",
         "answer_b": "a célpiac meghatározás",
@@ -124,7 +125,7 @@
         "correct": "answer_d"
     },
     {
-        "question": "terméktervezőknek három szinten kell meghatározniuk a termékeket és szolgáltatásokat. A harmadik szinten a terméktervezők létrehozzák……",
+        "question": "A terméktervezőknek három szinten kell meghatározniuk a termékeket és szolgáltatásokat. A harmadik szinten a terméktervezők létrehozzák……",
         "answer_a": "tényleges terméket",
         "answer_b": "a kiterjesztett terméket",
         "answer_c": "a márkaszemélyiséget",
@@ -197,20 +198,11 @@
     },
     {
         "question": "A következők közül melyik a stratégia tervezés első lépései?",
-        "answer_a": "a kiegészítők árazása",
-        "answer_b": "a költség alapú árazás",
-        "answer_c": "a kétrészes árazás",
-        "answer_d": "a behatoló árképzés",
-        "answer_e": "a magas-alacsony árazás",        
-        "correct": "answer_d"
-    },
-    {
-        "question": "A következők közül melyik a stratégia tervezés első lépései?",
-        "answer_a": "a vállalat küldetés-nyilatkozatának megfogalmazása",
-        "answer_b": "rövidtávú célok kitűzése",
-        "answer_c": "üzleti portfóliók kijelölése",
-        "answer_d": "az erőforrások eloszlása az egyes stratégiai üzletágak között",
-        "answer_e": "stratégiai üzletágak létrehozása",        
+        "answer_a": "a versenytársakkal kapcsolatos lépések végrehajtása",
+        "answer_b": "az adatok érvényességének és megbízhatóságának ellenőrzése",
+        "answer_c": "az információk interpretálása",
+        "answer_d": "az információ rendszerezése",
+        "answer_e": "a folyamatos adatgyűjtés",        
         "correct": "answer_a"
     },
     {

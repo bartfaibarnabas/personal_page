@@ -4,49 +4,36 @@
       :clipped-left="clipped"
       fixed
       app
+      height="70"
+      class="app-bar"
     >
-    <v-spacer></v-spacer>
-      <v-btn depressed @click="openLoginDialog">
-        <v-icon>mdi-account</v-icon>
-        <span>Login</span>
-      </v-btn>
-      </v-app-bar>
+      <v-spacer></v-spacer>
+      <headerMenu/>
+    </v-app-bar>
     <v-main>
       <v-container>
         <Nuxt />
       </v-container>
     </v-main>
-    <v-footer
-      :absolute="!fixed"
-      app
-    >
+    <v-footer :absolute="!fixed" app>
       <span>&copy; {{ new Date().getFullYear() }}</span>
-      <login v-model="loginDailog"/>
     </v-footer>
   </v-app>
 </template>
 
 <script>
-import login from '../components/login.vue'
+import headerMenu from '../components/header'
 export default {
-  name: 'DefaultLayout',
+  name: 'default',
   components: {
-    login,
+    headerMenu,
   },
   data () {
     return {
       loginDailog: false,
-
       clipped: false,
       drawer: false,
       fixed: false,
-      items: [
-        {
-          icon: 'mdi-user',
-          title: 'Login',
-          to: '/'
-        },
-      ],
       miniVariant: false,
       right: true,
       rightDrawer: false,
@@ -54,10 +41,16 @@ export default {
     }
   },
   methods: {
-    openLoginDialog() {
-      console.log('login');
-      this.loginDailog = true;
-    },
+  },
+  computed: {
   },
 }
 </script>
+<style scoped>
+.app-bar {
+  margin-bottom: 20px;
+}
+.app-bar ::v-deep .v-toolbar__content {
+  box-shadow: 0px 12px 3px #121212;
+}
+</style>
