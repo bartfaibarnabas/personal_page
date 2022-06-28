@@ -22,7 +22,19 @@
 </template>
 
 <script>
+import jwt from 'jsonwebtoken';
 import headerMenu from '../components/header'
+
+  const verifyPromise = (authClaim, secret) => new Promise((resolve, reject) => {
+    jwt.verify(authClaim, secret, async (_err, payload) => {
+      if (_err) {
+        reject(_err);
+      } else {
+        resolve(payload);
+      }
+    });
+  });
+
 export default {
   name: 'default',
   components: {
@@ -37,13 +49,46 @@ export default {
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: 'Vuetify.js'
+      title: 'Vuetify.js',
+      secret: 'cThIIoDvwdueQB468K5xDc5633seEFoqwxjF_xSJyQQ',
     }
   },
+  created() {
+    this.setAuthCookie();
+    this.verifyCookie();
+
+  },
   methods: {
+    setAuthCookie() {
+      const token = jwt.sign({ status: 'loggedIn', userName: 'name' }, this.secret, { expiresIn: '6h' });
+      this.$auth.$storage.setCookie('authClaim', token);
+    },
+    verifyCookie() {
+      console.log('verify');
+      const jwtAuthToken = this.$auth.$storage.getCookies()['auth.authClaim'];
+      console.log(jwtAuthToken);
+      /*verifyPromise(jwtAuthToken, this.secret).then((result) => {
+        console.log(
+          'VERIF'
+        )
+        console.log(result);
+      }).catch((error) => {
+        console.log(error);
+      });*/
+     const authClaim = jwt.decode(jwtAuthToken);
+      console.log(authClaim);
+      if (authClaim) {
+        this.$store.commit('setUser', authClaim.userName);
+      }
+    },
   },
   computed: {
+    isLoggedIn() {
+
+    }
   },
+  watch: {
+  }
 }
 </script>
 <style scoped>

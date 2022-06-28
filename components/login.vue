@@ -1,6 +1,6 @@
 <template>
 <v-dialog v-model="value" width="400" @click:outside="close" color="red">
-  <template v-slot:default="dialog">
+  <template v-slot:default>
       <v-card>
         <v-toolbar
           color="primary"

@@ -40,6 +40,13 @@ export default {
       tab: 0,
     };
   },
+  created() {
+    if (!this.user) {
+      this.$router.push({
+        path: '/home',
+      })
+    }
+  },
   computed: {
     user() {
       return this.$store.state.user;

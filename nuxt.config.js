@@ -2,6 +2,16 @@ import colors from 'vuetify/es5/util/colors'
 
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
+  toast: {
+    position: 'top-right',
+    duration: 2000
+  },
+  loading: {
+    name: 'chasing-dots',
+    color: '#ff5638',
+    background: 'white',
+    height: '4px'
+ },
   head: {
     titleTemplate: '%s - BB',
     title: 'BB',
@@ -79,11 +89,20 @@ export default {
   },
   auth: {
     strategies: {
+      local: {
+        endpoints: {
+          login: {url: '/user/login', method: 'post', propertyName:    'token' },
+          logout: false,
+          user: {url: '/user/user', method: 'get', propertyName: 'data'},
+        },
+        tokenRequired: true,
+        tokenType: 'Bearer'
+      },
       google: {
         clientId: '584787693700-fce79bu23lb56fpnsgr8qe9d0iuknem3.apps.googleusercontent.com',
-        scope: ['profile', 'email'],
-        responseType: 'token id_token',
-        code_challenge_method: '',
+        //scope: ['profile', 'email'],
+        //responseType: 'token id_token',
+        //code_challenge_method: '',
       },
       facebook: {
         endpoints: {
@@ -92,6 +111,12 @@ export default {
         clientId: 'bartfaibarnabas',
         scope: ['public_profile', 'email']
       },
+    },
+    redirect: {
+      login: '/?login=1',
+      logout: '/',
+      user: '/profile',
+      callback:'/'
     }
   },
 
@@ -102,7 +127,7 @@ export default {
     emulatorPort: 9000,
     emulatorHost: 'localhost',
   },
-
+  axios: {},
   router: {
     middleware: 'router-auth',
   }
