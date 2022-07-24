@@ -2,7 +2,7 @@
 <div>
   <div class="navigation">
     <ul>
-      <li class="list" v-for="menu in menuList" :key="menu.id" :class="{'active': selected === menu.id}" @click="liClicked(menu.id)">
+      <li class="list" v-for="menu in menuList" :key="menu.id" :class="{'active': selected === menu.id}" @click="liClicked(menu)">
         <v-btn :ripple="false" depressed @click="menu.clickEvent">
           <v-icon class="icon">{{menu.icon}}</v-icon>
           <span class="text">{{menu.text}}</span>
@@ -30,26 +30,35 @@ export default {
     }
   },
   created() {
+    this.selectByRoute();
   },
   methods: {
+    selectByRoute() {
+      const routeMenu = this.menuList.find((menuItem) => ( menuItem.text.toLowerCase() === this.$route.name.toLowerCase() ));
+      if (routeMenu) {
+        this.select(routeMenu);
+      }
+    },
     openLoginDialog() {
+      this.select(this.menuList[2]);
       this.loginDailog = true;
     },
     closeDialog() {
       this.loginDailog = false;
-      this.selected = 0;
+      this.selectByRoute();
     },
     logout() {
-       this.$store.commit('setUser', null);
+        this.$store.commit('setUser', null);
+        this.navigateToHome();
     },
     navigateToTest() {
       this.$router.push({
-        path: '/test',
+        path: '/quiz',
       })
     },
     navigateToHome() {
       this.$router.push({
-        path: '/',
+        path: '/home',
       })
     },
     navigateToInformation() {
@@ -62,57 +71,97 @@ export default {
         path: '/more',
       })
     },
-    liClicked(id) {
-      this.selected = id;
+    navigateToStudyCards() {
+      this.$router.push({
+        path: '/studyCards',
+      });
+    },
+    select(item) {
+      this.selected = item.id;
+    },
+    liClicked(item) {
+      console.log(item.text);
     }
   },
   computed: {
     menuList() {
-      const menuArray = [
+      let menu = [
         {
-          id: 1,
           icon: 'mdi-home',
           clickEvent: this.navigateToHome,
           text: 'Home',
         },
         {
-          id: 2,
-          icon: 'mdi-account',
-          clickEvent: this.openLoginDialog,
-          text: 'Login',
-        },
-        {
-          id: 3,
           icon: 'mdi-information',
           clickEvent: this.navigateToInformation,
           text: 'Information',
         },
         {
-          id: 4,
           icon: 'mdi-dots-horizontal-circle',
           clickEvent: this.navigateToMore,
           text: 'More',
         },
         {
-          id: 5,
-          icon: 'mdi-fencing',
-          clickEvent: this.navigateToTest,
-          text: 'Fight',
+          icon: 'mdi-cards',
+          clickEvent: this.navigateToStudyCards,
+          text: 'studyCards',
+        },
+        {
+          icon: 'mdi-account',
+          clickEvent: this.openLoginDialog,
+          text: 'Login',
         },
       ];
       if (this.user) {
-        menuArray[1] = {
-          id: '2',
-          icon: 'mdi-logout',
-          clickEvent: this.logout,
-          text: 'Logout',
-        };
+        menu = [
+          {
+            icon: 'mdi-home',
+            clickEvent: this.navigateToHome,
+            text: 'Home',
+          },
+          {
+            icon: 'mdi-information',
+            clickEvent: this.navigateToInformation,
+            text: 'Information',
+          },
+          {
+            icon: 'mdi-dots-horizontal-circle',
+            clickEvent: this.navigateToMore,
+            text: 'More',
+          },
+          {
+            icon: 'mdi-cards',
+            clickEvent: this.navigateToStudyCards,
+            text: 'studyCards',
+          },
+          {
+            icon: 'mdi-school',
+            clickEvent: this.navigateToTest,
+            text: 'Quiz',
+          },
+          {
+            icon: 'mdi-logout',
+            clickEvent: this.logout,
+            text: 'Logout',
+          },
+        ];
       }
-      return menuArray;
+      return menu.map((item, index) => ({ ...item, id: index }));
       },
     user() {
       return this.$store.state.user;
     },
+    route() {
+      return this.$route.name;
+    },
+  },
+  watch: {
+    route() {
+      this.selectByRoute();
+    },
+    menuList() {
+      this.selectByRoute();
+    }
   },
 }
 </script>
@@ -121,7 +170,6 @@ export default {
   background: unset !important;
 }
 .navigation {
-  width: 400px;
   height: 70px;
   background: $background-color;
   position: relative;
@@ -131,7 +179,6 @@ export default {
   border-radius: 10px;
   ul {
     display: flex;
-    width: 350px;
     li {
       position: relative;
       list-style: none;
@@ -247,6 +294,9 @@ export default {
 .navigation ul li:nth-child(5).active ~ .indicator {
   animation: changeColor 10s linear infinite;
   transform: translateX(calc(70px * 4))
+}
+.navigation ul li:nth-child(6).active ~ .indicator {
+  transform: translateX(calc(70px * 5))
 }
 @keyframes changeColor {
   0% {background-color: #29fd53;}
