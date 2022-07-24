@@ -34,7 +34,7 @@ export default {
   },
   methods: {
     selectByRoute() {
-      const routeMenu = this.menuList.find((menuItem) => ( menuItem.text.toLowerCase() === this.$route.name ));
+      const routeMenu = this.menuList.find((menuItem) => ( menuItem.text.toLowerCase() === this.$route.name.toLowerCase() ));
       if (routeMenu) {
         this.select(routeMenu);
       }
@@ -71,6 +71,11 @@ export default {
         path: '/more',
       })
     },
+    navigateToStudyCards() {
+      this.$router.push({
+        path: '/studyCards',
+      });
+    },
     select(item) {
       this.selected = item.id;
     },
@@ -97,6 +102,11 @@ export default {
           text: 'More',
         },
         {
+          icon: 'mdi-cards',
+          clickEvent: this.navigateToStudyCards,
+          text: 'studyCards',
+        },
+        {
           icon: 'mdi-account',
           clickEvent: this.openLoginDialog,
           text: 'Login',
@@ -118,6 +128,11 @@ export default {
             icon: 'mdi-dots-horizontal-circle',
             clickEvent: this.navigateToMore,
             text: 'More',
+          },
+          {
+            icon: 'mdi-cards',
+            clickEvent: this.navigateToStudyCards,
+            text: 'studyCards',
           },
           {
             icon: 'mdi-school',
@@ -279,6 +294,9 @@ export default {
 .navigation ul li:nth-child(5).active ~ .indicator {
   animation: changeColor 10s linear infinite;
   transform: translateX(calc(70px * 4))
+}
+.navigation ul li:nth-child(6).active ~ .indicator {
+  transform: translateX(calc(70px * 5))
 }
 @keyframes changeColor {
   0% {background-color: #29fd53;}

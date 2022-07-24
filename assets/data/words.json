@@ -1,0 +1,311 @@
+{
+    "verbs": [
+        {
+            "hu": "jönni",
+            "en": "come",
+            "de": "kommen"
+        },
+        {
+            "hu": "talál",
+            "en": "find",
+            "de": "finden"
+        },
+        {
+            "hu": "keres",
+            "en": "search",
+            "de": "suchen"
+        },
+        {
+            "hu": "lakni",
+            "en": "live",
+            "de": "wohnen"
+        },
+        {
+            "hu": "dolgozni",
+            "en": "work",
+            "de": "arbeiten"
+        },
+        {
+            "hu": "menni",
+            "en": "go",
+            "de": "gehen"
+        },
+        {
+            "hu": "látni",
+            "en": "see",
+            "de": "Sehen"
+        },
+        {
+            "hu": "válaszolni",
+            "en": "answer",
+            "de": "Antworten"
+        },
+        {
+            "hu": "aludni",
+            "en": "sleep",
+            "de": "Schlafen"
+        },
+        {
+            "hu": "írni",
+            "en": "write",
+            "de": "Schreiben"
+        },
+        {
+            "hu": "csinál",
+            "en": "do",
+            "de": "machen"
+        },
+        {
+            "hu": "élni",
+            "en": "live",
+            "de": "Leben"
+        },
+        {
+            "hu": "játszik",
+            "en": "playe",
+            "de": "Spielen"
+        },
+        {
+            "hu": "érteni",
+            "en": "understand",
+            "de": "Verstehen"
+        },
+        {
+            "hu": "nevetni",
+            "en": "laugh",
+            "de": "Lachen"
+        },
+        {
+            "hu": "hozni",
+            "en": "bring",
+            "de": "holen"
+        },
+        {
+            "hu": "vinni",
+            "en": "take",
+            "de": "nehmen"
+        },
+        {
+            "hu": "énekel",
+            "en": "sing",
+            "de": "Singen"
+        },
+        {
+            "hu": "olvasni",
+            "en": "read",
+            "de": "lesen"
+        },
+        {
+            "hu": "találkozni",
+            "en": "meet",
+            "de": "Treffen"
+        },
+        {
+            "hu": "futni",
+            "en": "run",
+            "de": "Laufen"
+        },
+        {
+            "hu": "elfelejten",
+            "en": "forget",
+            "de": "Vergessen"
+        },
+        {
+            "hu": "segít",
+            "en": "help",
+            "de": "hilfen"
+        },
+        {
+            "hu": "válni valamivé",
+            "en": "become",
+            "de": "Werden"
+        },
+
+        {
+            "hu": "beszélni",
+            "en": "speak",
+            "de": "Sprechen"
+        },
+        {
+            "hu": "mosni",
+            "en": "wash",
+            "de": "Waschen"
+        },
+        {
+            "hu": "viselni",
+            "en": "wear",
+            "de": "Tragen"
+        },
+        {
+            "hu": "adni",
+            "en": "give",
+            "de": "geben"
+        },
+        {
+            "hu": "vezet",
+            "en": "drive",
+            "de": "fahren"
+        },
+        {
+            "hu": "meghívni",
+            "en": "invite",
+            "de": "Einladen"
+        },
+        {
+            "hu": "kitakarítani",
+            "en": "clean",
+            "de": "Aufraumen"
+        },
+        {
+            "hu": "elindulni",
+            "en": "depart",
+            "de": "Abfahren"
+        },
+        {
+            "hu": "elhagyni",
+            "en": "leave",
+            "de": "verlassen"
+        },
+        {
+            "hu": "BEFEJEZNI",
+            "en": "stop",
+            "de": "aufhören"
+        },
+        {
+            "hu": "elkezd",
+            "en": "begin",
+            "de": "Anfang"
+        },
+        {
+            "hu": "becsukni",
+            "en": "close",
+            "de": "Zumachen"
+        },
+        {
+            "hu": "meglátogat",
+            "en": "visit",
+            "de": "Besuche"
+        },
+        {
+            "hu": "fizetni",
+            "en": "pay",
+            "de": "Bezahlen"
+        },
+        {
+            "hu": "számol",
+            "en": "count",
+            "de": "Zahlen"
+        },
+        {
+            "hu": "ajánlani",
+            "en": "offer",
+            "de": "Empfehlen"
+        },
+        {
+            "hu": "Elküldeni",
+            "en": "send",
+            "de": "senden"
+        },
+        {
+            "hu": "magyarázni",
+            "en": "explain",
+            "de": "Erklaren"
+        },
+
+        {
+            "hu": "eladni",
+            "en": "sell",
+            "de": "Verkaufen"
+        },
+        {
+            "hu": "venni",
+            "en": "buy",
+            "de": "kaufen"
+        },
+        {
+            "hu": "felöltözni",
+            "en": "get dressed",
+            "de": "Anziehen"
+        },
+        {
+            "hu": "bevásárolni",
+            "en": "shop",
+            "de": "Einkaufen"
+        },
+        {
+            "hu": "együtt jönni",
+            "en": "come together",
+            "de": "mitkommen"
+        },
+        {
+            "hu": "kimenni, elmenni szórakozni",
+            "en": "go out",
+            "de": "Ausgehen"
+        },
+        {
+            "hu": "megjönni",
+            "en": "come",
+            "de": "Ankommen"
+        },
+        {
+            "hu": "küldeni",
+            "en": "send",
+            "de": "Schicken"
+        },
+        {
+            "hu": "elutasít",
+            "en": "reject",
+            "de": "entlassen"
+        },
+        {
+            "hu": "elfogad",
+            "en": "accept",
+            "de": "akzeptieren"
+        },
+        {
+            "hu": "tanulni",
+            "en": "lear",
+            "de": "lernen"
+        },
+        {
+            "hu": "szükségem van rá",
+            "en": "need",
+            "de": "Brauchen"
+        },
+        {
+            "hu": "tudhat",
+            "en": "can",
+            "de": "Können"
+        },
+        {
+            "hu": "szabad",
+            "en": "allow",
+            "de": "dürfen"
+        },
+        {
+            "hu": "akar",
+            "en": "want",
+            "de": "Wollen"
+        },
+        {
+            "hu": "szeretni",
+            "en": "like",
+            "de": "Mögen"
+        },
+        {
+            "hu": "kell",
+            "en": "have to",
+            "de": "Sollen"
+        },
+        {
+            "hu": "muszáj / kell ",
+            "en": "must",
+            "de": "müssen"
+        },
+        {
+            "hu": "szeretnék",
+            "en": "like",
+            "de": "möchten"
+        }
+    ]
+}
