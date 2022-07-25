@@ -12,7 +12,7 @@
     </v-tabs>
     <v-tabs-items v-model="tab">
       <v-tab-item>
-        <studyCard :lightMode="lightMode" v-for="item in verbs" :key="item.hu" :item="item" :showAnswers="showAnswers"/>    
+        <studyCard :lightMode="lightMode" v-for="item in verbs" :key="item.hu" :item="item" :showAnswers="showAnswers" verb/>    
       </v-tab-item>
       <v-tab-item>
         <studyCard :lightMode="lightMode" v-for="item in nouns" :key="item.hu" :item="item" :showAnswers="showAnswers"/>       

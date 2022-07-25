@@ -17,7 +17,7 @@
                     <p class="text-answer" :class="{ 'correct': isDeCorrect }" v-if="checked || showAnswers" v-html="item.de"></p>
                 </v-col>
                 <v-col class="answerField">
-                    <v-text-field label="en (to ...)" outlined v-model="enAnswer"></v-text-field>
+                    <v-text-field :label="verb ? 'en (to ...)' : 'eng'" outlined v-model="enAnswer"></v-text-field>
                     <p class="text-answer" :class="{ 'correct': isEnCorrect }" v-if="checked || showAnswers" v-html="item.en"></p>
                 </v-col>
             </v-row>
@@ -39,6 +39,7 @@ export default {
     props: {
         lightMode: Boolean,
         item: Object,
+        verb: Boolean,
         showAnswers: Boolean,
     },
     methods: {
@@ -47,7 +48,7 @@ export default {
         }
     },
     watch: {
-        deAnser() {
+        deAnswer() {
             if (this.deAnswer === this.item.de) {
                 this.isDeCorrect = true;
             } else {
