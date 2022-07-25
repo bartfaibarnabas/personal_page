@@ -120,7 +120,6 @@
             "en": "become",
             "de": "Werden"
         },
-
         {
             "hu": "beszélni",
             "en": "speak",
@@ -306,6 +305,404 @@
             "hu": "szeretnék",
             "en": "like",
             "de": "möchten"
+        },
+        {
+            "hu": "húst sütni",
+            "en": "fry",
+            "de": "braten"
+        },
+        {
+            "hu": "stb",
+            "en": "stb",
+            "de": "stb"
         }
+    ],
+    "nouns": [
+        {
+            "hu": "egészség",
+            "en": "health",
+            "de": "die Gesundheit"
+        },
+        {
+            "hu": "táplálkozás",
+            "en": "",
+            "de": "? Ernährung"
+        },
+        {
+            "hu": "gyümölcs",
+            "en": "fruit",
+            "de": "? Obst"
+        },
+        {
+            "hu": "zöldség",
+            "en": "vegetable",
+            "de": "das Gemüse"
+        },
+        {
+            "hu": "kenyér",
+            "en": "bread",
+            "de": "das Brot"
+        },
+        {
+            "hu": "otthon",
+            "en": "home",
+            "de": "das Zuhause"
+        },
+        {
+            "hu": "ebéd",
+            "en": "lunch",
+            "de": "das Mittagessen"
+        },
+        {
+            "hu": "munkahely",
+            "en": "workplace",
+            "de": "der Arbeitsplatz"
+        },
+        {
+            "hu": "burgonya",
+            "en": "potato",
+            "de": "die Kartoffel"
+        },
+        {
+            "hu": "szék",
+            "en": "chair",
+            "de": "der Stuhl"
+        },
+        {
+            "hu": "asztal",
+            "en": "table",
+            "de": "der Tisch"
+        },
+        {
+            "hu": "szekrény",
+            "en": "wardrobe",
+            "de": "Der Schrank"
+        },
+        {
+            "hu": "hűtőszekrény",
+            "en": "fridge",
+            "de": "Der Kühlschrank"
+        },
+
+        {
+            "hu": "balaton",
+            "en": "Lake Balaton",
+            "de": "Plattensee"
+        },
+        {
+            "hu": "kép",
+            "en": "picture",
+            "de": "das Build"
+        },
+        {
+            "hu": "ágy",
+            "en": "bed",
+            "de": "das Bett"
+        },
+        {
+            "hu": "függöny",
+            "en": "curtain",
+            "de": "der Vorhang"
+        },
+        {
+            "hu": "nappali",
+            "en": "livingroom",
+            "de": "das Wohnzimmer"
+        },
+        {
+            "hu": "hálószóba",
+            "en": "bedroom",
+            "de": "das Schlafzimmer"
+        },
+        {
+            "hu": "konyha",
+            "en": "kitchen",
+            "de": "die Küche"
+        },
+        {
+            "hu": "Előszoba",
+            "en": "ante-room",
+            "de": "das vorzimmer"
+        },
+        {
+            "hu": "fürdőszoba",
+            "en": "bathroom",
+            "de": "das Badezimmer"
+        },
+        {
+            "hu": "terasz",
+            "en": "balcony",
+            "de": "die Terasse"
+        },
+        {
+            "hu": "szőnyeg",
+            "en": "carpet",
+            "de": "der Teppich"
+        },
+        {
+            "hu": "mikró",
+            "en": "microwave",
+            "de": "Die Mikrowelle"
+        },
+        {
+            "hu": "kés",
+            "en": "knife",
+            "de": "das Messer"
+        },
+        {
+            "hu": "villa",
+            "en": "fork",
+            "de": "die Gable"
+        },
+        {
+            "hu": "kanál",
+            "en": "spoon",
+            "de": "der Löffel"
+        },
+        {
+            "hu": "tál",
+            "en": "bowl",
+            "de": "? Schüssel"
+        },
+        {
+            "hu": "tányér",
+            "en": "plate",
+            "de": "der Teller"
+        },
+        {
+            "hu": "porszívó",
+            "en": "vacuum cleaner",
+            "de": "Der Staubsauger"
+        },
+        {
+            "hu": "mosógép",
+            "en": "washing machine",
+            "de": "Die Waschmaschine"
+        },
+        {
+            "hu": "mosogató",
+            "en": "sink",
+            "de": "das Waschbecken"
+        },
+        {
+            "hu": "utazás",
+            "en": "travel",
+            "de": "die Reise"
+        },
+        {
+            "hu": "könyv",
+            "en": "book",
+            "de": "das Buch"
+        },
+        {
+            "hu": "szülinap",
+            "en": "birthday",
+            "de": "der Geburstag"
+        },
+        {
+            "hu": "torta",
+            "en": "cake",
+            "de": "der Kuchen"
+        },
+        {
+            "hu": "karácsony",
+            "en": "christmas",
+            "de": "Weihnachten"
+        },
+        {
+            "hu": "festő",
+            "en": "painter",
+            "de": "der Maler"
+        },
+        {
+            "hu": "pincér",
+            "en": "waiter",
+            "de": "der Kellner"
+        },
+        {
+            "hu": "fodrász",
+            "en": "hairdresser",
+            "de": "der Friseur"
+        },
+        {
+            "hu": "tűzoltó",
+            "en": "firefigter",
+            "de": "der Feuerwehrmann"
+        },
+        {
+            "hu": "autószerelő",
+            "en": "car mechanic",
+            "de": "der Automechaniker"
+        },
+        {
+            "hu": "pénz",
+            "en": "money",
+            "de": "das Geld"
+        },
+        {
+            "hu": "időjárás",
+            "en": "weather",
+            "de": "das Wetter"
+        },
+        {
+            "hu": "eső",
+            "en": "rain",
+            "de": "der Regen"
+        },
+        {
+            "hu": "esik",
+            "en": "raining",
+            "de": "Regnet"
+        },
+        {
+            "hu": "minedgy",
+            "en": "never mind",
+            "de": "egal"
+        },
+        {
+            "hu": "stb",
+            "en": "stb",
+            "de": "stb"
+        }
+    ],
+    "adjectives": [
+        {
+            "hu": "érdekes",
+            "en": "interesting",
+            "de": "interessant"
+        },
+        {
+            "hu": "unalmas",
+            "en": "boring",
+            "de": "langweilig"
+        },
+        {
+            "hu": "okos",
+            "en": "clever",
+            "de": "klug"
+        },
+        {
+            "hu": "buta",
+            "en": "silly",
+            "de": "dumm"
+        },
+        {
+            "hu": "lusta",
+            "en": "lazy",
+            "de": "faul"
+        },
+        {
+            "hu": "szorgalmas",
+            "en": "diligent",
+            "de": "fleißig"
+        },
+        {
+            "hu": "kicsi",
+            "en": "small",
+            "de": "klein"
+        },
+        {
+            "hu": "nagy",
+            "en": "big",
+            "de": "groß"
+        },
+        {
+            "hu": "hosszú",
+            "en": "long",
+            "de": "lang"
+        },
+        {
+            "hu": "rövid",
+            "en": "short",
+            "de": "kurz"
+        },
+        {
+            "hu": "széles",
+            "en": "wide",
+            "de": "breit"
+        },
+        {
+            "hu": "magas",
+            "en": "high",
+            "de": "hoch"
+        },
+        {
+            "hu": "alacsony",
+            "en": "low",
+            "de": "niedrig"
+        },
+        {
+            "hu": "fáradt",
+            "en": "tired",
+            "de": "müde"
+        },
+        {
+            "hu": "kipihent",
+            "en": "relaxed",
+            "de": "entspannt"
+        },
+        {
+            "hu": "hideg",
+            "en": "cold",
+            "de": "kalt"
+        },
+        {
+            "hu": "meleg",
+            "en": "warm",
+            "de": "warm"
+        },
+        {
+            "hu": "kényelmes",
+            "en": "comfortable",
+            "de": "gemütlich"
+        },
+        {
+            "hu": "kényelmetlen",
+            "en": "uncomfortable",
+            "de": "unbequem"
+        },
+        {
+            "hu": "szomjas",
+            "en": "thirsty",
+            "de": "durstig"
+        },
+        {
+            "hu": "éhes",
+            "en": "hungry",
+            "de": "hungrig"
+        },
+        {
+            "hu": "dühös",
+            "en": "angry",
+            "de": "böse"
+        },
+        {
+            "hu": "nyugodt",
+            "en": "calm",
+            "de": "Ruhe"
+        },
+        {
+            "hu": "ízletes",
+            "en": "tasty",
+            "de": "lecker"
+        },
+        {
+            "hu": "vidám",
+            "en": "happy",
+            "de": "glücklich"
+        },
+        {
+            "hu": "szomorú",
+            "en": "sad",
+            "de": "traurig"
+        },
+        {
+            "hu": "stb",
+            "en": "stb",
+            "de": "stb"
+        }
+    ],
+    "grammar": [
+
     ]
 }
