@@ -765,15 +765,9 @@
             "note": "USODA"
         },
         {
-            "hu": "mert (4)",
+            "hu": "mert",
             "en": "because",
-            "de": "denn",
-            "note": "USODA"
-        },
-        {
-            "hu": "mert (2)",
-            "en": "thus",
-            "de": "da",
+            "de": "dann",
             "note": "USODA"
         },
         {
