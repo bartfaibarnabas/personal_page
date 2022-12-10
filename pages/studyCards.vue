@@ -7,13 +7,26 @@
         dark
       >
       <v-tab>Igék</v-tab>
-      <v-tab>stb</v-tab>
+      <v-tab>Főnevek</v-tab>
+      <v-tab>Melléknevek</v-tab>
+      <v-tab>Kötőszavak</v-tab>
+      <v-tab>Elöljárók</v-tab>
     </v-tabs>
     <v-tabs-items v-model="tab">
       <v-tab-item>
-        <studyCard :lightMode="lightMode" v-for="verb in verbs" :key="verb.hu" :item="verb" :showAnswers="showAnswers"/>    
+        <studyCard :lightMode="lightMode" v-for="item in verbs" :key="item.hu" :item="item" :showAnswers="showAnswers" verb/>    
       </v-tab-item>
-      <v-tab-item>   
+      <v-tab-item>
+        <studyCard :lightMode="lightMode" v-for="item in nouns" :key="item.hu" :item="item" :showAnswers="showAnswers"/>       
+      </v-tab-item>
+      <v-tab-item>
+        <studyCard :lightMode="lightMode" v-for="item in adjectives" :key="item.hu" :item="item" :showAnswers="showAnswers"/>       
+      </v-tab-item>
+      <v-tab-item>
+        <studyCard :lightMode="lightMode" v-for="item in conjunctions" :key="item.hu" :item="item" :showAnswers="showAnswers"/>       
+      </v-tab-item>
+      <v-tab-item>
+        <studyCard :lightMode="lightMode" v-for="item in foremens" :key="item.hu" :item="item" :showAnswers="showAnswers"/>       
       </v-tab-item>
     </v-tabs-items>
   </div>
@@ -57,7 +70,19 @@ export default {
       return this.$store.state.user;
     },
     verbs() {
-      return words.verbs;
+      return words.verbs.reverse();
+    },
+    nouns() {
+      return words.nouns.reverse();
+    },
+    adjectives() {
+      return words.adjectives.reverse();
+    },
+    conjunctions() {
+      return words.conjunctions;
+    },
+    foremens() {
+      return words.foremens;
     },
   },
 }

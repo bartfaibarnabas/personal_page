@@ -33,22 +33,22 @@
         {
             "hu": "látni",
             "en": "see",
-            "de": "Sehen"
+            "de": "sehen"
         },
         {
             "hu": "válaszolni",
             "en": "answer",
-            "de": "Antworten"
+            "de": "antworten"
         },
         {
             "hu": "aludni",
             "en": "sleep",
-            "de": "Schlafen"
+            "de": "schlafen"
         },
         {
             "hu": "írni",
             "en": "write",
-            "de": "Schreiben"
+            "de": "schreiben"
         },
         {
             "hu": "csinál",
@@ -58,22 +58,22 @@
         {
             "hu": "élni",
             "en": "live",
-            "de": "Leben"
+            "de": "leben"
         },
         {
             "hu": "játszik",
             "en": "playe",
-            "de": "Spielen"
+            "de": "spielen"
         },
         {
             "hu": "érteni",
             "en": "understand",
-            "de": "Verstehen"
+            "de": "verstehen"
         },
         {
             "hu": "nevetni",
             "en": "laugh",
-            "de": "Lachen"
+            "de": "lachen"
         },
         {
             "hu": "hozni",
@@ -88,7 +88,7 @@
         {
             "hu": "énekel",
             "en": "sing",
-            "de": "Singen"
+            "de": "singen"
         },
         {
             "hu": "olvasni",
@@ -98,17 +98,17 @@
         {
             "hu": "találkozni",
             "en": "meet",
-            "de": "Treffen"
+            "de": "treffen"
         },
         {
             "hu": "futni",
             "en": "run",
-            "de": "Laufen"
+            "de": "laufen"
         },
         {
             "hu": "elfelejten",
             "en": "forget",
-            "de": "Vergessen"
+            "de": "vergessen"
         },
         {
             "hu": "segít",
@@ -118,23 +118,22 @@
         {
             "hu": "válni valamivé",
             "en": "become",
-            "de": "Werden"
+            "de": "werden"
         },
-
         {
             "hu": "beszélni",
             "en": "speak",
-            "de": "Sprechen"
+            "de": "sprechen"
         },
         {
             "hu": "mosni",
             "en": "wash",
-            "de": "Waschen"
+            "de": "waschen"
         },
         {
             "hu": "viselni",
             "en": "wear",
-            "de": "Tragen"
+            "de": "tragen"
         },
         {
             "hu": "adni",
@@ -149,17 +148,17 @@
         {
             "hu": "meghívni",
             "en": "invite",
-            "de": "Einladen"
+            "de": "einladen"
         },
         {
             "hu": "kitakarítani",
             "en": "clean",
-            "de": "Aufraumen"
+            "de": "aufraumen"
         },
         {
             "hu": "elindulni",
             "en": "depart",
-            "de": "Abfahren"
+            "de": "abfahren"
         },
         {
             "hu": "elhagyni",
@@ -179,43 +178,43 @@
         {
             "hu": "becsukni",
             "en": "close",
-            "de": "Zumachen"
+            "de": "zumachen"
         },
         {
             "hu": "meglátogat",
             "en": "visit",
-            "de": "Besuche"
+            "de": "besuche"
         },
         {
             "hu": "fizetni",
             "en": "pay",
-            "de": "Bezahlen"
+            "de": "bezahlen"
         },
         {
             "hu": "számol",
             "en": "count",
-            "de": "Zahlen"
+            "de": "zahlen"
         },
         {
             "hu": "ajánlani",
             "en": "offer",
-            "de": "Empfehlen"
+            "de": "empfehlen"
         },
         {
-            "hu": "Elküldeni",
+            "hu": "Elküldeni (formális)",
             "en": "send",
             "de": "senden"
         },
         {
             "hu": "magyarázni",
             "en": "explain",
-            "de": "Erklaren"
+            "de": "erklaren"
         },
 
         {
             "hu": "eladni",
             "en": "sell",
-            "de": "Verkaufen"
+            "de": "verkaufen"
         },
         {
             "hu": "venni",
@@ -225,12 +224,12 @@
         {
             "hu": "felöltözni",
             "en": "get dressed",
-            "de": "Anziehen"
+            "de": "anziehen"
         },
         {
             "hu": "bevásárolni",
             "en": "shop",
-            "de": "Einkaufen"
+            "de": "einkaufen"
         },
         {
             "hu": "együtt jönni",
@@ -240,17 +239,17 @@
         {
             "hu": "kimenni, elmenni szórakozni",
             "en": "go out",
-            "de": "Ausgehen"
+            "de": "ausgehen"
         },
         {
             "hu": "megjönni",
             "en": "come",
-            "de": "Ankommen"
+            "de": "ankommen"
         },
         {
             "hu": "küldeni",
             "en": "send",
-            "de": "Schicken"
+            "de": "schicken"
         },
         {
             "hu": "elutasít",
@@ -270,12 +269,12 @@
         {
             "hu": "szükségem van rá",
             "en": "need",
-            "de": "Brauchen"
+            "de": "brauchen"
         },
         {
             "hu": "tudhat",
             "en": "can",
-            "de": "Können"
+            "de": "können"
         },
         {
             "hu": "szabad",
@@ -285,17 +284,17 @@
         {
             "hu": "akar",
             "en": "want",
-            "de": "Wollen"
+            "de": "wollen"
         },
         {
             "hu": "szeretni",
             "en": "like",
-            "de": "Mögen"
+            "de": "mögen"
         },
         {
             "hu": "kell",
             "en": "have to",
-            "de": "Sollen"
+            "de": "sollen"
         },
         {
             "hu": "muszáj / kell ",
@@ -306,6 +305,742 @@
             "hu": "szeretnék",
             "en": "like",
             "de": "möchten"
+        },
+        {
+            "hu": "húst sütni",
+            "en": "fry",
+            "de": "braten"
+        },
+        {
+            "hu": "stb",
+            "en": "stb",
+            "de": "stb"
+        }
+    ],
+    "nouns": [
+        {
+            "hu": "egészség",
+            "en": "health",
+            "de": "die Gesundheit"
+        },
+        {
+            "hu": "táplálkozás",
+            "en": "",
+            "de": "? Ernährung"
+        },
+        {
+            "hu": "gyümölcs",
+            "en": "fruit",
+            "de": "? Obst"
+        },
+        {
+            "hu": "zöldség",
+            "en": "vegetable",
+            "de": "das Gemüse"
+        },
+        {
+            "hu": "kenyér",
+            "en": "bread",
+            "de": "das Brot"
+        },
+        {
+            "hu": "otthon",
+            "en": "home",
+            "de": "das Zuhause"
+        },
+        {
+            "hu": "ebéd",
+            "en": "lunch",
+            "de": "das Mittagessen"
+        },
+        {
+            "hu": "munkahely",
+            "en": "workplace",
+            "de": "der Arbeitsplatz"
+        },
+        {
+            "hu": "burgonya",
+            "en": "potato",
+            "de": "die Kartoffel"
+        },
+        {
+            "hu": "szék",
+            "en": "chair",
+            "de": "der Stuhl"
+        },
+        {
+            "hu": "asztal",
+            "en": "table",
+            "de": "der Tisch"
+        },
+        {
+            "hu": "szekrény",
+            "en": "wardrobe",
+            "de": "Der Schrank"
+        },
+        {
+            "hu": "hűtőszekrény",
+            "en": "fridge",
+            "de": "Der Kühlschrank"
+        },
+
+        {
+            "hu": "balaton",
+            "en": "Lake Balaton",
+            "de": "Plattensee"
+        },
+        {
+            "hu": "kép",
+            "en": "picture",
+            "de": "das Build"
+        },
+        {
+            "hu": "ágy",
+            "en": "bed",
+            "de": "das Bett"
+        },
+        {
+            "hu": "függöny",
+            "en": "curtain",
+            "de": "der Vorhang"
+        },
+        {
+            "hu": "nappali",
+            "en": "livingroom",
+            "de": "das Wohnzimmer"
+        },
+        {
+            "hu": "hálószóba",
+            "en": "bedroom",
+            "de": "das Schlafzimmer"
+        },
+        {
+            "hu": "konyha",
+            "en": "kitchen",
+            "de": "die Küche"
+        },
+        {
+            "hu": "Előszoba",
+            "en": "ante-room",
+            "de": "das vorzimmer"
+        },
+        {
+            "hu": "fürdőszoba",
+            "en": "bathroom",
+            "de": "das Badezimmer"
+        },
+        {
+            "hu": "terasz",
+            "en": "balcony",
+            "de": "die Terasse"
+        },
+        {
+            "hu": "szőnyeg",
+            "en": "carpet",
+            "de": "der Teppich"
+        },
+        {
+            "hu": "mikró",
+            "en": "microwave",
+            "de": "Die Mikrowelle"
+        },
+        {
+            "hu": "kés",
+            "en": "knife",
+            "de": "das Messer"
+        },
+        {
+            "hu": "villa",
+            "en": "fork",
+            "de": "die Gable"
+        },
+        {
+            "hu": "kanál",
+            "en": "spoon",
+            "de": "der Löffel"
+        },
+        {
+            "hu": "tál",
+            "en": "bowl",
+            "de": "? Schüssel"
+        },
+        {
+            "hu": "tányér",
+            "en": "plate",
+            "de": "der Teller"
+        },
+        {
+            "hu": "porszívó",
+            "en": "vacuum cleaner",
+            "de": "Der Staubsauger"
+        },
+        {
+            "hu": "mosógép",
+            "en": "washing machine",
+            "de": "Die Waschmaschine"
+        },
+        {
+            "hu": "mosogató",
+            "en": "sink",
+            "de": "das Waschbecken"
+        },
+        {
+            "hu": "utazás",
+            "en": "travel",
+            "de": "die Reise"
+        },
+        {
+            "hu": "könyv",
+            "en": "book",
+            "de": "das Buch"
+        },
+        {
+            "hu": "szülinap",
+            "en": "birthday",
+            "de": "der Geburstag"
+        },
+        {
+            "hu": "torta",
+            "en": "cake",
+            "de": "der Kuchen"
+        },
+        {
+            "hu": "karácsony",
+            "en": "christmas",
+            "de": "? Weihnachten"
+        },
+        {
+            "hu": "festő",
+            "en": "painter",
+            "de": "der Maler"
+        },
+        {
+            "hu": "pincér",
+            "en": "waiter",
+            "de": "der Kellner"
+        },
+        {
+            "hu": "fodrász",
+            "en": "hairdresser",
+            "de": "der Friseur"
+        },
+        {
+            "hu": "tűzoltó",
+            "en": "firefigter",
+            "de": "der Feuerwehrmann"
+        },
+        {
+            "hu": "autószerelő",
+            "en": "car mechanic",
+            "de": "der Automechaniker"
+        },
+        {
+            "hu": "pénz",
+            "en": "money",
+            "de": "das Geld"
+        },
+        {
+            "hu": "időjárás",
+            "en": "weather",
+            "de": "das Wetter"
+        },
+        {
+            "hu": "eső",
+            "en": "rain",
+            "de": "der Regen"
+        },
+        {
+            "hu": "esik az eső",
+            "en": "it is raining",
+            "de": "Regnet"
+        },
+        {
+            "hu": "mindegy",
+            "en": "never mind",
+            "de": "egal"
+        },
+        {
+            "hu": "bolt",
+            "en": "shop",
+            "de": "Der Laden"
+        },
+        {
+            "hu": "szivacs",
+            "en": "sponge",
+            "de": "der Schwamm"
+        },
+        {
+            "hu": "mosogatógép",
+            "en": "dishwasher",
+            "de": "die Geschirrspüler"
+        }
+    ],
+    "adjectives": [
+        {
+            "hu": "érdekes",
+            "en": "interesting",
+            "de": "interessant"
+        },
+        {
+            "hu": "unalmas",
+            "en": "boring",
+            "de": "langweilig"
+        },
+        {
+            "hu": "okos",
+            "en": "clever",
+            "de": "klug"
+        },
+        {
+            "hu": "buta",
+            "en": "silly",
+            "de": "dumm"
+        },
+        {
+            "hu": "lusta",
+            "en": "lazy",
+            "de": "faul"
+        },
+        {
+            "hu": "szorgalmas",
+            "en": "diligent",
+            "de": "fleißig"
+        },
+        {
+            "hu": "kicsi",
+            "en": "small",
+            "de": "klein"
+        },
+        {
+            "hu": "nagy",
+            "en": "big",
+            "de": "groß"
+        },
+        {
+            "hu": "hosszú",
+            "en": "long",
+            "de": "lang"
+        },
+        {
+            "hu": "rövid",
+            "en": "short",
+            "de": "kurz"
+        },
+        {
+            "hu": "széles",
+            "en": "wide",
+            "de": "breit"
+        },
+        {
+            "hu": "magas",
+            "en": "high",
+            "de": "hoch"
+        },
+        {
+            "hu": "alacsony",
+            "en": "low",
+            "de": "niedrig"
+        },
+        {
+            "hu": "fáradt",
+            "en": "tired",
+            "de": "müde"
+        },
+        {
+            "hu": "kipihent",
+            "en": "relaxed",
+            "de": "entspannt"
+        },
+        {
+            "hu": "hideg",
+            "en": "cold",
+            "de": "kalt"
+        },
+        {
+            "hu": "meleg",
+            "en": "warm",
+            "de": "warm"
+        },
+        {
+            "hu": "kényelmes",
+            "en": "comfortable",
+            "de": "gemütlich"
+        },
+        {
+            "hu": "kényelmetlen",
+            "en": "uncomfortable",
+            "de": "unbequem"
+        },
+        {
+            "hu": "szomjas",
+            "en": "thirsty",
+            "de": "durstig"
+        },
+        {
+            "hu": "éhes",
+            "en": "hungry",
+            "de": "hungrig"
+        },
+        {
+            "hu": "dühös",
+            "en": "angry",
+            "de": "böse"
+        },
+        {
+            "hu": "nyugodt",
+            "en": "calm",
+            "de": "Ruhe"
+        },
+        {
+            "hu": "ízletes",
+            "en": "tasty",
+            "de": "lecker"
+        },
+        {
+            "hu": "vidám",
+            "en": "happy",
+            "de": "glücklich"
+        },
+        {
+            "hu": "szomorú",
+            "en": "sad",
+            "de": "traurig"
+        },
+        {
+            "hu": "kövér",
+            "en": "fat",
+            "de": "dick"
+        },
+        {
+            "hu": "sovány",
+            "en": "skinny",
+            "de": "dünn"
+        },
+        {
+            "hu": "féltékeny",
+            "en": "jealous",
+            "de": "eifersüchtig "
+        },
+        {
+            "hu": "szép",
+            "en": "beautyful",
+            "de": "hübsch"
+        },
+        {
+            "hu": "csúnya",
+            "en": "ugly",
+            "de": "hasslich"
+        },
+        {
+            "hu": "kemény",
+            "en": "hard",
+            "de": "hart"
+        },
+        {
+            "hu": "puha",
+            "en": "soft",
+            "de": "sanft"
+        }
+    ],
+    "grammar": [
+
+    ],
+    "conjunctions": [
+        {
+            "hu": "és",
+            "en": "and",
+            "de": "und",
+            "note": "USODA"
+        },
+        {
+            "hu": "hanem",
+            "en": "but also",
+            "de": "sonder",
+            "note": "USODA"
+        },
+        {
+            "hu": "vagy",
+            "en": "or",
+            "de": "oder",
+            "note": "USODA"
+        },
+        {
+            "hu": "mert",
+            "en": "because",
+            "de": "dann",
+            "note": "USODA"
+        },
+        {
+            "hu": "de",
+            "en": "but",
+            "de": "aber",
+            "note": "USODA"
+        },
+        {
+            "hu": "csupán, csak",
+            "en": "only",
+            "de": "allein",
+            "note": "USODA"
+        },
+        {
+            "hu": "annak ellenére",
+            "en": "nevertheless",
+            "de": "trotzdem",
+            "note": "fordított"
+        },
+        {
+            "hu": "ezért",
+            "en": "therefore",
+            "de": "deshalb",
+            "note": "fordított"
+        },
+        {
+            "hu": "azután",
+            "en": "then",
+            "de": "dann",
+            "note": "fordított"
+        },
+        {
+            "hu": "azonban, hiszen, mégis",
+            "en": "yet",
+            "de": "doch",
+            "note": "fordított + sima"
+        },
+        {
+            "hu": "csak 2",
+            "en": "only",
+            "de": "nur",
+            "note": "fordított + sima"
+        },
+        {
+            "hu": "mert",
+            "en": "because",
+            "de": "weil",
+            "note": "kati"
+        },
+        {
+            "hu": "hogy",
+            "en": "that",
+            "de": "dass",
+            "note": "kati"
+        },
+        {
+            "hu": "amikor, ha",
+            "en": "if",
+            "de": "wenn",
+            "note": "kati"
+        },
+        {
+            "hu": "abban az esetben ha",
+            "en": "",
+            "de": "falls",
+            "note": "kati"
+        },
+        {
+            "hu": "habár",
+            "en": "althaugh",
+            "de": "obwohl",
+            "note": "kati"
+        }
+    ],    
+    "foremens": [
+        {
+            "hu": "-ért, -nak/-nek, miatt",
+            "en": "",
+            "de": "für",
+            "note": "tárgyeset"
+        },
+        {
+            "hu": "-ig (hely, idő)",
+            "en": "",
+            "de": "bis",
+            "note": "tárgyeset"
+        },
+        {
+            "hu": "mentén",
+            "en": "",
+            "de": "entlang",
+            "note": "tárgyeset"
+        },
+        {
+            "hu": "át, keresztül",
+            "en": "",
+            "de": "durch",
+            "note": "tárgyeset"
+        },
+        {
+            "hu": " ellen/szemben valakivel/valamivel szemben, körül időben",
+            "en": "",
+            "de": "gegen",
+            "note": "tárgyeset"
+        },
+        {
+            "hu": "körül, időben időhatározó",
+            "en": "",
+            "de": "um",
+            "note": "tárgyeset"
+        },
+        {
+            "hu": "nélkül",
+            "en": "without",
+            "de": "ohne",
+            "note": "tárgyeset"
+        },
+        {
+            "hu": " -ból/-ből",
+            "en": "",
+            "de": "aus",
+            "note": "Részeseset"
+        },
+        {
+            "hu": "-nál, -nél",
+            "en": "",
+            "de": "bei",
+            "note": "Részeseset"
+        },
+        {
+            "hu": "-tól/-től -ról/-ről",
+            "en": "",
+            "de": "ab",
+            "note": "Részeseset"
+        },
+        {
+            "hu": "kívül",
+            "en": "",
+            "de": "auβer",
+            "note": "Részeseset"
+        },
+        {
+            "hu": "ellen, ellenére",
+            "en": "opposite",
+            "de": "entgegen",
+            "note": "Részeseset"
+        },
+        {
+            "hu": "mentén pl utca",
+            "en": "along",
+            "de": "entlang",
+            "note": "Részeseset"
+        },
+        {
+            "hu": "szemben (hely)",
+            "en": "",
+            "de": "gegenüber",
+            "note": "Részeseset"
+        },
+        {
+            "hu": "után, múlva, -ba/-be, -ral/-rel",
+            "en": "",
+            "de": "nach",
+            "note": "Részeseset"
+        },
+        {
+            "hu": "óta",
+            "en": "",
+            "de": "seit",
+            "note": "Részeseset"
+        },
+        {
+            "hu": "-val/-vel",
+            "en": "",
+            "de": "mit",
+            "note": "Részeseset"
+        },
+        {
+            "hu": "-tól/-től, -ról/-ről, -ból/-ből",
+            "en": "",
+            "de": "von",
+            "note": "Részeseset"
+        },
+        {
+            "hu": " -hoz/-hez/-höz, -ra/-re, -vá/-vé, -on/-en/-ön",
+            "en": "",
+            "de": "zu",
+            "note": "Részeseset"
+        },
+        {
+            "hu": "ahelyett/helyett",
+            "en": "",
+            "de": "anstatt",
+            "note": "Birtokos "
+        },
+        {
+            "hu": "alatt/közbe",
+            "en": "under",
+            "de": "während",
+            "note": "Birtokos "
+        },
+        {
+            "hu": "miatt, végett",
+            "en": "",
+            "de": "wegen",
+            "note": "Birtokos "
+        },
+        {
+            "hu": "ellenére",
+            "en": "",
+            "de": "trotz",
+            "note": "Birtokos"
+        },
+        {
+            "hu": "Valami segítségével",
+            "en": "",
+            "de": "mittels",
+            "note": "Birtokos"
+        },
+        {
+            "hu": "tárgy: -rá/-ré (vízszintes) részes: on-en-ön",
+            "en": "",
+            "de": "auf",
+            "note": "Tárgy -és részes esettel"
+        },
+        {
+            "hu": "tárgyesettel: -ra/-re ,  részes esettel: -on/-en/-ön, -nél/-nél",
+            "en": "",
+            "de": "an",
+            "note": "Tárgy -és részes esettel"
+        },
+        {
+            "hu":  "tárgyesettel: -ba/-be, részes esettel: ban-ben",
+            "en": "",
+            "de": "in",
+            "note": "Tárgy -és részes esettel"
+        },
+        {
+            "hu": "tárgyesettel: mögé, r: mögött",
+            "en": "",
+            "de": "hinter",
+            "note": "Tárgy -és részes esettel"
+        },
+        {
+            "hu": "t: elé, r: előtt",
+            "en": "",
+            "de": "vor",
+            "note": "Tárgy -és részes esettel"
+        },
+        {
+            "hu": "t: mellé, r: mellett",
+            "en": "",
+            "de": "neben",
+            "note": "Tárgy -és részes esettel"
+        },
+        {
+            "hu": "t: alá, r: alatt",
+            "en": "",
+            "de": "unter",
+            "note": "Tárgy -és részes esettel"
+        },
+        {
+            "hu": "t: felé, r: felett",
+            "en": "",
+            "de": "über",
+            "note": "Tárgy -és részes esettel"
+        },
+        {
+            "hu": "t: közé, r: között",
+            "en": "",
+            "de": "zwischen",
+            "note": "Tárgy -és részes esettel"
         }
     ]
 }

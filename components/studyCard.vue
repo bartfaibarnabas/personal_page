@@ -2,10 +2,13 @@
 <div>
         <v-card :light="lightMode" class="pa-4 word-card">
               <v-row>
-                <v-col cols="8" sm="10" lg="11">
+                <v-col cols="6" sm="7" lg="7">
                   <p  v-html="item.hu"></p>
-                </v-col >
-                <v-col cols="4" sm="2" lg="1" align="right">
+                </v-col>
+                <v-col cols="3" sm="4" lg="4">
+                  <p v-if="item.note" class="right">{{item.note}}</p>
+                </v-col>
+                <v-col cols="4" sm="1" lg="1" align="right">
                   <v-btn xs1 text @click="check()">
                     <v-icon center>{{(checked || showAnswers) ? 'mdi-eye-off' : 'mdi-eye'}}</v-icon>
                   </v-btn>
@@ -17,7 +20,7 @@
                     <p class="text-answer" :class="{ 'correct': isDeCorrect }" v-if="checked || showAnswers" v-html="item.de"></p>
                 </v-col>
                 <v-col class="answerField">
-                    <v-text-field label="en (to ...)" outlined v-model="enAnswer"></v-text-field>
+                    <v-text-field :label="verb ? 'en (to ...)' : 'eng'" outlined v-model="enAnswer"></v-text-field>
                     <p class="text-answer" :class="{ 'correct': isEnCorrect }" v-if="checked || showAnswers" v-html="item.en"></p>
                 </v-col>
             </v-row>
@@ -39,6 +42,7 @@ export default {
     props: {
         lightMode: Boolean,
         item: Object,
+        verb: Boolean,
         showAnswers: Boolean,
     },
     methods: {
@@ -47,7 +51,7 @@ export default {
         }
     },
     watch: {
-        deAnser() {
+        deAnswer() {
             if (this.deAnswer === this.item.de) {
                 this.isDeCorrect = true;
             } else {
@@ -83,6 +87,10 @@ export default {
     }
     .answerField {
         margin-bottom: 15px;
+    }
+
+    .right {
+        float: right;
     }
 
 

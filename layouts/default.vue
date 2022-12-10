@@ -54,8 +54,8 @@ export default {
     }
   },
   created() {
-    this.setAuthCookie();
-    this.verifyCookie();
+    /*this.setAuthCookie();
+    this.verifyCookie();*/
 
   },
   methods: {
