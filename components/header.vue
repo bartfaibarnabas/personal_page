@@ -2,8 +2,8 @@
 <div>
   <div class="navigation">
     <ul>
-      <li class="list" v-for="menu in menuList" :key="menu.id" :class="{'active': selected === menu.id}" @click="liClicked(menu)">
-        <v-btn :ripple="false" depressed @click="menu.clickEvent">
+      <li class="list" v-for="menu in menuList" :key="menu.id" :class="{'active': selected === menu.id}">
+        <v-btn :ripple="false" depressed @click="menu.clickEvent(menu.id, menu.path)">
           <v-icon class="icon">{{menu.icon}}</v-icon>
           <span class="text">{{menu.text}}</span>
         </v-btn>
@@ -12,20 +12,16 @@
     </ul>
 
   </div>
-  <login v-model="loginDailog" :close="closeDialog"/>
 </div>
 </template>
 
 <script>
-import login from '../components/login.vue'
 export default {
   name: 'DefaultLayout',
   components: {
-    login,
   },
   data () {
     return {
-      loginDailog: false,
       selected: 0,
     }
   },
@@ -34,50 +30,19 @@ export default {
   },
   methods: {
     selectByRoute() {
-      const routeMenu = this.menuList.find((menuItem) => ( menuItem.text.toLowerCase() === this.$route.name.toLowerCase() ));
+      const routeMenu = this.menuList.find((menuItem) => ( menuItem.path === this.$route.name.toLowerCase() ));
       if (routeMenu) {
-        this.select(routeMenu);
+        this.select(routeMenu.id);
       }
     },
-    openLoginDialog() {
-      this.select(this.menuList[2]);
-      this.loginDailog = true;
-    },
-    closeDialog() {
-      this.loginDailog = false;
-      this.selectByRoute();
-    },
-    logout() {
-        this.$store.commit('setUser', null);
-        this.navigateToHome();
-    },
-    navigateToTest() {
+    navigate(id, path) {
+      this.select(id);
       this.$router.push({
-        path: '/quiz',
+        path: `/${path}`,
       })
     },
-    navigateToHome() {
-      this.$router.push({
-        path: '/home',
-      })
-    },
-    navigateToInformation() {
-      this.$router.push({
-        path: '/information',
-      })
-    },
-    navigateToMore() {
-      this.$router.push({
-        path: '/more',
-      })
-    },
-    navigateToStudyCards() {
-      this.$router.push({
-        path: '/studyCards',
-      });
-    },
-    select(item) {
-      this.selected = item.id;
+    select(id) {
+      this.selected = id;
     },
     liClicked(item) {
       console.log(item.text);
@@ -85,72 +50,28 @@ export default {
   },
   computed: {
     menuList() {
-      let menu = [
+      const menu = [
         {
-          icon: 'mdi-home',
-          clickEvent: this.navigateToHome,
-          text: 'Home',
+          icon: 'mdi-account-box',
+          clickEvent: this.navigate,
+          text: 'About me',
+          path: 'home',
+        },
+        {
+          icon: 'mdi-laptop',
+          clickEvent: this.navigate,
+          text: 'Experience',
+          path: 'experience',
         },
         {
           icon: 'mdi-information',
-          clickEvent: this.navigateToInformation,
-          text: 'Information',
-        },
-        {
-          icon: 'mdi-dots-horizontal-circle',
-          clickEvent: this.navigateToMore,
-          text: 'More',
-        },
-        {
-          icon: 'mdi-cards',
-          clickEvent: this.navigateToStudyCards,
-          text: 'studyCards',
-        },
-        {
-          icon: 'mdi-account',
-          clickEvent: this.openLoginDialog,
-          text: 'Login',
+          clickEvent: this.navigate,
+          text: 'Contact',
+          path: 'contact',
         },
       ];
-      if (this.user) {
-        menu = [
-          {
-            icon: 'mdi-home',
-            clickEvent: this.navigateToHome,
-            text: 'Home',
-          },
-          {
-            icon: 'mdi-information',
-            clickEvent: this.navigateToInformation,
-            text: 'Information',
-          },
-          {
-            icon: 'mdi-dots-horizontal-circle',
-            clickEvent: this.navigateToMore,
-            text: 'More',
-          },
-          {
-            icon: 'mdi-cards',
-            clickEvent: this.navigateToStudyCards,
-            text: 'studyCards',
-          },
-          {
-            icon: 'mdi-school',
-            clickEvent: this.navigateToTest,
-            text: 'Quiz',
-          },
-          {
-            icon: 'mdi-logout',
-            clickEvent: this.logout,
-            text: 'Logout',
-          },
-        ];
-      }
       return menu.map((item, index) => ({ ...item, id: index }));
       },
-    user() {
-      return this.$store.state.user;
-    },
     route() {
       return this.$route.name;
     },
@@ -166,7 +87,7 @@ export default {
 }
 </script>
 <style scoped lang="scss">
-.navigation ::v-deep.v-btn:before {
+.navigation .v-btn:before {
   background: unset !important;
 }
 .navigation {
@@ -196,7 +117,7 @@ export default {
     }
   }
 }
-.navigation ul li button ::v-deep.v-btn__content {
+.navigation ul li button .v-btn__content {
           position:relative;
           display:flex;
           justify-content: center;
@@ -224,7 +145,7 @@ export default {
             transform: translateY(-20px);
           }
 }
-.navigation ul li:hover ::v-deep.v-btn__content{
+.navigation ul li:hover  .v-btn__content{
   .icon {
     transform: translateY(15px);
   }
@@ -233,7 +154,7 @@ export default {
     transform: translateY(-10px);
   }
 }
-.navigation ul li.active ::v-deep.v-btn__content{
+.navigation ul li.active  .v-btn__content{
   .icon {
     transform: translateY(35px);
     color: #121212
@@ -299,7 +220,7 @@ export default {
   transform: translateX(calc(70px * 5))
 }
 @keyframes changeColor {
-  0% {background-color: #29fd53;}
+  0% {background-color: #5729fd;}
   50% {background-color: red;}
   100% {background-color: #29fd53;}
 }
