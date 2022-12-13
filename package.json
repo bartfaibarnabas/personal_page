@@ -24,6 +24,7 @@
     "webpack": "^4.46.0"
   },
   "devDependencies": {
+    "@nuxtjs/device": "^3.0.0",
     "@nuxtjs/vuetify": "^1.12.3",
     "chromedriver": "^96.0.0",
     "eslint": "^8.18.0",

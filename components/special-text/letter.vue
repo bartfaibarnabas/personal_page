@@ -5,6 +5,7 @@
         <span :id="'title-char'" class="title-char"
           @mouseover="hover = true"
           @mouseleave="hover = false"
+          @touchend="hover = false"
         >{{char}}</span>
     </h1>
 </template>
