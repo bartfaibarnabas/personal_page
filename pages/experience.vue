@@ -3,7 +3,7 @@
     <v-row justify="center" class="page-title-container">
       <special-text text="Experience" />
     </v-row>
-    <v-row>
+    <v-row justify="center">
         <v-timeline :dense="$vuetify.breakpoint.smAndDown" align-top>
           <timeline-item icon="mdi-file-code-outline" color="cyberyellow" title="Frontend Developer" date="04.2019 - 08.2022">
             <v-col

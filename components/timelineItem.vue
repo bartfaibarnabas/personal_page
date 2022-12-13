@@ -3,11 +3,11 @@
     :color="`${color}-bg`"
     fill-dot
     :left="left"
-    :icon="$device.Mobile ? item.icon : null"
+    :icon="$vuetify.breakpoint.mobile ? icon : null"
+    icon-color="black"
     >
     <div class="hover-polygon">
         <div class="inner"></div>
-
     </div>
     <v-card class="time-line-card">
         <v-card-title :class="[{'justify-end': left}, `${color}-bg`, 'title'] ">
@@ -16,7 +16,7 @@
                     <v-icon
                         size="42"
                         class="title-icon mr-4"
-                        v-if="!left && !$device.Mobile"
+                        v-if="!left && !$vuetify.breakpoint.mobile"
                     >
                         {{icon}}
                     </v-icon>
@@ -31,7 +31,7 @@
                     <v-icon
                         size="42"
                         class="ml-4"
-                        v-if="left && !$device.Mobile"
+                        v-if="left && !$vuetify.breakpoint.mobile"
                     >
                         {{icon}}
                     </v-icon>
