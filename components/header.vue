@@ -157,7 +157,7 @@ $size-between-menu-xl: 10rem;
 .navigation ul li.active  .v-btn__content{
   .icon {
     transform: translateY(35px);
-    color: #121212
+    color: $background-page
   }
   .text {
     opacity: 1;
@@ -178,8 +178,11 @@ $size-between-menu-xl: 10rem;
   height: 70px;
   background: $cyberblue;//#29fd53;
   border-radius: 50%;
-  border: 6px solid #121212;
+  border: 6px solid $background-page;
   transition: 0.5s;
+  &:hover {
+    box-shadow: inset 0px 0px 15px -2px $cyberpurple;
+  }
 }
 .indicator::before {
   content: '';
@@ -189,7 +192,7 @@ $size-between-menu-xl: 10rem;
   width: 20px;
   height: 20px;
   border-bottom-right-radius: 20px;
-  box-shadow:1px 10px 0 0 #121212
+  box-shadow:1px 10px 0 0 $background-page
 }
 .indicator::after {
   content: '';
@@ -199,7 +202,7 @@ $size-between-menu-xl: 10rem;
   width: 20px;
   height: 20px;
   border-bottom-left-radius: 20px;
-  box-shadow:-1px 10px 0 0 #121212
+  box-shadow:-1px 10px 0 0 $background-page
 }
 
 .navigation ul li:nth-child(1).active ~ .indicator {

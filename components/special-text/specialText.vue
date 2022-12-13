@@ -24,7 +24,6 @@ export default {
 	},
 	computed: {
 		textArray() {
-			console.log(...this.text);
 			return [...this.text];
 		},
 	},
