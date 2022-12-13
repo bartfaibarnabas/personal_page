@@ -1,5 +1,4 @@
 <template>
-<div>
   <div class="navigation">
     <ul>
       <li class="list" v-for="menu in menuList" :key="menu.id" :class="{'active': selected === menu.id}">
@@ -10,9 +9,7 @@
       </li>
       <div class="indicator"></div>
     </ul>
-
   </div>
-</div>
 </template>
 
 <script>
@@ -52,16 +49,16 @@ export default {
     menuList() {
       const menu = [
         {
+          icon: 'mdi-monitor-star',
+          clickEvent: this.navigate,
+          text: 'Experience',
+          path: 'experience',
+        },
+        {
           icon: 'mdi-account-box',
           clickEvent: this.navigate,
           text: 'About me',
           path: 'home',
-        },
-        {
-          icon: 'mdi-laptop',
-          clickEvent: this.navigate,
-          text: 'Experience',
-          path: 'experience',
         },
         {
           icon: 'mdi-information',
@@ -87,6 +84,8 @@ export default {
 }
 </script>
 <style scoped lang="scss">
+$size-between-menu: 5rem;
+$size-between-menu-xl: 10rem;
 .navigation .v-btn:before {
   background: unset !important;
 }
@@ -100,10 +99,11 @@ export default {
   border-radius: 10px;
   ul {
     display: flex;
+    padding: unset;
     li {
       position: relative;
       list-style: none;
-      width: 70px;
+      width: $size-between-menu;
       height: 70px;
       z-index: 1;
       align-items: center;
@@ -112,7 +112,7 @@ export default {
         min-width: unset !important;
         height: unset !important;
         background: unset !important;
-        width: 70px;
+        width: $size-between-menu;
       }
     }
   }
@@ -173,9 +173,10 @@ export default {
 .indicator {
   bottom: -50%;
   position: absolute;
+  margin-left:calc(#{$size-between-menu} / 2  - 70px / 2);
   width: 70px;
   height: 70px;
-  background: #29fd53;
+  background: $cyberblue;//#29fd53;
   border-radius: 50%;
   border: 6px solid #121212;
   transition: 0.5s;
@@ -200,28 +201,61 @@ export default {
   border-bottom-left-radius: 20px;
   box-shadow:-1px 10px 0 0 #121212
 }
+
 .navigation ul li:nth-child(1).active ~ .indicator {
-  transform: translateX(calc(70px * 0))
+    transform: translateX(calc(#{$size-between-menu} * 0))
+  }
+  .navigation ul li:nth-child(2).active ~ .indicator {
+    transform: translateX(calc(#{$size-between-menu} * 1))
+  }
+  .navigation ul li:nth-child(3).active ~ .indicator {
+    transform: translateX(calc(#{$size-between-menu} * 2))
+  }
+  .navigation ul li:nth-child(4).active ~ .indicator {
+    transform: translateX(calc(#{$size-between-menu} * 3))
+  }
+  .navigation ul li:nth-child(5).active ~ .indicator {
+    animation: changeColor 10s linear infinite;
+    transform: translateX(calc(#{$size-between-menu} * 4))
+  }
+  .navigation ul li:nth-child(6).active ~ .indicator {
+    transform: translateX(calc(#{$size-between-menu} * 5))
+  }
+@media (min-width: 960px) {
+  .navigation ul li {
+    width: $size-between-menu-xl;
+    & button {
+      width: $size-between-menu-xl;
+    }
+  }
+  .indicator {
+    margin-left:calc(#{$size-between-menu-xl} / 2  - 70px / 2);
+  }
+  .navigation ul li:nth-child(1).active ~ .indicator {
+    transform: translateX(calc(#{$size-between-menu-xl} * 0))
+  }
+  .navigation ul li:nth-child(2).active ~ .indicator {
+    transform: translateX(calc(#{$size-between-menu-xl} * 1))
+  }
+  .navigation ul li:nth-child(3).active ~ .indicator {
+    transform: translateX(calc(#{$size-between-menu-xl} * 2))
+  }
+  .navigation ul li:nth-child(4).active ~ .indicator {
+    transform: translateX(calc(#{$size-between-menu-xl} * 3))
+  }
+  .navigation ul li:nth-child(5).active ~ .indicator {
+    transform: translateX(calc(#{$size-between-menu-xl} * 4))
+  }
+  .navigation ul li:nth-child(6).active ~ .indicator {
+    transform: translateX(calc(#{$size-between-menu-xl} * 5))
+  }
+
 }
-.navigation ul li:nth-child(2).active ~ .indicator {
-  transform: translateX(calc(70px * 1))
-}
-.navigation ul li:nth-child(3).active ~ .indicator {
-  transform: translateX(calc(70px * 2))
-}
-.navigation ul li:nth-child(4).active ~ .indicator {
-  transform: translateX(calc(70px * 3))
-}
-.navigation ul li:nth-child(5).active ~ .indicator {
-  animation: changeColor 10s linear infinite;
-  transform: translateX(calc(70px * 4))
-}
-.navigation ul li:nth-child(6).active ~ .indicator {
-  transform: translateX(calc(70px * 5))
-}
+
+
 @keyframes changeColor {
-  0% {background-color: #5729fd;}
-  50% {background-color: red;}
-  100% {background-color: #29fd53;}
+  0% {background-color: $cyberpurple;}
+  50% {background-color: $cyberyellow;}
+  100% {background-color: $cyberpurple;}
 }
 </style> 
