@@ -1,31 +1,24 @@
 <template>
-<div>
   <div class="navigation">
     <ul>
-      <li class="list" v-for="menu in menuList" :key="menu.id" :class="{'active': selected === menu.id}" @click="liClicked(menu)">
-        <v-btn :ripple="false" depressed @click="menu.clickEvent">
+      <li class="list" v-for="menu in menuList" :key="menu.id" :class="{'active': selected === menu.id}">
+        <v-btn :ripple="false" depressed @click="menu.clickEvent(menu.id, menu.path)">
           <v-icon class="icon">{{menu.icon}}</v-icon>
           <span class="text">{{menu.text}}</span>
         </v-btn>
       </li>
       <div class="indicator"></div>
     </ul>
-
   </div>
-  <login v-model="loginDailog" :close="closeDialog"/>
-</div>
 </template>
 
 <script>
-import login from '../components/login.vue'
 export default {
   name: 'DefaultLayout',
   components: {
-    login,
   },
   data () {
     return {
-      loginDailog: false,
       selected: 0,
     }
   },
@@ -34,50 +27,19 @@ export default {
   },
   methods: {
     selectByRoute() {
-      const routeMenu = this.menuList.find((menuItem) => ( menuItem.text.toLowerCase() === this.$route.name.toLowerCase() ));
+      const routeMenu = this.menuList.find((menuItem) => ( menuItem.path === this.$route.name.toLowerCase() ));
       if (routeMenu) {
-        this.select(routeMenu);
+        this.select(routeMenu.id);
       }
     },
-    openLoginDialog() {
-      this.select(this.menuList[2]);
-      this.loginDailog = true;
-    },
-    closeDialog() {
-      this.loginDailog = false;
-      this.selectByRoute();
-    },
-    logout() {
-        this.$store.commit('setUser', null);
-        this.navigateToHome();
-    },
-    navigateToTest() {
+    navigate(id, path) {
+      this.select(id);
       this.$router.push({
-        path: '/quiz',
+        path: `/${path}`,
       })
     },
-    navigateToHome() {
-      this.$router.push({
-        path: '/home',
-      })
-    },
-    navigateToInformation() {
-      this.$router.push({
-        path: '/information',
-      })
-    },
-    navigateToMore() {
-      this.$router.push({
-        path: '/more',
-      })
-    },
-    navigateToStudyCards() {
-      this.$router.push({
-        path: '/studyCards',
-      });
-    },
-    select(item) {
-      this.selected = item.id;
+    select(id) {
+      this.selected = id;
     },
     liClicked(item) {
       console.log(item.text);
@@ -85,72 +47,28 @@ export default {
   },
   computed: {
     menuList() {
-      let menu = [
+      const menu = [
         {
-          icon: 'mdi-home',
-          clickEvent: this.navigateToHome,
-          text: 'Home',
+          icon: 'mdi-monitor-star',
+          clickEvent: this.navigate,
+          text: 'Experience',
+          path: 'experience',
+        },
+        {
+          icon: 'mdi-account-box',
+          clickEvent: this.navigate,
+          text: 'About me',
+          path: 'home',
         },
         {
           icon: 'mdi-information',
-          clickEvent: this.navigateToInformation,
-          text: 'Information',
-        },
-        {
-          icon: 'mdi-dots-horizontal-circle',
-          clickEvent: this.navigateToMore,
-          text: 'More',
-        },
-        {
-          icon: 'mdi-cards',
-          clickEvent: this.navigateToStudyCards,
-          text: 'studyCards',
-        },
-        {
-          icon: 'mdi-account',
-          clickEvent: this.openLoginDialog,
-          text: 'Login',
+          clickEvent: this.navigate,
+          text: 'Contact',
+          path: 'contact',
         },
       ];
-      if (this.user) {
-        menu = [
-          {
-            icon: 'mdi-home',
-            clickEvent: this.navigateToHome,
-            text: 'Home',
-          },
-          {
-            icon: 'mdi-information',
-            clickEvent: this.navigateToInformation,
-            text: 'Information',
-          },
-          {
-            icon: 'mdi-dots-horizontal-circle',
-            clickEvent: this.navigateToMore,
-            text: 'More',
-          },
-          {
-            icon: 'mdi-cards',
-            clickEvent: this.navigateToStudyCards,
-            text: 'studyCards',
-          },
-          {
-            icon: 'mdi-school',
-            clickEvent: this.navigateToTest,
-            text: 'Quiz',
-          },
-          {
-            icon: 'mdi-logout',
-            clickEvent: this.logout,
-            text: 'Logout',
-          },
-        ];
-      }
       return menu.map((item, index) => ({ ...item, id: index }));
       },
-    user() {
-      return this.$store.state.user;
-    },
     route() {
       return this.$route.name;
     },
@@ -166,7 +84,9 @@ export default {
 }
 </script>
 <style scoped lang="scss">
-.navigation ::v-deep.v-btn:before {
+$size-between-menu: 5rem;
+$size-between-menu-xl: 10rem;
+.navigation .v-btn:before {
   background: unset !important;
 }
 .navigation {
@@ -179,10 +99,11 @@ export default {
   border-radius: 10px;
   ul {
     display: flex;
+    padding: unset;
     li {
       position: relative;
       list-style: none;
-      width: 70px;
+      width: $size-between-menu;
       height: 70px;
       z-index: 1;
       align-items: center;
@@ -191,12 +112,12 @@ export default {
         min-width: unset !important;
         height: unset !important;
         background: unset !important;
-        width: 70px;
+        width: $size-between-menu;
       }
     }
   }
 }
-.navigation ul li button ::v-deep.v-btn__content {
+.navigation ul li button .v-btn__content {
           position:relative;
           display:flex;
           justify-content: center;
@@ -224,7 +145,7 @@ export default {
             transform: translateY(-20px);
           }
 }
-.navigation ul li:hover ::v-deep.v-btn__content{
+.navigation ul li:hover  .v-btn__content{
   .icon {
     transform: translateY(15px);
   }
@@ -233,7 +154,7 @@ export default {
     transform: translateY(-10px);
   }
 }
-.navigation ul li.active ::v-deep.v-btn__content{
+.navigation ul li.active  .v-btn__content{
   .icon {
     transform: translateY(35px);
     color: #121212
@@ -252,9 +173,10 @@ export default {
 .indicator {
   bottom: -50%;
   position: absolute;
+  margin-left:calc(#{$size-between-menu} / 2  - 70px / 2);
   width: 70px;
   height: 70px;
-  background: #29fd53;
+  background: $cyberblue;//#29fd53;
   border-radius: 50%;
   border: 6px solid #121212;
   transition: 0.5s;
@@ -279,28 +201,61 @@ export default {
   border-bottom-left-radius: 20px;
   box-shadow:-1px 10px 0 0 #121212
 }
+
 .navigation ul li:nth-child(1).active ~ .indicator {
-  transform: translateX(calc(70px * 0))
+    transform: translateX(calc(#{$size-between-menu} * 0))
+  }
+  .navigation ul li:nth-child(2).active ~ .indicator {
+    transform: translateX(calc(#{$size-between-menu} * 1))
+  }
+  .navigation ul li:nth-child(3).active ~ .indicator {
+    transform: translateX(calc(#{$size-between-menu} * 2))
+  }
+  .navigation ul li:nth-child(4).active ~ .indicator {
+    transform: translateX(calc(#{$size-between-menu} * 3))
+  }
+  .navigation ul li:nth-child(5).active ~ .indicator {
+    animation: changeColor 10s linear infinite;
+    transform: translateX(calc(#{$size-between-menu} * 4))
+  }
+  .navigation ul li:nth-child(6).active ~ .indicator {
+    transform: translateX(calc(#{$size-between-menu} * 5))
+  }
+@media (min-width: 960px) {
+  .navigation ul li {
+    width: $size-between-menu-xl;
+    & button {
+      width: $size-between-menu-xl;
+    }
+  }
+  .indicator {
+    margin-left:calc(#{$size-between-menu-xl} / 2  - 70px / 2);
+  }
+  .navigation ul li:nth-child(1).active ~ .indicator {
+    transform: translateX(calc(#{$size-between-menu-xl} * 0))
+  }
+  .navigation ul li:nth-child(2).active ~ .indicator {
+    transform: translateX(calc(#{$size-between-menu-xl} * 1))
+  }
+  .navigation ul li:nth-child(3).active ~ .indicator {
+    transform: translateX(calc(#{$size-between-menu-xl} * 2))
+  }
+  .navigation ul li:nth-child(4).active ~ .indicator {
+    transform: translateX(calc(#{$size-between-menu-xl} * 3))
+  }
+  .navigation ul li:nth-child(5).active ~ .indicator {
+    transform: translateX(calc(#{$size-between-menu-xl} * 4))
+  }
+  .navigation ul li:nth-child(6).active ~ .indicator {
+    transform: translateX(calc(#{$size-between-menu-xl} * 5))
+  }
+
 }
-.navigation ul li:nth-child(2).active ~ .indicator {
-  transform: translateX(calc(70px * 1))
-}
-.navigation ul li:nth-child(3).active ~ .indicator {
-  transform: translateX(calc(70px * 2))
-}
-.navigation ul li:nth-child(4).active ~ .indicator {
-  transform: translateX(calc(70px * 3))
-}
-.navigation ul li:nth-child(5).active ~ .indicator {
-  animation: changeColor 10s linear infinite;
-  transform: translateX(calc(70px * 4))
-}
-.navigation ul li:nth-child(6).active ~ .indicator {
-  transform: translateX(calc(70px * 5))
-}
+
+
 @keyframes changeColor {
-  0% {background-color: #29fd53;}
-  50% {background-color: red;}
-  100% {background-color: #29fd53;}
+  0% {background-color: $cyberpurple;}
+  50% {background-color: $cyberyellow;}
+  100% {background-color: $cyberpurple;}
 }
 </style> 
