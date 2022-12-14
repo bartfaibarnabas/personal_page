@@ -55,10 +55,10 @@ export default {
           path: 'experience',
         },
         {
-          icon: 'mdi-account-box',
+          icon: 'mdi-human-greeting',
           clickEvent: this.navigate,
-          text: 'About me',
-          path: 'home',
+          text: 'Welcome',
+          path: 'welcome',
         },
         {
           icon: 'mdi-information',

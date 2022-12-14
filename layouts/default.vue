@@ -11,11 +11,11 @@
       <headerMenu/>
       <v-spacer></v-spacer>
     </v-app-bar>
-    <v-main>
-      <v-container>
-        <Nuxt/>
-      </v-container>
-    </v-main>
+      <v-main>
+        <v-container>
+            <Nuxt/>
+        </v-container>
+      </v-main>
     <v-footer :absolute="!fixed" app>
       <span>&copy; {{ new Date().getFullYear() }}</span>
     </v-footer>
@@ -57,7 +57,7 @@ export default {
   }
 }
 </script>
-<style scoped>
+<style scoped lang="scss">
 .v-main {
   padding-top: 200px !important;
 }

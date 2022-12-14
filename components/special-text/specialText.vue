@@ -15,7 +15,6 @@ export default {
 	props: {
 		text: {
 				type: String,
-				default: 'Hey, I am Barnabás, software developer',
 			}
 	},
 	data() {
