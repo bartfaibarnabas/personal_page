@@ -1,11 +1,11 @@
 <template>
-    <h1 :class="{'bouncing': bounce}" @mouseover="bouncing">
+    <h1 :class="{'bouncing': bounce, 'appearing': appear}" @mouseover="bouncing" @touchstart="bouncing" @touchcancel="bouncing">
         <span class="shadow-helper left" :class="{'inactive': !hover}">{{char}}</span>
         <span class="shadow-helper right" :class="{'inactive': !hover}">{{char}}</span>
         <span :id="'title-char'" class="title-char"
           @mouseover="hover = true"
           @mouseleave="hover = false"
-          @touchend="hover = false"
+          @touchcancel="hover = false"
         >{{char}}</span>
     </h1>
 </template>
@@ -25,12 +25,19 @@ export default {
       };
     },
     created() {
+      this.appearing();
     },
     methods: {
       bouncing() {
         this.bounce = true;
         setTimeout(() => {
           this.bounce = false;
+        }, 1000); // nexttick does not work here
+      },
+      appearing() {
+        this.appear = true;
+        setTimeout(() => {
+          this.appear = false;
         }, 1000); // nexttick does not work here
 
       }
@@ -73,6 +80,12 @@ $font-size-xl: 5rem;
     margin-top: 0px;
   }
 }
+.bouncing {
+  animation : rubberband 800ms alternate ease-out;
+}
+.appearing {
+  animation : appear 200ms alternate ease-out;
+}
 
 @keyframes rubberband {
     0%{
@@ -98,9 +111,15 @@ $font-size-xl: 5rem;
     }
 }
 
-.bouncing {
-  animation : rubberband 800ms alternate ease-out;
+@keyframes appear {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
+
 @media (min-width: 960px) {
  .title-char {
   font-size: $font-size-xl;

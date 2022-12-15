@@ -14,9 +14,9 @@
             <v-container class="title-container">
                 <v-row>
                     <v-icon
-                        size="42"
+                        size="50"
                         class="title-icon mr-4"
-                        v-if="!left && !$vuetify.breakpoint.mobile"
+                        v-if="!$vuetify.breakpoint.mobile"
                     >
                         {{icon}}
                     </v-icon>
@@ -28,13 +28,6 @@
                             {{date}}
                         </span>
                     </span>
-                    <v-icon
-                        size="42"
-                        class="ml-4"
-                        v-if="left && !$vuetify.breakpoint.mobile"
-                    >
-                        {{icon}}
-                    </v-icon>
                 </v-row>
             </v-container>
         </v-card-title>
@@ -79,6 +72,9 @@ $corner: 50px;
 
 .title-container {
     padding: 8px 8px 8px 8px;
+}
+.text-h4 {
+    word-break: break-word;
 }
 .time-line-card {
     clip-path: polygon(100% 0%, 100% calc(100% - #{$corner}), calc(100% - #{$corner}) 100%, 0% 100%, 0% 0%);
