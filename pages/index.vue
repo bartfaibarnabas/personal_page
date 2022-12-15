@@ -6,7 +6,7 @@
 export default {
     name: 'index',
     created() {
-        this.$router.push('home');
+        this.$router.push('welcome');
     }
 }
 </script>

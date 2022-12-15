@@ -41,6 +41,20 @@ export default {
       });    
   },
   computed: {
+    chartData() {
+      return {
+        labels: [1, 2, 3, 4, 5],
+        datasets: [
+          {
+            label: '',
+            data: [2, 1, 16, 3, 2],
+            backgroundColor: 'rgba(20, 255, 0, 0.3)',
+            borderColor: 'rgba(100, 255, 0, 1)',
+            borderWidth: 2,
+          },
+        ],
+      };
+    },
   },
 }
 </script>
