@@ -3,11 +3,21 @@
     <special-text :text="hi" />
     <special-text :text="name" />
     <special-text :text="job" />
+    <v-row>
+      <v-col>
+
+      </v-col>
+      <v-col>
+        <bar-chart></bar-chart>
+      </v-col>
+    </v-row>
+
 </div>
 </template>
 
 <script>
-import specialText from '../components/special-text/specialText.vue';
+import specialText from '../components/specialText/specialText.vue';
+import barChart from '../components/barChart/barChart.vue';
 export default {
   name: 'home',
   components: {
@@ -55,6 +65,11 @@ export default {
         ],
       };
     },
+    options() {
+      return {
+        
+      };
+    }
   },
 }
 </script>

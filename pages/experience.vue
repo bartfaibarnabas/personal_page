@@ -48,7 +48,7 @@
 
 <script>
 import timelineItem from '../components/timelineItem.vue';
-import specialText from '../components/special-text/specialText.vue';
+import specialText from '../components/specialText/specialText.vue';
 
 export default {
   name: 'index',
