@@ -3,7 +3,7 @@
         <v-col cols="2" class="name-col">
             {{name}}
         </v-col>
-        <v-col class="bar-col" :style="`max-width: ${calculatedWidth}%`">
+        <v-col class="bar-col" :style="`max-width: ${width}%`">
             <div class="inner"><div class="hover"/></div>
             length
         </v-col>
@@ -25,13 +25,28 @@ export default {
             type: Number,
             default: 100,
         },
+        noCreateAnimation: {
+            type: Boolean,
+            default: true,
+        },
+    },
+    data: {
+        width: 0,
     },
     created() {
+
+        this.width = this.noCreateAnimation;
+        if (this.noCreateAnimation) {
+            this.width = this.size / this.maxSize * 100;
+        } else {
+            setTimeout(() => {
+                this.width = this.size / this.maxSize * 100;
+            }, 1000);
+        }
     },
     computed: {
-        calculatedWidth() {
-            return this.size / this.maxSize * 100;
-        }
+    },
+    methods: {
     },
 
 }
@@ -49,36 +64,37 @@ $maxLength: 100%;
 }
 .name-col {
     background-color: #{$cyberblue + 'CC'};
+    text-align: center;
+    line-height: 1.5rem;
     //background-image: linear-gradient(to right, $cyberpurple, $cyberpurple, $cyberblue, );
 }
 .bar-col {
     clip-path: polygon($maxLength 0%, $maxLength calc(100% - #{$corner}), calc(#{$maxLength} - #{$corner}) 100%, 0% 100%, 0% 0%);
     .inner {
-        border-radius: 4px;
+
         width: calc(100% - #{$border});
         height: calc(100% - #{$border});
         background: $background-page;
-        clip-path: polygon(100% $border, 100% calc(100% - #{$corner}), calc(100% - #{$corner}) 100%, $border 100%, $border $border);
+        clip-path: polygon(100% $border, 100% calc(100% - #{$corner}), calc(100% - #{$corner}) 100%, 0px 100%, 0px $border);
         .hover {
-        border-radius: 4px;
         width: 0%;
         height: 100%;
         background: $cyberblue;
     }
     }
 }
-
 .bar:hover .bar-col .inner .hover {
     animation: lefttorightAppear 400ms alternate ease-out;
-    width: 105%
+    width: 100%
 }
+
 
 @keyframes lefttorightAppear {
     0%{
         width: 0%;
     }
     100%{
-        width: 105%;
+        width: 100%;
     }
 }
 </style>

@@ -4,10 +4,10 @@
     <special-text :text="name" />
     <special-text :text="job" />
     <v-row>
-      <v-col>
-
+      <v-col sm="12" md="6">
+        text
       </v-col>
-      <v-col>
+      <v-col sm="12" md="6">
         <bar-chart></bar-chart>
       </v-col>
     </v-row>
