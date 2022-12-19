@@ -9,7 +9,7 @@
 <script>
 import specialText from '../components/special-text/specialText.vue';
 export default {
-  name: 'home',
+  name: 'welcome',
   components: {
     specialText,
   },
