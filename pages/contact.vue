@@ -1,7 +1,10 @@
 <template>
   <v-row justify="center" align="center">
-    <v-col v-for="(char, key) in titleChars" :key="key" class="page-title">
-      <p class="title-char" :class="{'rotate': char === 'E'}">{{char}}</p>
+    <v-col>
+      <v-icon>
+        mdi-account-hard-hat-outline
+      </v-icon>
+      {{ title }}
     </v-col>
   </v-row>
 </template>
@@ -11,7 +14,7 @@ export default {
   name: 'index',
   data() {
     return {
-      title:'INFORMATION TBD',
+      title:'Under Construction',
     };
   },
   computed: {
@@ -22,22 +25,4 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-.page-title {
-  .title-char {
-    font-size:5vw;
-    color: $primary-color;
-    &.rotate {
-      transform: rotateY(360deg);
-      float:left;
-      &:hover {
-        animation: turn 1.0s ease-in ;
-      }
-    }
-  }
-}
-@keyframes turn {
-  100% {
-    transform: rotateY(0deg);
-  }
-}
 </style>

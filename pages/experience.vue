@@ -21,7 +21,7 @@
             <v-col
               cols="12"
             >
-              As a Junior devops engineer in UnifyLab my tasks were to handle issues in builds, to improve the building process and to create new build flows. 
+              As a Junior devops engineer in UnifyLab my tasks were to handle issues in builds to improve the building process and to create new build flows. 
             </v-col>
             <v-col
               class="hidden-sm-and-down text-right"
