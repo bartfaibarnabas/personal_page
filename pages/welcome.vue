@@ -19,7 +19,7 @@
 import specialText from '../components/specialText/specialText.vue';
 import barChart from '../components/barChart/barChart.vue';
 export default {
-  name: 'home',
+  name: 'welcome',
   components: {
     specialText,
   },
