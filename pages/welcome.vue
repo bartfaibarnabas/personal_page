@@ -22,6 +22,7 @@ export default {
   name: 'welcome',
   components: {
     specialText,
+    barChart,
   },
   data() {
     return {
